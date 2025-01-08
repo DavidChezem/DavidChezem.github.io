@@ -9,20 +9,25 @@
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
-            background-color: #001f3f; /* Navy blue background */
-            color: #fff; /* White text */
+            background-color: #fff; /* White background */
+            color: #333; /* Black text */
             margin: 20px;
-            position: relative; /* Ensure positioning context for the image */
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border: 2px solid black; /* Black border around each table */
+        }
+        th, td {
+            border: 2px solid black; /* Black border around each cell */
+            padding: 15px;
+            text-align: left;
+            vertical-align: top;
         }
         .gherkin {
-            border: 1px solid #e0e0e0;
-            padding: 15px;
-            margin-bottom: 15px;
+            background-color: #cce4f7; /* Light blue background */
             border-radius: 8px;
-            background-color: #fff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             color: #333; /* Black text inside the boxes */
         }
@@ -37,28 +42,52 @@
             color: #007bff;
         }
         .logo {
-            align-self: center;
-            margin-top: auto; /* Push the image to the bottom */
+            display: block;
+            margin: 0 0 10px 0; /* Left-justify the image and add bottom margin */
             width: 150px; /* Adjust the width as needed */
+        }
+        .team-text {
+            text-align: left;
+            font-size: 1.2em;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="gherkin">
-        <h2>Feature: Pathways: Find and Replace Course Functionality not Working</h2>
-        <h2>Astra - 48685</h2>
-    </div>
-
-    <div class="gherkin">
-        <h2>Scenario: User is needing to execute a Find and Replace of a specific course</h2>
-        <p><strong>Given</strong> the user is logging into the platform</p>
-        <p><strong>When</strong> the user selects the kabob for Find and Replace Course</p>
-        <p><strong>And</strong> executes a Find and Replace of a specific course Subject</p>
-        <p><strong>And</strong> the user searches for the Subject</p>
-        <p><strong>And</strong> the user makes the replacement with a new course</p>
-        <p><strong>Then</strong> the system will find the Subject replacement and save the change</p>
-    </div>
-
     <img src="https://www.aais.com/hs-fs/hubfs/ad_astra-color.png?width=1067&height=269&name=ad_astra-color.png" alt="Logo" class="logo">
+    <div class="team-text">Team: who</div>
+
+    <table>
+        <tr>
+            <td class="gherkin">
+                <h2>Feature: Pathways: Find and Replace Course Functionality not Working</h2>
+                <h2>Jira Key : Astra - 48685</h2>
+            </td>
+            <td class="gherkin">
+                <h2>Scenario: User is needing to execute a Find and Replace of a specific course</h2>
+                <p><strong>Given</strong> the user is logging into the platform</p>
+                <p><strong>When</strong> the user selects the kabob for Find and Replace Course</p>
+                <p><strong>And</strong> executes a Find and Replace of a specific course Subject</p>
+                <p><strong>And</strong> the user searches for the Subject</p>
+                <p><strong>And</strong> the user makes the replacement with a new course</p>
+                <p><strong>Then</strong> the system will find the Subject replacement and save the change</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="gherkin">
+                <h2>Feature: Pathways: Find and Replace Course Functionality not Working</h2>
+                <h2>Jira Key : Astra - 48685</h2>
+            </td>
+            <td class="gherkin">
+                <h2>Scenario: User is needing to execute a Find and Replace of a specific course</h2>
+                <p><strong>Given</strong> the user is logging into the platform</p>
+                <p><strong>When</strong> the user selects the kabob for Find and Replace Course</p>
+                <p><strong>And</strong> executes a Find and Replace of a specific course Subject</p>
+                <p><strong>And</strong> the user searches for the Subject</p>
+                <p><strong>And</strong> the user makes the replacement with a new course</p>
+                <p><strong>Then</strong> the system will find the Subject replacement and save the change</p>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
