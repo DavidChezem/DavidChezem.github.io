@@ -48,4 +48,12 @@
         <p><strong>Then</strong> the user should be redirected to their dashboard</p>
     </div>
 
-    <div class="
+    <div class="gherkin">
+        <h2>Scenario: Unsuccessful login due to invalid password</h2>
+        <p><strong>Given</strong> the user is on the login page</p>
+        <p><strong>When</strong> the user enters an invalid password</p>
+        <p><strong>And</strong> clicks the login button</p>
+        <p><strong>Then</strong> an error message should be displayed</p>
+    </div>
+</body>
+</html>
