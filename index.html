@@ -47,6 +47,9 @@
             margin: 0 0 10px 0; /* Left-justify the image and add bottom margin */
             width: 150px; /* Adjust the width as needed */
         }
+        .left-cell {
+            padding-right: 15px; /* Adjust this value to move the middle border */
+        }
     </style>
 </head>
 <body>
@@ -54,7 +57,7 @@
 
     <table>
         <tr>
-            <td class="gherkin">
+            <td class="gherkin left-cell">
                 <h2>Feature: Pathways: Find and Replace Course Functionality not Working</h2>
                 <h2>Astra - 48685</h2>
             </td>
@@ -66,6 +69,15 @@
                 <p><strong>And</strong> the user searches for the Subject</p>
                 <p><strong>And</strong> the user makes the replacement with a new course</p>
                 <p><strong>Then</strong> the system will find the Subject replacement and save the change</p>
+                
+                <h2>Scenario: Validate the Select course group option is working correctly</h2>
+                <p><strong>Given</strong> the user is selecting the Select Course Group fly out menu</p>
+                <p><strong>When</strong> the link is selected</p>
+                <p><strong>And</strong> the user is selecting the Select Course Group fly out menu</p>
+                <p><strong>And</strong> the Course Group options are displayed</p>
+                <p><strong>And</strong> when clicked the course will move into the Course Group column</p>
+                <p><strong>And</strong> the user clicks Next</p>
+                <p><strong>Then</strong> the found courses search results should display with the checkboxes</p>
             </td>
         </tr>
     </table>
