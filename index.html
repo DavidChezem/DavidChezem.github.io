@@ -13,6 +13,9 @@
             color: #fff; /* White text */
             margin: 20px;
             position: relative; /* Ensure positioning context for the image */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
         }
         .gherkin {
             border: 1px solid #e0e0e0;
@@ -34,15 +37,13 @@
             color: #007bff;
         }
         .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
+            align-self: center;
+            margin-top: auto; /* Push the image to the bottom */
             width: 150px; /* Adjust the width as needed */
         }
     </style>
 </head>
 <body>
-    <img src="https://www.aais.com/hs-fs/hubfs/ad_astra-color.png?width=1067&height=269&name=ad_astra-color.png" alt="Logo" class="logo">
     <div class="gherkin">
         <h2>Feature: Pathways: Find and Replace Course Functionality not Working</h2>
         <h2>Astra - 48685</h2>
@@ -57,5 +58,7 @@
         <p><strong>And</strong> the user makes the replacement with a new course</p>
         <p><strong>Then</strong> the system will find the Subject replacement and save the change</p>
     </div>
+
+    <img src="https://www.aais.com/hs-fs/hubfs/ad_astra-color.png?width=1067&height=269&name=ad_astra-color.png" alt="Logo" class="logo">
 </body>
 </html>
