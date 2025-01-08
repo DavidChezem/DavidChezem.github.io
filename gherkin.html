@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gherkin Statement</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+        .gherkin {
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .gherkin h2 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+        .gherkin p {
+            margin: 5px 0;
+        }
+        .gherkin p strong {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="gherkin">
+        <h2>Feature: User Login</h2>
+        <p><strong>As a</strong> registered user</p>
+        <p><strong>I want</strong> to log in to the application</p>
+        <p><strong>So that</strong> I can access my account</p>
+    </div>
+
+    <div class="gherkin">
+        <h2>Scenario: Successful login</h2>
+        <p><strong>Given</strong> the user is on the login page</p>
+        <p><strong>When</strong> the user enters valid credentials</p>
+        <p><strong>And</strong> clicks the login button</p>
+        <p><strong>Then</strong> the user should be redirected to their dashboard</p>
+    </div>
+
+    <div class="
