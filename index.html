@@ -161,6 +161,11 @@
                 <p><strong>Given</strong> user is working in Sections at the UI level</p>
                 <p><strong>When</strong> making permission changes for room-only entitlements </p>
                 <p><strong>Then</strong> the UI settings will also enforce the entitlement permission settings </p>
+
+                <h2>Scenario: Validate the Privileges services also enforce the Room Only entitlement setting</h2>
+                <p><strong>Given</strong> the user has been granted the specific Room Only entitlement setting</p>
+                <p><strong>When</strong> using the Sections and Spaces feature within the platform</p>
+                <p><strong>Then</strong> the Privileges service enforces the same Room Only entitlement</p>
             </td>
         </tr>
     </table>
