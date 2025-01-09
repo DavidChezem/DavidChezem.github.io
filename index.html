@@ -60,6 +60,7 @@
         <tr>
             <td class="gherkin left-cell">
                 <h2>Feature: Pathways: Find and Replace Course Functionality not Working</h2>
+                <h2>Astra - 48685 </h2>
             </td>
             <td class="gherkin">
                 <h2>Scenario: User is needing to execute a Find and Replace of a specific course</h2>
@@ -83,10 +84,13 @@
     </table>
     
     <!-- Duplicate Table -->
+    
+    <!--Astra-39196-->
     <table>
         <tr>
             <td class="gherkin left-cell">
-                <h2>Feature: <p>Manage access by user/group for a department. As an admin, I want to control some users' access to change Part of Term because it can break processes in Banner
+                <h2>Feature: Manage access by user/group for a department. As an admin, I want to control some users' access to change Part of Term because it can break processes in Banner
+                <h2>Astra - 39196</h2>
             </td>
             <td class="gherkin">
                 <h2>Scenario: User is able to access the Settings > Departments option</h2>
@@ -98,6 +102,23 @@
                 <p><strong>Given</strong> the Admin user has opened the Department Management section within Departments</p>
                 <p><strong>When</strong> the user executes a search using a department code such as ABLW or CDC</p>
                 <p><strong>Then</strong> the correct department name search result will be displayed within the Department Management display field </p>
+
+                <h2>Scenario: User is able to select and Edit Permissions for the the Department search results </h2>
+                <p><strong>Given</strong> the user has executed a search and results are displayed in the Department view</p>
+                <p><strong>When</strong> the user selects a specific Department and clicks the Kebob icon for Edit Permissions</p>
+                <p><strong>Then</strong> the Edit curtan will display for the user</p>
+
+                <h2>Scenario: User is able to select the All Departments option to apply Permissions settings  </h2>
+                <p><strong>Given</strong> the user is working within the Departments settings in the Platform</p>
+                <p><strong>When</strong> the user selects All Departments from the Department Management listing</p>
+                <p><strong>Then</strong> clicking on Edit Permissions opens the Add Users and Groups input field</p>
+
+                <h2>Scenario: Admin user is able to select a Permission level from the drop down menu of Permission options of View, Edit, Publish, and Custom</h2>
+                <p><strong>Given</strong> the user is working within the Add Users or Groups options within a specific Department</p>
+                <p><strong>When</strong> the user clicks into the Permissions drop down menu</p>
+                <p><strong>Then</strong> the Permissions option drop down displays current options of View, Edit, Publish, and Custom </p>
+
+
             </td>
         </tr>
     </table>
