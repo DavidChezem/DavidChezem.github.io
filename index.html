@@ -82,6 +82,7 @@
             </td>
         </tr>
     </table>
+
     
     <!-- Duplicate Table -->
     
@@ -142,5 +143,27 @@
             </td>
         </tr>
     </table>
+
+
+    <table>
+        <tr>
+            <td class="gherkin left-cell">
+                <h2>Feature: Restrict all fields in section editing except meeting "Building" and "Room" so that we effectively have the same functionality as AS8.</h2>
+                <h2>Astra - 45557 </h2>
+            </td>
+            <td class="gherkin">
+                <h2>Scenario: Room only permissions enforced at the UI level </h2>
+                <p><strong>Given</strong> the user is logging into the platform</p>
+                <p><strong>When</strong> user is working in Sections</p>
+                <p><strong>Then</strong> the room only entitlement default is enforced at the UI section levels</p>
+
+                <h2>Scenario: Settings UI enforcement</h2>
+                <p><strong>Given</strong> user is working in Sections at the UI level</p>
+                <p><strong>When</strong> making permission changes for room-only entitlements </p>
+                <p><strong>Then</strong> the UI settings will also enforce the entitlement permission settings </p>
+            </td>
+        </tr>
+    </table>
+    
 </body>
 </html>
