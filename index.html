@@ -130,10 +130,15 @@
                 <p><strong>When</strong> viewing the Courses curtain and the details within the Courses detail view </p>
                 <p><strong>Then</strong> the User permission only has the View option and no Edit privs</p>
 
-                <h2>Scenario: Validate when Custom permissions is selected from the Permissions menu - this auto opens the Define Section permissions modal window  </h2>
+                <h2>Scenario: Validate when Custom permissions have been set and Saved - the UI retains the checked Departments</h2>
                 <p><strong>Given</strong> a user has been assigned Custom level permissions within a specific Department</p>
-                <p><strong>When</strong> viewing the updated User/Group permissions in that isolated Department</p>
-                <p><strong>Then</strong> the user should have the new Custom icon displaying next to the Permissions header</p>
+                <p><strong>When</strong>  the Admin user checks specific View and/or Edit checkboxes next to the section viewer elements and Saved</p>
+                <p><strong>Then</strong> the selected Saved checks are reatained when the Admin user leaves the modal and opens it again</p>
+
+                <h2>Scenario: Validate when Custom permissions View options allows user to Select All from the Field row and All permissions details are checked correctly</h2>
+                <p><strong>Given</strong> a user has been assigned Custom level permissions within a specific Department
+                <p><strong>When</strong>  the Admin user checks the the View check at the Field level</p>
+                <p><strong>Then</strong> all of the View check options have been selected</p> 
             </td>
         </tr>
     </table>
