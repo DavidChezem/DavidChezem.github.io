@@ -86,25 +86,18 @@
     <table>
         <tr>
             <td class="gherkin left-cell">
-                <h2>Feature: Pathways: Find and Replace Course Functionality not Working</h2>
+                <h2>Feature: <p>Manage access by user/group for a department. As an admin, I want to control some users' access to change Part of Term because it can break processes in Banner
             </td>
             <td class="gherkin">
-                <h2>Scenario: User is needing to execute a Find and Replace of a specific course</h2>
+                <h2>Scenario: User is able to access the Settings > Departments option</h2>
                 <p><strong>Given</strong> the user is logging into the platform</p>
-                <p><strong>When</strong> the user selects the kabob for Find and Replace Course</p>
-                <p><strong>And</strong> executes a Find and Replace of a specific course Subject</p>
-                <p><strong>And</strong> the user searches for the Subject</p>
-                <p><strong>And</strong> the user makes the replacement with a new course</p>
-                <p><strong>Then</strong> the system will find the Subject replacement and save the change</p>
+                <p><strong>When</strong> the Admin user selects the Settings > Departments menu option</p>
+                <p><strong>Then</strong> the Department Management options are displayed and accessible to the Admin user</p>
 
-                <h2>Scenario: Validate the Select Course Group option is working correctly</h2>
-                <p><strong>Given</strong> the user is selecting the Select Course Group fly out menu</p>
-                <p><strong>When</strong> the link is selected</p>
-                <p><strong>And</strong> the user is selecting the Select Course Group fly out menu</p>
-                <p><strong>And</strong> the Course Group options are displayed</p>
-                <p><strong>And</strong> when clicked the course will move into the Course Group column</p>
-                <p><strong>And</strong> the user clicks Next</p>
-                <p><strong>Then</strong> the found courses search results should display with the checkboxes</p>
+                <h2>Scenario: User is able to search (Find) a specific Deaprtment using the Search field using department code </h2>
+                <p><strong>Given</strong> the Admin user has opened the Department Management section within Departments</p>
+                <p><strong>When</strong> the user executes a search using a Department code (abbreviation) such as ABLW or CDC</p>
+                <p><strong>Then</strong> the correct Department name search result will be displayed within the Department Management display field </p>
             </td>
         </tr>
     </table>
