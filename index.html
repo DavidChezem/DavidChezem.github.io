@@ -79,6 +79,16 @@
                 <p><strong>And</strong> when clicked the course will move into the Course Group column</p>
                 <p><strong>And</strong> the user clicks Next</p>
                 <p><strong>Then</strong> the found courses search results should display with the checkboxes</p>
+
+                <h2>Scenario: Validate the Search Course by course abbr is functional</h2>
+                <p><strong>Given</strong> the user is working in the Find and Replace modal within the platform</p>
+                <p><strong>When</strong> the user inputs a Course subject abbr</p>
+                <p><strong>Then</strong>the matching course loads in the Search Results window pane </p>
+
+                <h2>Scenario: Validate when entering a Course Code abbr that is malformed it will not return a search value</h2>
+                <p><strong>Given</strong> the user is working in the Find and Replace modal within the platform</p>
+                <p><strong>When</strong> the user inputs a Course subject abbr that is malformed</p>
+                <p><strong>Then</strong>the "No results. Enter new search terms" error message is displayed </p>
             </td>
         </tr>
     </table>
