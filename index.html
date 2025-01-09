@@ -55,21 +55,50 @@
 <body>
     <img src="https://www.aais.com/hs-fs/hubfs/ad_astra-color.png?width=1067&height=269&name=ad_astra-color.png" alt="Logo" class="logo">
 
+    <!--Astra-48685-->
     <table>
         <tr>
             <td class="gherkin left-cell">
-                <h2>Pathways: Find and Replace Course Functionality not Working</h2>
+                <h2>Feature: Pathways: Find and Replace Course Functionality not Working</h2>
                 <h2>Astra - 48685</h2>
             </td>
             <td class="gherkin">
-                <h2>Scenario: Validate the user can execute a Find and Replace of a specific course</h2>
+                <h2>Scenario: User is needing to execute a Find and Replace of a specific course</h2>
                 <p><strong>Given</strong> the user is logging into the platform</p>
                 <p><strong>When</strong> the user selects the kabob for Find and Replace Course</p>
                 <p><strong>And</strong> executes a Find and Replace of a specific course Subject</p>
                 <p><strong>And</strong> the user searches for the Subject</p>
                 <p><strong>And</strong> the user makes the replacement with a new course</p>
                 <p><strong>Then</strong> the system will find the Subject replacement and save the change</p>
-                
+
+                <h2>Scenario: Validate the Select Course Group option is working correctly</h2>
+                <p><strong>Given</strong> the user is selecting the Select Course Group fly out menu</p>
+                <p><strong>When</strong> the link is selected</p>
+                <p><strong>And</strong> the user is selecting the Select Course Group fly out menu</p>
+                <p><strong>And</strong> the Course Group options are displayed</p>
+                <p><strong>And</strong> when clicked the course will move into the Course Group column</p>
+                <p><strong>And</strong> the user clicks Next</p>
+                <p><strong>Then</strong> the found courses search results should display with the checkboxes</p>
+            </td>
+        </tr>
+    </table>
+    
+    <!-- Duplicate Table -->
+    <table>
+        <tr>
+            <td class="gherkin left-cell">
+                <h2>Feature: Pathways: Find and Replace Course Functionality not Working</h2>
+                <h2>Astra - 48685</h2>
+            </td>
+            <td class="gherkin">
+                <h2>Scenario: User is needing to execute a Find and Replace of a specific course</h2>
+                <p><strong>Given</strong> the user is logging into the platform</p>
+                <p><strong>When</strong> the user selects the kabob for Find and Replace Course</p>
+                <p><strong>And</strong> executes a Find and Replace of a specific course Subject</p>
+                <p><strong>And</strong> the user searches for the Subject</p>
+                <p><strong>And</strong> the user makes the replacement with a new course</p>
+                <p><strong>Then</strong> the system will find the Subject replacement and save the change</p>
+
                 <h2>Scenario: Validate the Select Course Group option is working correctly</h2>
                 <p><strong>Given</strong> the user is selecting the Select Course Group fly out menu</p>
                 <p><strong>When</strong> the link is selected</p>
