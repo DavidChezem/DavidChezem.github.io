@@ -93,6 +93,44 @@
         </tr>
     </table>
 
+    <!--Astra-45563-->
+    <table>
+        <tr>
+            <td class="gherkin left-cell">
+                <h2>FEATURE: During the scheduling process we need to show more information about space conflicts.</h2>
+                <h2>Astra - 45563 </h2>
+            </td>
+            <td class="gherkin">
+                <h2>SCENARIO: Validate the UI now reflects IDs and data associated with improved conflicting info</h2>
+                <p><strong>Given</strong> the user is working in the meetings for Location: Building and Region</p>
+                <p><strong>When</strong> viewing the Building - Region feature options</p>
+                <p><strong>Then</strong> UI will display more detailed info and relevant conflict information for the user</p>
+
+                <h2>SCENARIO: Validate the avaiable rooms only toggle displays the correct rooms listins based on the view ALL toggle criteria </h2>
+                <p><strong>Given</strong> the user is viewinq the room spaces list based on the ALL rooms toggle </p>
+                <p><strong>When</strong> viewing the rooms listings</p>
+                <p><strong>Then</strong> UI will display a list of ALL rooms spaces reagrdless of avaiable status</p>
+
+                <h2>SCENARIO: Validate when the toggle is set to Available Rooms Only is TRUE</h2>
+                <p><strong>Given</strong> the user is viewinq the room spaces list based on the rooms toggle "Available Rooms Only" toggle is set ON/TRUE </p>
+                <p><strong>When</strong> user is viewing the selected Rooms which are tagged as Unavailable</p>
+                <p><strong>Then</strong> the room listing link will redirect the user to room details including the Unavailable indicating icon</p>
+
+                <h2>SCENARIO: Validate when user selects the Building Space link that it directs the user to the Building details displaying availability</h2>
+                <p><strong>Given</strong> the user is working within the Building and Spaces availability details page</p>
+                <p><strong>When</strong> selecting a Building with conflicts from the listing </p>
+                <p><strong>Then</strong> the conflicting outcomes will display correctly on the "Suggested Rooms" table listing of those Rooms</p>
+ 
+                <h2>SCENARIO: Validate when a Room space is avaiable that the Room Selector lists the Room with the Green check inidcating all is good</h2>
+                <p><strong>Given</strong> the user is working within the Building and Spaces availability details page</p>
+                <p><strong>When</strong> viewing the Building spaces with no conflicts</p>
+                <p><strong>Then</strong> those rooms are displayted on the Room Selector with the Green "check" icon meaning No Conflicts Found</p>
+            </td>
+        </tr>
+    </table>
+
+
+
     
     <!-- Duplicate Table -->
     
