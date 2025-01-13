@@ -194,7 +194,7 @@
         </tr>
     </table>
 
-
+    <!--Astra-45557-->
     <table>
         <tr>
             <td class="gherkin left-cell">
@@ -216,6 +216,34 @@
                 <p><strong>Given</strong> the user has been granted the specific Room Only entitlement setting</p>
                 <p><strong>When</strong> using the Sections and Spaces feature within the platform</p>
                 <p><strong>Then</strong> the Privileges service enforces the same Room Only entitlement</p>
+            </td>
+        </tr>
+    </table>
+
+    <!--Astra-45557-->
+    <table>
+        <tr>
+            <td class="gherkin left-cell">
+                <h2>FEATURE: Schedule & Align grid Top Nav headers do not freeze on scroll</h2>
+                <h2>Astra - 45557 </h2>
+            </td>
+            <td class="gherkin">
+                <h2>SCENARIO: Validate the Schedule top nav headers are freezing on page scroll</h2>
+                <p><strong>Given</strong> the user is logging into the platform</p>
+                <p><strong>When</strong> user is working within the Schedule grid</p>
+                <p><strong>And</strong> scrolls the page thus moving the grid</p>
+                <p><strong>Then</strong> the Schedule top nav headers should not scroll with the grid and reamin frozen and viewable</p>
+
+                <h2>SCENARIO: Validate the Align top nav headers are freezing on page scroll</h2>
+                <p><strong>Given</strong> the user is logging into the platform</p>
+                <p><strong>When</strong> user is working within the Align grid</p>
+                <p><strong>And</strong> scrolls the page thus moving the grid</p>
+                <p><strong>Then</strong> the Schedule top nav headers should not scroll with the grid and reamin frozen and viewable</p>
+
+                <h2>SCENARIO: Validate each of the grids top nav headers function similar to Courses</h2>
+                <p><strong>Given</strong> the user is working within the primary platform grids</p>
+                <p><strong>When</strong> scrolling the grids within the Schedule and Courses apps</p>
+                <p><strong>Then</strong> the Schedule, Align, and Courses headers should not scroll when the user scrolls</p>
             </td>
         </tr>
     </table>
