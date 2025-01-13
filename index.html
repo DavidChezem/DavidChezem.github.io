@@ -86,7 +86,8 @@
                     <h2>SCENARIO: Validate the main sidebar menu can be modified to fly out with a more user friendly delay</h2>
                     <p><strong>Given</strong> the user is working within the platform and hovers on the main sidebar menu</p>
                     <p><strong>When</strong> the menu opens</p>
-                    <p><strong>Then</strong> there is a slight delay which eliminates how quickly the menu opens and improves the user experience</p>        
+                    <p><strong>And</strong> the user is either working within the menu or accidently hovers over the menu</p>
+                    <p><strong>Then</strong> there should be a slight delay which either reduces how quickly it opens or decreases the hyperlink coverage to improve the user experience</p>        
                 </td>
             </tr>
         </table>
