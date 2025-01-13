@@ -57,7 +57,42 @@
     <img src="https://www.aais.com/hs-fs/hubfs/ad_astra-color.png?width=1067&height=269&name=ad_astra-color.png" alt="Logo" class="logo"><br>
     <img src="https://tootsie.com/app/themes/tootsie/public/images/mr-owl/mr-owl.430a08.png" alt="Logo" style="display: block; margin-left: auto; margin-right: auto; width: 200px; height: auto;"><br>
     <div class="large-text"><strong>The following test scenarios are not in order of project completion date and do not represent the full scope of Unit, System, and Functional testing that each project required.</strong><br><br>
-    <!--Astra-48685-->
+    
+        <!--Astra-49353-->
+        <table>
+            <tr>
+                <td class="gherkin left-cell">
+                    <h2>FEATURE: Schedule Grid - Removing Term filter on a further filtered course list breaks the page</h2>
+                    <h2>Astra - 49353 </h2>
+                </td>
+                <td class="gherkin">
+                    <h2>SCENARIO: Validate the page does not return an error when entering a Course name and clearing the Term filter</h2>
+                    <p><strong>Given</strong> the user is working within the platform and enters a search for a Course</p>
+                    <p><strong>When</strong> the user enters a Course title or abbreviation</p>
+                    <p><strong>And</strong> deletes the current Term filter</p>
+                    <p><strong>Then</strong> the page will refresh correctly and will not throw a system error</p>        
+                </td>
+            </tr>
+        </table>
+
+        <!--Astra-48473-->
+        <table>
+            <tr>
+                <td class="gherkin left-cell">
+                    <h2>FEATURE: Adding more milliseconds to the hover state for application sidebar</h2>
+                    <h2>Astra - 48473 </h2>
+                </td>
+                <td class="gherkin">
+                    <h2>SCENARIO: Validate the main sidebar menu can be modified to fly out with a more user friendly delay</h2>
+                    <p><strong>Given</strong> the user is working within the platform and hovers on the main sidebar menu</p>
+                    <p><strong>When</strong> the menu opens</p>
+                    <p><strong>Then</strong> there is a slight delay which eliminates how quickly the menu opens and improves the user experience</p>        
+                </td>
+            </tr>
+        </table>
+        
+    
+        <!--Astra-48685-->
     <table>
         <tr>
             <td class="gherkin left-cell">
@@ -257,7 +292,7 @@
             </td>
             <td class="gherkin">
                 <h2>SCENARIO: Validate the Add Course button has the updated marketing blue shading</h2>
-                <p><strong>Given</strong> the user is working within the plptform and Courses</p>
+                <p><strong>Given</strong> the user is working within the platform and Courses</p>
                 <p><strong>When</strong> the user is using the Add Course inout button</p>
                 <p><strong>Then</strong> the input button should match the other primary inputs with the updated marketing blue shade</p>
 
