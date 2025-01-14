@@ -322,5 +322,48 @@
             </td>
         </tr>
     </table> 
+
+      <!--Astra-45194-->
+      <table>
+        <tr>
+            <td class="gherkin left-cell">
+                <h2>FEATURE: Validate Space title update</h2>
+                <h2>Astra - 45194 </h2>
+            </td>
+            <td class="gherkin">
+                <h2>SCENARIO: Validate new formatting</h2>
+                <p><strong>Given</strong> the recent updates to Rooms name formatting</p>
+                <p><strong>When</strong> viewing the new format </p>
+                <p><strong>Then</strong> the nomenclature will follow {building name} {room code} - {room name}</p>     
+                
+                <h2>SCENARIO: Validate the UI locations impacted by the Room formatting updates</h2>
+                <p><strong>Given</strong> the user is viewing the spaces viewer > header</p>
+                <p><strong>When</strong> user is viewing the spaces viewer </p>
+                <p><strong>Then</strong> the name formatting has been updated correctly - Sample of new format = "BCH 00000 - 00000"</p> 
+                
+                <h2>SCENARIO: Validate the changes are made to the Courses app</h2>
+                <p><strong>Given</strong> the user is working within the Room Selector > Room Selector > header</p>
+                <p><strong>When</strong> update the coloum header "Availability / Space" </p>
+                <p><strong>Then</strong> update the data in the table to the new format</p> 
+            </td>
+        </tr>
+    </table>
+
+
+     <!--Astra-46100-->
+     <table>
+        <tr>
+            <td class="gherkin left-cell">
+                <h2>FEATURE: UX Standards: Add "Meeting Pattern Management" input needs to be updated</h2>
+                <h2>Astra - 46100 </h2>
+            </td>
+            <td class="gherkin">
+                <h2>SCENARIO: Validate the New button used to add a Meeting Pattern Management has an updated UX change</h2>
+                <p><strong>Given</strong> the user is adding a new Meeting Pattern Management pattern to the schedule</p>
+                <p><strong>When</strong> using the action button </p>
+                <p><strong>Then</strong> the action button will be updated with the new label of "Add Meeting Pattern"</p>        
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
