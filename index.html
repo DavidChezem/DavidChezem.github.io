@@ -252,6 +252,74 @@
         </tr>
     </table>
 
+     <!--Astra-41450-->
+     <table>
+        <tr>
+            <td class="gherkin left-cell">
+                <h2>FEATURE: Bring in the Events data to the Timeline and Calendar workspaces in Courses</h2>
+                <h2>Astra - 41450 </h2>
+            </td>
+            <td class="gherkin">
+                <h2>SCENARIO: Validate the eventing dates from Hively are mapping correctly to the dates in Courses </h2>
+                <p><strong>Given</strong> the user is viewing Courses </p>
+                <p><strong>When</strong> reviewing current dates from the Calendar</p>
+                <p><strong>Then</strong> the dates will match the dates from the original Hively data</p>
+
+                <h2>SCENARIO: Validate the eventing dates from Hively are mapping correctly to the times in Courses</h2>
+                <p><strong>Given</strong> the user is viewing Courses </p>
+                <p><strong>When</strong> reviewing current dates from the Calendar </p>
+                <p><strong>Then</strong> the Hide events button function works correctly  </p>
+
+                <h2>SCENARIO: Validate there is a Hide Events button option within Courses appHide </h2>
+                <p><strong>Given</strong> the user is working within the Courses app</p>
+                <p><strong>When</strong> wanting to Hide the displayed events</p>
+                <p><strong>Then</strong> the Privileges service enforces the same Room Only entitlement</p>
+
+                <h2>SCENARIO: Validate an Entitlement is used to Hide events </h2>
+                <p><strong>Given</strong> the user is working in Course app</p>
+                <p><strong>When</strong> the events are added to the platform within Courses</p>
+                <p><strong>Then</strong> the events info is controlled behind the Event entitlement</p>
+
+                --CALENDAR VIEW--<br>
+                --Month View--
+
+                <h2>SCENARIO: Validate the Calendar Month view is displaying Events correctly </h2>
+                <p><strong>Given</strong> the user has Hively events already created</p>
+                <p><strong>When</strong> viewing the Calendar month view is used</p>
+                <p><strong>Then</strong> existing events are displaying</p>
+
+                --Day View--
+
+                <h2>SCENARIO: Validate the Calendar Day view is displaying Events correctly </h2>
+                <p><strong>Given</strong> the user has Hively events already created</p>
+                <p><strong>When</strong> viewing the Calendar month view is used</p>
+                <p><strong>Then</strong> existing events are displaying</p>
+
+                <h2>SCENARIO: Validate the hover over Day calendar item highlights in Event tooltip</h2>
+                <p><strong>Given</strong> user is wortking in the Events calendar</p>
+                <p><strong>When</strong> the user hovers on the specified Event</p>
+                <p><strong>Then</strong> the correct highlighted tool tip opens as expected </p>
+
+                <h2>SCENARIO: Validate that clicking the Event item on the Day view grid opens the detail curtain view opens</h2>
+                <p><strong>Given</strong> user is wortking in the Events calendar</p>
+                <p><strong>When</strong> the user hovers on the specified Event and selects the event item</p>
+                <p><strong>Then</strong> the Event detail curtain view opens </p>
+
+                --List View--
+
+                <h2>SCENARIO: Validate that clicking the Event item on the Day view grid opens the detail curtain view opens</h2>
+                <p><strong>Given</strong> user is wortking in the Events calendar</p>
+                <p><strong>When</strong> the user hovers on the specified Event and selects the event item</p>
+                <p><strong>Then</strong> the Event detail curtain view opens </p>
+
+            </td>
+        </tr>
+    </table>
+
+    
+
+
+
     <!--Astra-45557-->
     <table>
         <tr>
