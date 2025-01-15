@@ -101,10 +101,16 @@
                     <h2>Astra - 49668 </h2>
                 </td>
                 <td class="gherkin">
-                    <h2>SCENARIO: Validate the "required field" asterik is placed with an extra space</h2>
+                    <h2>SCENARIO: Validate the "required field" asterik for the Add Course input button is placed with an extra space</h2>
                     <p><strong>Given</strong> the user is working within the platform</p>
-                    <p><strong>When</strong> when viewing a requiuired input field</p>
-                    <p><strong>Then</strong> the required field "asterik" has an extra space inserted</p>        
+                    <p><strong>When</strong> viewing a requiuired input field</p>
+                    <p><strong>Then</strong> the required field "asterik" has an extra space inserted</p>   
+                    
+                    <h2>SCENARIO: Validate the UX standard for the required field *asterik* is used correctly within the platform</h2>
+                    <p><strong>Given</strong> the user is working within the platform</p>
+                    <p><strong>When</strong> viewing requiuired input fields which are using an *asterik* </p>
+                    <p><strong>Then</strong> there is an extra space inserted between the *asterik* and the wording</p>   
+                    
                 </td>
             </tr>
         </table>
