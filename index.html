@@ -66,10 +66,21 @@
                     <h2>Astra - 47286 </h2>
                 </td>
                 <td class="gherkin">
+                    
                     <h2>SCENARIO: Validate the newly added Hively events are integrating correctly with the Course "Day" calendar views</h2>
                     <p><strong>Given</strong> the user is adding new Hively events within the "Day" view</p>
                     <p><strong>When</strong> the new Event has been saved in Hively</p>
                     <p><strong>Then</strong> the Event will process correctly through the Snowflake integration and external_activities table</p> 
+
+                    <h2>SCENARIO: Validate the new Hively event time is displaying correctly on the Course calendar day view</h2>
+                    <p><strong>Given</strong> the user is adding new Hively events within the "Day" view</p>
+                    <p><strong>When</strong> the new Event has been saved in Hively</p>
+                    <p><strong>Then</strong> the Event time is also showing on the platform Courses day view</p> 
+
+                    <h2>SCENARIO: Validate the new Hively building assignment is displaying correctly on the Course calendar day view</h2>
+                    <p><strong>Given</strong> the user is adding new Hively events within the "Day" view</p>
+                    <p><strong>When</strong> the new Event has been saved in Hively</p>
+                    <p><strong>Then</strong> the building assignment (BLD) is displaying on the platform Courses day view</p> 
                     
                     <h2>SCENARIO: Validate the newly added Hively events are integrating correctly with the Course "Week" calendar views</h2>
                     <p><strong>Given</strong> the user is adding new Hively events within the "Week" view</p>
