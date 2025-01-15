@@ -58,6 +58,32 @@
     <img src="https://tootsie.com/app/themes/tootsie/public/images/mr-owl/mr-owl.430a08.png" alt="Logo" style="display: block; margin-left: 0; margin-right: auto; width: 100px; height: auto;"><br>
     <div class="large-text"><strong>The following test scenarios are not in order of project completion date and do not represent the full scope of Unit, System, and Functional testing that each project required.</strong><br><br>
     
+         <!--Astra-47286-->
+         <table>
+            <tr>
+                <td class="gherkin left-cell">
+                    <h2>FEATURE: Astra Events activities aren't being created in snowflake</h2>
+                    <h2>Astra - 47286 </h2>
+                </td>
+                <td class="gherkin">
+                    <h2>SCENARIO: Validate the newly added Hively events are integrating correctly with the Course "Day" calendar views</h2>
+                    <p><strong>Given</strong> the user is adding new Hively events within the "Day" view</p>
+                    <p><strong>When</strong> the new Event has been saved in Hively</p>
+                    <p><strong>Then</strong> the Event will process correctly through the Snowflake integration and external_activities table</p> 
+                    
+                    <h2>SCENARIO: Validate the newly added Hively events are integrating correctly with the Course "Week" calendar views</h2>
+                    <p><strong>Given</strong> the user is adding new Hively events within the "Week" view</p>
+                    <p><strong>When</strong> the new Event has been saved in Hively</p>
+                    <p><strong>Then</strong> the Event will process correctly through the Snowflake integration and external_activities table</p> 
+
+                    <h2>SCENARIO: Validate the newly added Hively events are integrating correctly with the Course "Monthly" calendar views</h2>
+                    <p><strong>Given</strong> the user is adding new Hively events within the "Monthly" view</p>
+                    <p><strong>When</strong> the new Event has been saved in Hively</p>
+                    <p><strong>Then</strong> the Event will process correctly through the Snowflake integration and external_activities table</p> 
+                </td>
+            </tr>
+        </table>
+        
         <!--Astra-49353-->
         <table>
             <tr>
