@@ -349,8 +349,21 @@
                 
                 <h2>SCENARIO: Validate the changes are made to the Courses app</h2>
                 <p><strong>Given</strong> the user is working within the Room Selector > Room Selector > header</p>
-                <p><strong>When</strong> update the coloum header "Availability / Space" </p>
-                <p><strong>Then</strong> update the data in the table to the new format</p> 
+                <p><strong>Then</strong> update the coloum header "Availability / Space" </p>
+                
+                <h2>SCENARIO: Validate the changes within the Section Viewer</h2>
+                <p><strong>Given</strong> the user is working within the Space” column </p>
+                <p><strong>Then</strong> update the data to the new format</p> 
+
+                <h2>SCENARIO: Validate the changes within the Timeline</h2>
+                <p><strong>Given</strong> user is working within the "Timeline" feature</p>
+                <p><strong>When</strong> changing the view dropdown entry from Rooms to Spaces </p>
+                <p><strong>Then</strong> update the list on the left to the new format</p> 
+
+                <h2>SCENARIO: Validate the Room listing assumes the new fomratting</h2>
+                <p><strong>Given</strong> the user is working within the ROOM selector</p>
+                <p><strong>When</strong> using the field to select a ROOM  </p>
+                <p><strong>Then</strong> the new formatting will display following the "Availability / Space" styling format </p> 
             </td>
         </tr>
     </table>
