@@ -3,522 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who test scenarios</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Gherkin Syntax Highlighting</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
     <style>
         body {
-            font-family: 'Roboto', sans-serif; 
-            line-height: 1.6; 
-            background-color: #1b1a1a; /* Light Gray background */ 
-            color: #18191a; /* Dark Blue text */ 
-            margin: 20px;
+            background-color: #687b9e; /* Light gray background for the entire page */
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            border: 2px solid black; /* Black border around each table */
-            font-size: 0.7em; /* Set table font size to 0.7em */
-        }
-        th, td {
-            border: 2px solid black; /* Black border around each cell */
-            padding: 15px;
-            text-align: left;
-            vertical-align: top;
-        }
-        .gherkin {
-            background-color: #d6d8da; /* Light blue background */
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            color: #333; /* Black text inside the boxes */
-        }
-        .gherkin h2 {
-            margin-top: 0;
-            color: #0056b3;
-        }
-        .gherkin p {
-            margin: 5px 0;
-        }
-        .gherkin p strong {
-            color: #007bff;
-        }
-        .logo {
-            display: block;
-            margin: 0 0 10px 0; /* Left-justify the image and add bottom margin */
-            width: 150px; /* Adjust the width
-        }
-        .left-cell {
-            padding-right: 15px; /* Adjust this value to move the middle border */
+        pre {
+            background-color: #f7eded; /* Light gray background for code blocks */
+            padding: 10px; /* Adding some padding for better readability */
+            border-radius: 5px; /* Optional: Rounded corners */
         }
 
     </style>
 </head>
 <body>
-    <img src="https://www.aais.com/hs-fs/hubfs/ad_astra-color.png?width=1067&height=269&name=ad_astra-color.png" alt="Logo" class="logo"><br>
+    <img src="https://www.aais.com/hs-fs/hubfs/ad_astra-color.png?width=300&height=300&name=ad_astra-color.png" alt="Logo" class="logo"><br>
     <img src="https://tootsie.com/app/themes/tootsie/public/images/mr-owl/mr-owl.430a08.png" alt="Logo" style="display: block; margin-left: 0; margin-right: auto; width: 100px; height: auto;"><br>
-         <!--Astra-47286-->
-         <table>
-            <tr>
-                <td class="gherkin left-cell">
-                    <h2>FEATURE: Astra Events activities aren't being created in snowflake</h2>
-                    <h2>Astra - 47286 </h2>
-                </td>
-                <td class="gherkin">
-                    
-                    <h2>SCENARIO: Validate the newly added Hively events are integrating correctly with the Course "Day" calendar views</h2>
-                    <p><strong>Given</strong> the user is adding new Hively events within the "Day" view</p>
-                    <p><strong>When</strong> the new Event has been saved in Hively</p>
-                    <p><strong>Then</strong> the Event will process correctly through the Snowflake integration and external_activities table</p> 
+    <div class="large-text"><strong>The following test scenarios are not in order of project completion date and do not represent the full scope of Unit, System, and Functional testing that each project required</strong><br><br>
 
-                    <h2>SCENARIO: Validate the new Hively event time is displaying correctly on the Course calendar day view</h2>
-                    <p><strong>Given</strong> the user is adding new Hively events within the "Day" view</p>
-                    <p><strong>When</strong> the new Event has been saved in Hively</p>
-                    <p><strong>Then</strong> the Event time is also showing on the platform Courses day view</p> 
+    <pre><code class="language-gherkin">
+    Astra: 47286
+    Feature: Astra Events activities aren't being created in snowflake
+    Scenario: Validate the newly added Hively events are integrating correctly with the Course "Day" calendar views
+        Given the user is adding new Hively events within the "Day" view
+        When the new Event has been saved in Hively
+        Then the Event will process correctly through the Snowflake integration and external_activities table
 
-                    <h2>SCENARIO: Validate the new Hively building assignment is displaying correctly on the Course calendar day view</h2>
-                    <p><strong>Given</strong> the user is adding new Hively events within the "Day" view</p>
-                    <p><strong>When</strong> the new Event has been saved in Hively</p>
-                    <p><strong>Then</strong> the building assignment (BLD) is displaying on the platform Courses day view</p> 
-                    
-                    <h2>SCENARIO: Validate the newly added Hively events are integrating correctly with the Course "Week" calendar views</h2>
-                    <p><strong>Given</strong> the user is adding new Hively events within the "Week" view</p>
-                    <p><strong>When</strong> the new Event has been saved in Hively</p>
-                    <p><strong>Then</strong> the Event will process correctly through the Snowflake integration and external_activities table</p> 
+    Scenario: Validate the new Hively event time is displaying correctly on the Course calendar day view</h2>
+        Given the user is adding new Hively events within the "Day" view
+        When the new Event has been saved in Hively
+        Then the Event time is also showing on the platform Courses day view
 
-                    <h2>SCENARIO: Validate the newly added Hively events are integrating correctly with the Course "Monthly" calendar views</h2>
-                    <p><strong>Given</strong> the user is adding new Hively events within the "Monthly" view</p>
-                    <p><strong>When</strong> the new Event has been saved in Hively</p>
-                    <p><strong>Then</strong> the Event will process correctly through the Snowflake integration and external_activities table</p> 
+    Scenario: Validate the new Hively building assignment is displaying correctly on the Course calendar day view</h2>
+        Given the user is adding new Hively events within the "Day" view</p>
+        When the new Event has been saved in Hively</p>
+        Then the building assignment (BLD) is displaying on the platform Courses day view</p> 
 
-                    <h2>SCENARIO: Validate the newly added Hively events viewed in Weekly view are visible in Courses calendar</h2>
-                    <p><strong>Given</strong> the user is adding new Hively events within the "Week" view</p>
-                    <p><strong>When</strong> the new Event has been saved in Hively</p>
-                    <p><strong>And</strong> the new Event is being viewed from the Week view in Hively and the Astra platform</p>
-                    <p><strong>Then</strong> the Event will process correctly through the Snowflake integration and external_activities table</p> 
-                    <p><strong>Then</strong> the Event details will match in the Courses platform calendar</p> 
+    Scenario: Validate the newly added Hively events are integrating correctly with the Course "Monthly" calendar views</h2>
+        Given the user is adding new Hively events within the "Monthly" view</p>
+        When the new Event has been saved in Hively</p>
+        Then the Event will process correctly through the Snowflake integration and external_activities table</p> 
 
-                </td>
-            </tr>
-        </table>
-        
-        <!--Astra-49353-->
-        <table>
-            <tr>
-                <td class="gherkin left-cell">
-                    <h2>FEATURE: Schedule Grid - Removing Term filter on a further filtered course list breaks the page</h2>
-                    <h2>Astra - 49353 </h2>
-                </td>
-                <td class="gherkin">
-                    <h2>SCENARIO: Validate the page does not return an error when entering a Course name and clearing the Term filter</h2>
-                    <p><strong>Given</strong> the user is working within the platform and enters a search for a Course</p>
-                    <p><strong>When</strong> the user enters a Course title or abbreviation</p>
-                    <p><strong>And</strong> deletes the current Term filter</p>
-                    <p><strong>Then</strong> the page will refresh correctly and will not throw a system error</p>        
-                </td>
-            </tr>
-        </table>
-
-        <!--Astra-48473-->
-        <table>
-            <tr>
-                <td class="gherkin left-cell">
-                    <h2>FEATURE: Adding more milliseconds to the hover state for application sidebar</h2>
-                    <h2>Astra - 48473 </h2>
-                </td>
-                <td class="gherkin">
-                    <h2>SCENARIO: Validate the main sidebar menu can be modified to fly out with a more user friendly delay</h2>
-                    <p><strong>Given</strong> the user is working within the platform and hovers on the main sidebar menu</p>
-                    <p><strong>When</strong> the menu opens</p>
-                    <p><strong>And</strong> the user is either working within the menu or accidently hovers over the menu</p>
-                    <p><strong>Then</strong> there should be a slight delay which either reduces how quickly it opens or decreases the hyperlink coverage to improve the user experience</p>        
-                </td>
-            </tr>
-        </table>
-        
-
-           <!--Astra-49668-->
-           <table>
-            <tr>
-                <td class="gherkin left-cell">
-                    <h2>FEATURE: UX Standards - The primary Add Course input needs *asterik* spacing corrections</h2>
-                    <h2>Astra - 49668 </h2>
-                </td>
-                <td class="gherkin">
-                    <h2>SCENARIO: Validate the "required field" asterik for the Add Course input button is placed with an extra space</h2>
-                    <p><strong>Given</strong> the user is working within the platform</p>
-                    <p><strong>When</strong> viewing a requiuired input field</p>
-                    <p><strong>Then</strong> the required field "asterik" has an extra space inserted</p>   
-                    
-                    <h2>SCENARIO: Validate the UX standard for the required field *asterik* is used correctly within the platform</h2>
-                    <p><strong>Given</strong> the user is working within the platform</p>
-                    <p><strong>When</strong> viewing requiuired input fields which are using an *asterik* </p>
-                    <p><strong>Then</strong> there is an extra space inserted between the *asterik* and the wording</p>   
-                    
-                </td>
-            </tr>
-        </table>
-        
-        <!--Astra-48685-->
-    <table>
-        <tr>
-            <td class="gherkin left-cell">
-                <h2>FEATURE: Pathways - Find and Replace Course Functionality not Working</h2>
-                <h2>Astra - 48685 </h2>
-            </td>
-            <td class="gherkin">
-                <h2>SCENARIO: User is needing to execute a Find and Replace of a specific course</h2>
-                <p><strong>Given</strong> the user is logging into the platform</p>
-                <p><strong>When</strong> the user selects the kabob for Find and Replace Course</p>
-                <p><strong>And</strong> executes a Find and Replace of a specific course Subject</p>
-                <p><strong>And</strong> the user searches for the Subject</p>
-                <p><strong>And</strong> the user makes the replacement with a new course</p>
-                <p><strong>Then</strong> the system will find the Subject replacement and save the change</p>
-
-                <h2>SCENARIO: Validate the Select Course Group option is working correctly</h2>
-                <p><strong>Given</strong> the user is selecting the Select Course Group fly out menu</p>
-                <p><strong>When</strong> the link is selected</p>
-                <p><strong>And</strong> the user is selecting the Select Course Group fly out menu</p>
-                <p><strong>And</strong> the Course Group options are displayed</p>
-                <p><strong>And</strong> when clicked the course will move into the Course Group column</p>
-                <p><strong>And</strong> the user clicks Next</p>
-                <p><strong>Then</strong> the found courses search results should display with the checkboxes</p>
-
-                <h2>SCENARIO: Validate the Search Course by course abbr is functional</h2>
-                <p><strong>Given</strong> the user is working in the Find and Replace modal within the platform</p>
-                <p><strong>When</strong> the user inputs a Course subject abbr</p>
-                <p><strong>Then</strong> the matching course loads in the Search Results window pane </p>
-
-                <h2>SCENARIO: Validate when entering a Course Code abbr that is malformed it will not return a search value</h2>
-                <p><strong>Given</strong> the user is working in the Find and Replace modal within the platform</p>
-                <p><strong>When</strong> the user inputs a Course subject abbr that is malformed</p>
-                <p><strong>Then</strong> the "No results. Enter new search terms" error message is displayed </p>
-            </td>
-        </tr>
-    </table>
-
-    <!--Astra-45563-->
-    <table>
-        <tr>
-            <td class="gherkin left-cell">
-                <h2>FEATURE: During the scheduling process we need to show more information about space conflicts.</h2>
-                <h2>Astra - 45563 </h2>
-            </td>
-            <td class="gherkin">
-                <h2>SCENARIO: Validate the UI now reflects IDs and data associated with improved conflicting info</h2>
-                <p><strong>Given</strong> the user is working in the meetings for Location: Building and Region</p>
-                <p><strong>When</strong> viewing the Building - Region feature options</p>
-                <p><strong>Then</strong> UI will display more detailed info and relevant conflict information for the user</p>
-
-                <h2>SCENARIO: Validate the available rooms only toggle displays the correct rooms listins based on the view ALL toggle criteria </h2>
-                <p><strong>Given</strong> the user is viewinq the room spaces list based on the ALL rooms toggle </p>
-                <p><strong>When</strong> viewing the rooms listings</p>
-                <p><strong>Then</strong> UI will display a list of ALL rooms spaces reagrdless of available status</p>
-
-                <h2>SCENARIO: Validate when the toggle is set to Available Rooms Only is TRUE</h2>
-                <p><strong>Given</strong> the user is viewinq the room spaces list based on the rooms toggle "Available Rooms Only" toggle is set ON/TRUE </p>
-                <p><strong>When</strong> user is viewing the selected Rooms which are tagged as Unavailable</p>
-                <p><strong>Then</strong> the room listing link will redirect the user to room details including the Unavailable indicating icon</p>
-
-                <h2>SCENARIO: Validate when user selects the Building Space link that it directs the user to the Building details displaying availability</h2>
-                <p><strong>Given</strong> the user is working within the Building and Spaces availability details page</p>
-                <p><strong>When</strong> selecting a Building with conflicts from the listing </p>
-                <p><strong>Then</strong> the conflicting outcomes will display correctly on the "Suggested Rooms" table listing of those Rooms</p>
- 
-                <h2>SCENARIO: Validate when a Room space is available that the Room Selector lists the Room with the Green check inidcating all is good</h2>
-                <p><strong>Given</strong> the user is working within the Building and Spaces availability details page</p>
-                <p><strong>When</strong> viewing the Building spaces with no conflicts</p>
-                <p><strong>Then</strong> those rooms are displayted on the Room Selector with the Green "check" icon meaning No Conflicts Found</p>
-            </td>
-        </tr>
-    </table>
-
-
-
+    Scenario: Validate the newly added Hively events viewed in Weekly view are visible in Courses calendar</h2>
+        Given</strong> the user is adding new Hively events within the "Week" view</p>
+        When</strong> the new Event has been saved in Hively</p>
+        And</strong> the new Event is being viewed from the Week view in Hively and the Astra platform</p>
+        Then</strong> the Event will process correctly through the Snowflake integration and external_activities table</p> 
+        Then</strong> the Event details will match in the Courses platform calendar</p> 
     
-    <!-- Duplicate Table -->
-    
-    <!--Astra-39196-->
-    <table>
-        <tr>
-            <td class="gherkin left-cell">
-                <h2>FEATURE: Manage access by user/group for a department. As an admin, I want to control some users' access to change Part of Term because it can break processes in Banner
-                <h2>Astra - 39196</h2>
-            </td>
-            <td class="gherkin">
-                <h2>SCENARIO: User is able to access the Settings > Departments option</h2>
-                <p><strong>Given</strong> the user is logging into the platform</p>
-                <p><strong>When</strong> the Admin user selects the Settings > Departments menu option</p>
-                <p><strong>Then</strong> the Department Management options are displayed and accessible to the Admin user</p>
+    </code></pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
 
-                <h2>SCENARIO: User is able to search a specific departtment using the search field using department code </h2>
-                <p><strong>Given</strong> the Admin user has opened the Department Management section within Departments</p>
-                <p><strong>When</strong> the user executes a search using a department code such as ABLW or CDC</p>
-                <p><strong>Then</strong> the correct department name search result will be displayed within the Department Management display field </p>
+    <pre><code class="language-gherkin">
+    Feature: Example feature
+    Scenario: Example scenario
+        Given some precondition
+        When some action happens
+        Then some outcome
+    </code></pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
 
-                <h2>SCENARIO: User is able to select and Edit Permissions for the the Department search results </h2>
-                <p><strong>Given</strong> the user has executed a search and results are displayed in the Department view</p>
-                <p><strong>When</strong> the user selects a specific Department and clicks the Kebob icon for Edit Permissions</p>
-                <p><strong>Then</strong> the Edit curtan will display for the user</p>
-
-                <h2>SCENARIO: User is able to select the All Departments option to apply Permissions settings  </h2>
-                <p><strong>Given</strong> the user is working within the Departments settings in the Platform</p>
-                <p><strong>When</strong> the user selects All Departments from the Department Management listing</p>
-                <p><strong>Then</strong> clicking on Edit Permissions opens the Add Users and Groups input field</p>
-
-                <h2>SCENARIO: Admin user is able to select a Permission level from the drop down menu of Permission options of View, Edit, Publish, and Custom</h2>
-                <p><strong>Given</strong> the user is working within the Add Users or Groups options within a specific Department</p>
-                <p><strong>When</strong> the user clicks into the Permissions drop down menu</p>
-                <p><strong>Then</strong> the Permissions option drop down displays current options of View, Edit, Publish, and Custom </p>
-
-                <h2>SCENARIO: Validate the Permisisons menu selector displays the available options</h2>
-                <p><strong>Given</strong> the Admin user needs to set a user Permission for another plaform user </p>
-                <p><strong>When</strong> the Admin user navigates to Settings > Departments </p>
-                <p><strong>And</strong> selects a specific Department</p>
-                <p><strong>And</strong> clicks the Edit Permissions Kabob menu for that user</p>
-                <p><strong>Then</strong> the UI displays new Permissions options (View, Edit, Publish, Custom)</p>
-
-                <h2>SCENARIO: Validate the current "User" based permission does NOT have any Courses/Sections "EDIT" priv  </h2>
-                <p><strong>Given</strong> the platform user is logged in as a "User" based permission while working in the Courses/Sections curtain </p>
-                <p><strong>When</strong> viewing the Courses curtain and the details within the Courses detail view </p>
-                <p><strong>Then</strong> the User permission only has the View option and no Edit privs</p>
-
-                <h2>SCENARIO: Validate when Custom permissions have been set and Saved - the UI retains the checked Departments</h2>
-                <p><strong>Given</strong> a user has been assigned Custom level permissions within a specific Department</p>
-                <p><strong>When</strong>  the Admin user checks specific View and/or Edit checkboxes next to the section viewer elements and Saved</p>
-                <p><strong>Then</strong> the selected Saved checks are reatained when the Admin user leaves the modal and opens it again</p>
-
-                <h2>SCENARIO: Validate when Custom permissions View options allows user to Select All from the Field row and All permissions details are checked correctly</h2>
-                <p><strong>Given</strong> a user has been assigned Custom level permissions within a specific Department
-                <p><strong>When</strong>  the Admin user checks the the View check at the Field level</p>
-                <p><strong>Then</strong> all of the View check options have been selected</p> 
-            </td>
-        </tr>
-    </table>
-
-     <!--Astra-41450-->
-     <table>
-        <tr>
-            <td class="gherkin left-cell">
-                <h2>FEATURE: Bring in the Events data to the Timeline and Calendar workspaces in Courses</h2>
-                <h2>Astra - 41450 </h2>
-            </td>
-            <td class="gherkin">
-                <h2>SCENARIO: Validate the eventing dates from Hively are mapping correctly to the dates in Courses </h2>
-                <p><strong>Given</strong> the user is viewing Courses </p>
-                <p><strong>When</strong> reviewing current dates from the Calendar</p>
-                <p><strong>Then</strong> the dates will match the dates from the original Hively data</p>
-
-                <h2>SCENARIO: Validate the eventing dates from Hively are mapping correctly to the times in Courses</h2>
-                <p><strong>Given</strong> the user is viewing Courses </p>
-                <p><strong>When</strong> reviewing current dates from the Calendar </p>
-                <p><strong>Then</strong> the Hide events button function works correctly  </p>
-
-                <h2>SCENARIO: Validate there is a Hide Events button option within Courses appHide </h2>
-                <p><strong>Given</strong> the user is working within the Courses app</p>
-                <p><strong>When</strong> wanting to Hide the displayed events</p>
-                <p><strong>Then</strong> the Privileges service enforces the same Room Only entitlement</p>
-
-                <h2>SCENARIO: Validate an Entitlement is used to Hide events </h2>
-                <p><strong>Given</strong> the user is working in Course app</p>
-                <p><strong>When</strong> the events are added to the platform within Courses</p>
-                <p><strong>Then</strong> the events info is controlled behind the Event entitlement</p>
-
-                --CALENDAR VIEW--<br>
-                --Month View--
-
-                <h2>SCENARIO: Validate the Calendar Month view is displaying Events correctly </h2>
-                <p><strong>Given</strong> the user has Hively events already created</p>
-                <p><strong>When</strong> viewing the Calendar month view is used</p>
-                <p><strong>Then</strong> existing events are displaying</p>
-
-                --Day View--
-
-                <h2>SCENARIO: Validate the Calendar Day view is displaying Events correctly </h2>
-                <p><strong>Given</strong> the user has Hively events already created</p>
-                <p><strong>When</strong> viewing the Calendar month view is used</p>
-                <p><strong>Then</strong> existing events are displaying</p>
-
-                <h2>SCENARIO: Validate the hover over Day calendar item highlights in Event tooltip</h2>
-                <p><strong>Given</strong> user is wortking in the Events calendar</p>
-                <p><strong>When</strong> the user hovers on the specified Event</p>
-                <p><strong>Then</strong> the correct highlighted tool tip opens as expected </p>
-
-                <h2>SCENARIO: Validate that clicking the Event item on the Day view grid opens the detail curtain view opens</h2>
-                <p><strong>Given</strong> user is wortking in the Events calendar</p>
-                <p><strong>When</strong> the user hovers on the specified Event and selects the event item</p>
-                <p><strong>Then</strong> the Event detail curtain view opens </p>
-
-                --List View--
-
-                <h2>SCENARIO: Validate that clicking the Event item on the Day view grid opens the detail curtain view opens</h2>
-                <p><strong>Given</strong> user is wortking in the Events calendar</p>
-                <p><strong>When</strong> the user hovers on the specified Event and selects the event item</p>
-                <p><strong>Then</strong> the Event detail curtain view opens </p>
-
-            </td>
-        </tr>
-    </table>
-
-    
-
-
-
-    <!--Astra-45557-->
-    <table>
-        <tr>
-            <td class="gherkin left-cell">
-                <h2>FEATURE: Restrict all fields in section editing except meeting "Building" and "Room" so that we effectively have the same functionality as AS8.</h2>
-                <h2>Astra - 45557 </h2>
-            </td>
-            <td class="gherkin">
-                <h2>SCENARIO: Room only permissions enforced at the UI level </h2>
-                <p><strong>Given</strong> the user is logging into the platform</p>
-                <p><strong>When</strong> user is working in Sections</p>
-                <p><strong>Then</strong> the room only entitlement default is enforced at the UI section levels</p>
-
-                <h2>SCENARIO: Settings UI enforcement</h2>
-                <p><strong>Given</strong> user is working in Sections at the UI level</p>
-                <p><strong>When</strong> making permission changes for room-only entitlements </p>
-                <p><strong>Then</strong> the UI settings will also enforce the entitlement permission settings </p>
-
-                <h2>SCENARIO: Validate the Privileges services also enforce the Room Only entitlement setting</h2>
-                <p><strong>Given</strong> the user has been granted the specific Room Only entitlement setting</p>
-                <p><strong>When</strong> using the Sections and Spaces feature within the platform</p>
-                <p><strong>Then</strong> the Privileges service enforces the same Room Only entitlement</p>
-            </td>
-        </tr>
-    </table>
-
-    <!--Astra-45557-->
-    <table>
-        <tr>
-            <td class="gherkin left-cell">
-                <h2>FEATURE: Schedule & Align grid Top Nav headers do not freeze on scroll</h2>
-                <h2>Astra - 45557 </h2>
-            </td>
-            <td class="gherkin">
-                <h2>SCENARIO: Validate the Schedule top nav headers are freezing on page scroll</h2>
-                <p><strong>Given</strong> the user is logging into the platform</p>
-                <p><strong>When</strong> user is working within the Schedule grid</p>
-                <p><strong>And</strong> scrolls the page thus moving the grid</p>
-                <p><strong>Then</strong> the Schedule top nav headers should not scroll with the grid and reamin frozen and viewable</p>
-
-                <h2>SCENARIO: Validate the Align top nav headers are freezing on page scroll</h2>
-                <p><strong>Given</strong> the user is logging into the platform</p>
-                <p><strong>When</strong> user is working within the Align grid</p>
-                <p><strong>And</strong> scrolls the page thus moving the grid</p>
-                <p><strong>Then</strong> the Schedule top nav headers should not scroll with the grid and reamin frozen and viewable</p>
-
-                <h2>SCENARIO: Validate each of the grids top nav headers function similar to Courses</h2>
-                <p><strong>Given</strong> the user is working within the primary platform grids</p>
-                <p><strong>When</strong> scrolling the grids within the Schedule and Courses apps</p>
-                <p><strong>Then</strong> the Schedule, Align, and Courses Top Nav headers should stay visiable when the user scrolls the data</p>
-            </td>
-        </tr>
-    </table>
-
-       <!--Astra-48547-->
-       <table>
-        <tr>
-            <td class="gherkin left-cell">
-                <h2>FEATURE: UX - Courses: Add Course button needs the "marketing" blue shading</h2>
-                <h2>Astra - 48547 </h2>
-            </td>
-            <td class="gherkin">
-                <h2>SCENARIO: Validate the Add Course button has the updated marketing blue shading</h2>
-                <p><strong>Given</strong> the user is working within the platform and Courses</p>
-                <p><strong>When</strong> the user is using the Add Course inout button</p>
-                <p><strong>Then</strong> the input button should match the other primary inputs with the updated marketing blue shade</p>
-
-                <h2>SCENARIO: Validate the Align top nav headers are freezing on page scroll</h2>
-                <p><strong>Given</strong> the user is logging into the platform</p>
-                <p><strong>When</strong> user is working within the Align grid</p>
-                <p><strong>And</strong> scrolls the page thus moving the grid</p>
-                <p><strong>Then</strong> the Schedule top nav headers should not scroll with the grid and reamin frozen and viewable</p>
-
-            </td>
-        </tr>
-    </table> 
-
-      <!--Astra-45194-->
-      <table>
-        <tr>
-            <td class="gherkin left-cell">
-                <h2>FEATURE: Validate Space title update</h2>
-                <h2>Astra - 45194 </h2>
-            </td>
-            <td class="gherkin">
-                <h2>SCENARIO: Validate new formatting</h2>
-                <p><strong>Given</strong> the recent updates to Rooms name formatting</p>
-                <p><strong>When</strong> viewing the new format </p>
-                <p><strong>Then</strong> the nomenclature will follow {building name} {room code} - {room name}</p>     
-                
-                <h2>SCENARIO: Validate the UI locations impacted by the Room formatting updates</h2>
-                <p><strong>Given</strong> the user is viewing the spaces viewer > header</p>
-                <p><strong>When</strong> user is viewing the spaces viewer </p>
-                <p><strong>Then</strong> the name formatting has been updated correctly - Sample of new format = "BCH 00000 - 00000"</p> 
-                
-                <h2>SCENARIO: Validate the changes are made to the Courses app</h2>
-                <p><strong>Given</strong> the user is working within the Room Selector > Room Selector > header</p>
-                <p><strong>Then</strong> update the coloum header "Availability / Space" </p>
-                
-                <h2>SCENARIO: Validate the changes within the Section Viewer</h2>
-                <p><strong>Given</strong> the user is working within the Space” column </p>
-                <p><strong>Then</strong> update the data to the new format</p> 
-
-                <h2>SCENARIO: Validate the changes within the Timeline</h2>
-                <p><strong>Given</strong> user is working within the "Timeline" feature</p>
-                <p><strong>When</strong> changing the view dropdown entry from Rooms to Spaces </p>
-                <p><strong>Then</strong> update the list on the left to the new format</p> 
-
-                <h2>SCENARIO: Validate the Room listing assumes the new fomratting</h2>
-                <p><strong>Given</strong> the user is working within the ROOM selector</p>
-                <p><strong>When</strong> using the field to select a ROOM  </p>
-                <p><strong>Then</strong> the new formatting will display following the "Availability / Space" styling format </p> 
-            </td>
-        </tr>
-    </table>
-
-           <!--Astra-46700-->
-           <table>
-            <tr>
-                <td class="gherkin left-cell">
-                    <h2>FEATURE: UX Standards: Add "Meeting Pattern Management" input needs to be updated. Quick fix for a UX bug discovered during QE exploratory. </h2>
-                    <h2>Astra - 46700 </h2>
-                </td>
-                <td class="gherkin">
-                    <h2>SCENARIO: Validate the New button used to add a Meeting Pattern Management has an updated UX change</h2>
-                    <p><strong>Given</strong> the user is adding a new Meeting Pattern Management pattern to the schedule</p>
-                    <p><strong>When</strong> using the action button </p>
-                    <p><strong>Then</strong> the action button will be updated with the new label of "Add Meeting Pattern"</p>
-    
-                    <h2>SCENARIO: Validate the "Add Meeting Pattern" button no longer has the "plus +" graphical icon</h2>
-                    <p><strong>Given</strong> the new "Add Meeting Pattern" action button has been added to the UI</p>
-                    <p><strong>When</strong> its in place </p>
-                    <p><strong>Then</strong> the button will NOT contain the prior non-compliant graphical icon "plus sign +"</p>
-    
-                    <h2>SCENARIO: Validate the action button continues to open the "Add Meeting Pattern" modal window</h2>
-                    <p><strong>Given</strong> the user is adding a new "Add Meeting Pattern" to the schedule </p>
-                    <p><strong>When</strong> opening the "Add Meeting Pattern" action bultton and modal </p>
-                    <p><strong>Then</strong> the "Add Meeting Pattern" modal opens correctly as it did prior to the UX label change </p>
-                </td>
-            </tr>
-        </table> 
-
-     <!--Astra-46100-->
-     <table>
-        <tr>
-            <td class="gherkin left-cell">
-                <h2>FEATURE: UX Standards: Add "Meeting Pattern Management" input needs to be updated</h2>
-                <h2>Astra - 46100 </h2>
-            </td>
-            <td class="gherkin">
-                <h2>SCENARIO: Validate the New button used to add a Meeting Pattern Management has an updated UX change</h2>
-                <p><strong>Given</strong> the user is adding a new Meeting Pattern Management pattern to the schedule</p>
-                <p><strong>When</strong> using the action button </p>
-                <p><strong>Then</strong> the action button will be updated with the new label of "Add Meeting Pattern"</p>        
-            </td>
-        </tr>
-    </table>
+     <pre><code class="language-gherkin">
+     Feature: Example feature
+        Scenario: Example scenario
+            Given some precondition
+            When some action happens
+            Then some outcome
+    </code></pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
 </body>
 </html>
