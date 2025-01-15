@@ -368,6 +368,31 @@
         </tr>
     </table>
 
+           <!--Astra-46700-->
+           <table>
+            <tr>
+                <td class="gherkin left-cell">
+                    <h2>FEATURE: UX Standards: Add "Meeting Pattern Management" input needs to be updated. Quick fix for a UX bug discovered during QE exploratory. </h2>
+                    <h2>Astra - 46700 </h2>
+                </td>
+                <td class="gherkin">
+                    <h2>SCENARIO: Validate the New button used to add a Meeting Pattern Management has an updated UX change</h2>
+                    <p><strong>Given</strong> the user is adding a new Meeting Pattern Management pattern to the schedule</p>
+                    <p><strong>When</strong> using the action button </p>
+                    <p><strong>Then</strong> the action button will be updated with the new label of "Add Meeting Pattern"</p>
+    
+                    <h2>SCENARIO: Validate the "Add Meeting Pattern" button no longer has the "plus +" graphical icon</h2>
+                    <p><strong>Given</strong> the new "Add Meeting Pattern" action button has been added to the UI</p>
+                    <p><strong>When</strong> its in place </p>
+                    <p><strong>Then</strong> the button will NOT contain the prior non-compliant graphical icon "plus sign +"</p>
+    
+                    <h2>SCENARIO: Validate the action button continues to open the "Add Meeting Pattern" modal window</h2>
+                    <p><strong>Given</strong> the user is adding a new "Add Meeting Pattern" to the schedule </p>
+                    <p><strong>When</strong> opening the "Add Meeting Pattern" action bultton and modal </p>
+                    <p><strong>Then</strong> the "Add Meeting Pattern" modal opens correctly as it did prior to the UX label change </p>
+                </td>
+            </tr>
+        </table> 
 
      <!--Astra-46100-->
      <table>
