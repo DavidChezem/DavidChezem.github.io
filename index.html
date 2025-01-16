@@ -7,7 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
     <style>
         body {
-            background-color: #687b9e; /* Light gray background for the entire page */
+            background-color: hsla(220, 5%, 56%, 0.76); /* Light gray background for the entire page */
         }
         pre {
             background-color: #f7eded; /* Light gray background for code blocks */
@@ -20,8 +20,6 @@
 <body>
     <img src="https://www.aais.com/hs-fs/hubfs/ad_astra-color.png?width=300&height=300&name=ad_astra-color.png" alt="Logo" class="logo"><br>
     <img src="https://tootsie.com/app/themes/tootsie/public/images/mr-owl/mr-owl.430a08.png" alt="Logo" style="display: block; margin-left: 0; margin-right: auto; width: 100px; height: auto;"><br>
-    <div class="large-text"><strong>The following test scenarios are not in order of project completion date and do not represent the full scope of Unit, System, and Functional testing that each project required</strong><br><br>
-
     <!--Astra-47286-->
     <pre><code class="language-gherkin">
     Astra: 47286
@@ -268,72 +266,112 @@
 
 </code></pre>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
 
+
+<!--Astra-45557-->
  <pre><code class="language-gherkin">
-    Feature: Example feature
-        Scenario: Example scenario
-            Given some precondition
-            When some action happens
-            Then some outcome
+    Astra - 45557
+    Feature: Restrict all fields in section editing except meeting "Building" and "Room" so that we effectively have the same functionality as AS8
+    Scenario: Room only permissions enforced at the UI level </h2>
+        Given</strong> the user is logging into the platform</p>
+            When</strong> user is working in Sections</p>
+            Then</strong> the room only entitlement default is enforced at the UI section levels</p>
+
+    Scenario: Settings UI enforcement</h2>
+        Given</strong> user is working in Sections at the UI level</p>
+            When</strong> making permission changes for room-only entitlements </p>
+            Then</strong> the UI settings will also enforce the entitlement permission settings </p>
+
+    Scenario: Validate the Privileges services also enforce the Room Only entitlement setting</h2>
+        Given</strong> the user has been granted the specific Room Only entitlement setting</p>
+            When</strong> using the Sections and Spaces feature within the platform</p>
+            Then</strong> the Privileges service enforces the same Room Only entitlement</p>
+
 </code></pre>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
 
-</code></pre>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
+<!--Astra-48547-->
+<pre><code class="language-gherkin">
+    Astra - 48547
+    Feature: UX - Courses: Add Course button needs the "marketing" blue shading
+    Scenario: Validate the Add Course button has the updated marketing blue shading</h2>
+        Given</strong> the user is working within the platform and Courses</p>
+            When</strong> the user is using the Add Course inout button</p>
+            Then</strong> the input button should match the other primary inputs with the updated marketing blue shade</p>
 
- <pre><code class="language-gherkin">
- Feature: Example feature
-    Scenario: Example scenario
-        Given some precondition
-        When some action happens
-        Then some outcome
-</code></pre>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
-
-</code></pre>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
-
- <pre><code class="language-gherkin">
- Feature: Example feature
-    Scenario: Example scenario
-        Given some precondition
-        When some action happens
-        Then some outcome
-</code></pre>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
-
-</code></pre>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
-
- <pre><code class="language-gherkin">
- Feature: Example feature
-    Scenario: Example scenario
-        Given some precondition
-        When some action happens
-        Then some outcome
-</code></pre>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
+    Scenario: Validate the Align top nav headers are freezing on page scroll</h2>
+        Given</strong> the user is logging into the platform</p>
+            When</strong> user is working within the Align grid</p>
+            And</strong> scrolls the page thus moving the grid</p>
+            Then</strong> the Schedule top nav headers should not scroll with the grid and reamin frozen and viewable</p> 
 
 </code></pre>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
 
+ <!--Astra-45194-->
  <pre><code class="language-gherkin">
- Feature: Example feature
-    Scenario: Example scenario
-        Given some precondition
-        When some action happens
-        Then some outcome
+    Astra - 45194
+    Feature: Validate Space title update
+    Scenario: Validate new formatting</h2>
+        Given</strong> the recent updates to Rooms name formatting</p>
+            When</strong> viewing the new format </p>
+            Then</strong> the nomenclature will follow {building name} {room code} - {room name}</p>    
+
+    Scenario: Validate the UI locations impacted by the Room formatting updates</h2>
+        Given</strong> the user is viewing the spaces viewer > header</p>
+            When</strong> user is viewing the spaces viewer </p>
+            Then</strong> the name formatting has been updated correctly - Sample of new format = "BCH 00000 - 00000"</p> 
+
+    Scenario: Validate the changes within the Timeline</h2>
+        Given</strong> user is working within the "Timeline" feature</p>
+            When</strong> changing the view dropdown entry from Rooms to Spaces </p>
+            Then</strong> update the list on the left to the new format</p> 
+    
+    Scenario: Validate the UI locations impacted by the Room formatting updates</h2>
+        Given</strong> the user is viewing the spaces viewer > header</p>
+            When</strong> user is viewing the spaces viewer </p>
+            Then</strong> the name formatting has been updated correctly - Sample of new format = "BCH 00000 - 00000"</p> 
+
 </code></pre>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
-</body>
-</html>
+
+<!--Astra-46700-->
+<pre><code class="language-gherkin">
+    Astra - 46700
+    Feature: UX Standards: Add "Meeting Pattern Management" input needs to be updated. Quick fix for a UX bug discovered during QE exploratory
+    Scenario: Validate the New button used to add a Meeting Pattern Management has an updated UX change</h2>
+        Given</strong> the user is adding a new Meeting Pattern Management pattern to the schedule</p>
+            When</strong> using the action button </p>
+            Then</strong> the action button will be updated with the new label of "Add Meeting Pattern"</p>
+
+    Scenario: Validate the "Add Meeting Pattern" button no longer has the "plus +" graphical icon</h2>
+        Given</strong> the new "Add Meeting Pattern" action button has been added to the UI</p>
+            When</strong> its in place </p>
+            Then</strong> the button will NOT contain the prior non-compliant graphical icon "plus sign +"</p>
+
+    Scenario: Validate the action button continues to open the "Add Meeting Pattern" modal window</h2>
+        Given</strong> the user is adding a new "Add Meeting Pattern" to the schedule </p>
+            When</strong> opening the "Add Meeting Pattern" action bultton and modal </p>
+            Then</strong> the "Add Meeting Pattern" modal opens correctly as it did prior to the UX label change </p>
+
+</code></pre>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
+
+
+ <!--Astra-46100-->
+ <pre><code class="language-gherkin">
+    Astra - 46100
+    Feature: UX Standards: Add "Meeting Pattern Management" input needs to be updated
+    Scenario: Validate the New button used to add a Meeting Pattern Management has an updated UX change</h2>
+        Given</strong> the user is adding a new Meeting Pattern Management pattern to the schedule</p>
+        When</strong> using the action button </p>
+        Then</strong> the action button will be updated with the new label of "Add Meeting Pattern"</p>   
+
+</code></pre>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
