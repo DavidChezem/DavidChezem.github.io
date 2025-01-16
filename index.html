@@ -20,6 +20,7 @@
 <body>
     <img src="https://www.aais.com/hs-fs/hubfs/ad_astra-color.png?width=300&height=300&name=ad_astra-color.png" alt="Logo" class="logo"><br>
     <img src="https://tootsie.com/app/themes/tootsie/public/images/mr-owl/mr-owl.430a08.png" alt="Logo" style="display: block; margin-left: 0; margin-right: auto; width: 100px; height: auto;"><br>
+    
     <!--Astra-47286-->
     <pre><code class="language-gherkin">
     Astra: 47286
@@ -50,6 +51,11 @@
         And</strong> the new Event is being viewed from the Week view in Hively and the Astra platform</p>
         Then</strong> the Event will process correctly through the Snowflake integration and external_activities table</p> 
         Then</strong> the Event details will match in the Courses platform calendar</p> 
+
+    Scenario: Validate when an event is Cancalled in Hively that the update migrates and viewed as cancelled in Courses calendar
+        Given</strong> the user has cancelled an Event</p>
+            When</strong> the new Event status has been saved in Hively</p>
+            Then</strong> the Event will process correctly through the Snowflake integration and external_activities table and display as Cancelled in Courses</p> 
     
     </code></pre>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
@@ -362,6 +368,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
 
+<!--Astra-46100-->
+<pre><code class="language-gherkin"></code>
+    Astra - 46100
+    Feature: UX Standards: Add "Meeting Pattern Management" input needs to be updated
+    Scenario: Validate the New button used to add a Meeting Pattern Management has an updated UX change</h2>
+        Given</strong> the user is adding a new Meeting Pattern Management pattern to the schedule</p>
+            When</strong> using the action button </p>
+            Then</strong> the action button will be updated with the new label of "Add Meeting Pattern"</p>    
 
 </code></pre>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
