@@ -22,6 +22,7 @@
     <img src="https://tootsie.com/app/themes/tootsie/public/images/mr-owl/mr-owl.430a08.png" alt="Logo" style="display: block; margin-left: 0; margin-right: auto; width: 100px; height: auto;"><br>
     <div class="large-text"><strong>The following test scenarios are not in order of project completion date and do not represent the full scope of Unit, System, and Functional testing that each project required</strong><br><br>
 
+    <!--Astra-47286-->
     <pre><code class="language-gherkin">
     Astra: 47286
     Feature: Astra Events activities aren't being created in snowflake
@@ -56,60 +57,225 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
 
+    <!--Astra-49353-->
     <pre><code class="language-gherkin">
     Astra-49668
     Feature: Schedule Grid - Removing Term filter on a further filtered course list breaks the page
-    Scenario: Validate the main sidebar menu can be modified to fly out with a more user friendly delay</h2>
-        Given</strong> the user is working within the platform and hovers on the main sidebar menu</p>
-        When</strong> the menu opens</p>
-        And</strong> the user is either working within the menu or accidently hovers over the menu</p>
-        Then</strong> there should be a slight delay which either reduces how quickly it opens or decreases the hyperlink coverage to improve the user experience</p>  
+    Scenario: Validate the page does not return an error when entering a Course name and clearing the Term filter</h2>
+        Given</strong> the user is working within the platform and enters a search for a Course</p>
+        When</strong> the user enters a Course title or abbreviation</p>
+        And</strong> deletes the current Term filter</p>
+        Then</strong> the page will refresh correctly and will not throw a system error</p>        
 
-    
-    Scenario: Validate the UX standard for the required field *asterik* is used correctly within the platform</h2>
-        Given</strong> the user is working within the platform</p>
-        When</strong> viewing required input fields which are using an *asterik* </p>
-        Then</strong> there is an extra space inserted between the *asterik* and the wording</p>   
-
-    
     </code></pre>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
 
-     <pre><code class="language-gherkin">
-     Feature: Example feature
-        Scenario: Example scenario
-            Given some precondition
-            When some action happens
-            Then some outcome
+
+    <!--Astra-48473-->
+    <pre><code class="language-gherkin">
+    Astra-48473
+    Feature: Adding more milliseconds to the hover state for application sidebar
+    Scenario: Validate the main sidebar menu can be modified to fly out with a more user friendly delay</h2>
+        Given</strong> the user is working within the platform and hovers on the main sidebar menu</p>
+            When the menu opens</p>
+            And</strong> the user is either working within the menu or accidently hovers over the menu</p>
+            Then</strong> there should be a slight delay which either reduces how quickly it opens or decreases the hyperlink coverage to improve the user experience</p>  
     </code></pre>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
 
-</code></pre>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
+    <!--Astra-48685-->
+    <pre><code class="language-gherkin">
+    Astra-48685
+    Feature: Pathways - Find and Replace Course Functionality not Working
+    Scenario: User is needing to execute a Find and Replace of a specific course
+        Given</strong> the user is logging into the platform</p>
+            When</strong> the user selects the kabob for Find and Replace Course</p>
+            And</strong> executes a Find and Replace of a specific course Subject</p>
+            And</strong> the user searches for the Subject</p>
+            And</strong> the user makes the replacement with a new course</p>
+            Then</strong> the system will find the Subject replacement and save the change</p>
 
- <pre><code class="language-gherkin">
- Feature: Example feature
-    Scenario: Example scenario
-        Given some precondition
-        When some action happens
-        Then some outcome
+    Scenario: Validate the Select Course Group option is working correctly 
+        Given</strong> the user is selecting the Select Course Group fly out menu</p>
+            When</strong> the link is selected</p>
+            And</strong> the user is selecting the Select Course Group fly out menu</p>
+            And</strong> the Course Group options are displayed</p>
+            And</strong> when clicked the course will move into the Course Group column</p>
+            And</strong> the user clicks Next</p>
+            Then</strong> the found courses search results should display with the checkboxes</p>  
+
+    Scenario: Validate the Search Course by course abbr is functional</h2>
+        Given</strong> the user is working in the Find and Replace modal within the platform</p>
+            When</strong> the user inputs a Course subject abbr</p>
+            Then</strong> the matching course loads in the Search Results window pane </p>
+
+    Scenario: Validate when entering a Course Code abbr that is malformed it will not return a search value</h2>
+        Given</strong> the user is working in the Find and Replace modal within the platform</p>
+            When</strong> the user inputs a Course subject abbr that is malformed</p>
+            Then</strong> the "No results. Enter new search terms" error message is displayed </p>
+
+    </code></pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
+
+
+    <!--Astra-45563-->
+    <pre><code class="language-gherkin">
+    Astra-45563
+    Feature: During the scheduling process we need to show more information about space conflicts
+    Scenario: Validate the UI now reflects IDs and data associated with improved conflicting info</h2>
+        Given</strong> the user is working in the meetings for Location: Building and Region</p>
+            When</strong> viewing the Building - Region feature options</p>
+            Then</strong> UI will display more detailed info and relevant conflict information for the user</p>
+
+    Scenario: Validate the available rooms only toggle displays the correct rooms listings based on the view ALL toggle criteria </h2>
+        Given</strong> the user is viewinq the room spaces list based on the ALL rooms toggle </p>
+            When</strong> viewing the rooms listings</p>
+            Then</strong> UI will display a list of ALL rooms spaces reagrdless of available status</p>
+
+    Scenario: Validate when the toggle is set to Available Rooms Only is TRUE</h2>
+        Given</strong> the user is viewinq the room spaces list based on the rooms toggle "Available Rooms Only" toggle is set ON/TRUE </p>
+            When</strong> user is viewing the selected Rooms which are tagged as Unavailable</p>
+            Then</strong> the room listing link will redirect the user to room details including the Unavailable indicating icon</p>
+
+    Scenario: Validate when user selects the Building Space link that it directs the user to the Building details displaying availability</h2>
+        Given</strong> the user is working within the Building and Spaces availability details page</p>
+            When</strong> selecting a Building with conflicts from the listing </p>
+            Then</strong> the conflicting outcomes will display correctly on the "Suggested Rooms" table listing of those Rooms</p>
+
+    Scenario: Validate when a Room space is available that the Room Selector lists the Room with the Green check inidcating all is good</h2>
+        Given</strong> the user is working within the Building and Spaces availability details page</p>
+            When</strong> viewing the Building spaces with no conflicts</p>
+            Then</strong> those rooms are displayted on the Room Selector with the Green "check" icon meaning No Conflicts Found</p>
+
+    </code></pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
+
+
+    <!--Astra-39196-->
+    <pre><code class="language-gherkin">
+     Astra - 39196
+     Feature: Manage access by user/group for a department. As an admin, I want to control some users' access to change Part of Term because it can break processes in Banner
+     Scenario: User is able to access the Settings > Departments option</h2>
+        Given</strong> the user is logging into the platform</p>
+            When</strong> the Admin user selects the Settings > Departments menu option</p>
+            Then</strong> the Department Management options are displayed and accessible to the Admin user</p>
+
+     Scenario: User is able to search a specific departtment using the search field using department code </h2>
+        Given</strong> the Admin user has opened the Department Management section within Departments</p>
+            When</strong> the user executes a search using a department code such as ABLW or CDC</p>
+            Then</strong> the correct department name search result will be displayed within the Department Management display field </p>
+
+    Scenario: User is able to select and Edit Permissions for the the Department search results </h2>
+        Given</strong> the user has executed a search and results are displayed in the Department view</p>
+            When</strong> the user selects a specific Department and clicks the Kebob icon for Edit Permissions</p>
+            Then</strong> the Edit curtan will display for the user</p>
+
+    Scenario: User is able to select the All Departments option to apply Permissions settings  </h2>
+        Given</strong> the user is working within the Departments settings in the Platform</p>
+            When</strong> the user selects All Departments from the Department Management listing</p>
+            Then</strong> clicking on Edit Permissions opens the Add Users and Groups input field</p>
+
+    Scenario: Admin user is able to select a Permission level from the drop down menu of Permission options of View, Edit, Publish, and Custom</h2>
+        Given</strong> the user is working within the Add Users or Groups options within a specific Department</p>
+            When</strong> the user clicks into the Permissions drop down menu</p>
+            Then</strong> the Permissions option drop down displays current options of View, Edit, Publish, and Custom </p>
+
+    Scenario: Validate the Permisisons menu selector displays the available options</h2>
+        Given</strong> the Admin user needs to set a user Permission for another plaform user </p>
+            When</strong> the Admin user navigates to Settings > Departments </p>
+            And</strong> selects a specific Department</p>
+            And</strong> clicks the Edit Permissions Kabob menu for that user</p>
+            Then</strong> the UI displays new Permissions options (View, Edit, Publish, Custom)</p>
+
+    Scenario: Validate the current "User" based permission does NOT have any Courses/Sections "EDIT" priv  </h2>
+        Given</strong> the platform user is logged in as a "User" based permission while working in the Courses/Sections curtain </p>
+            When</strong> viewing the Courses curtain and the details within the Courses detail view </p>
+            Then</strong> the User permission only has the View option and no Edit privs</p>
+
+    Scenario: Validate when Custom permissions have been set and Saved - the UI retains the checked Departments</h2>
+        Given</strong> a user has been assigned Custom level permissions within a specific Department</p>
+            When</strong>  the Admin user checks specific View and/or Edit checkboxes next to the section viewer elements and Saved</p>
+            Then</strong> the selected Saved checks are reatained when the Admin user leaves the modal and opens it again</p>
+
+    Scenario: Validate when Custom permissions View options allows user to Select All from the Field row and All permissions details are checked correctly</h2>
+        Given</strong> a user has been assigned Custom level permissions within a specific Department
+            When</strong>  the Admin user checks the the View check at the Field level</p>
+            Then</strong> all of the View check options have been selected</p>    
 </code></pre>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
 
+
+<!--Astra-41450-->
+<pre><code class="language-gherkin">
+    Astra - 41450
+    Feature: Bring in the Events data to the Timeline and Calendar workspaces in Courses
+    Scenario: Validate the eventing dates from Hively are mapping correctly to the dates in Courses </h2>
+        Given</strong> the user is viewing Courses </p>
+            When</strong> reviewing current dates from the Calendar</p>
+            Then</strong> the dates will match the dates from the original Hively data</p>
+
+    Scenario: Validate the eventing dates from Hively are mapping correctly to the times in Courses</h2>
+        Given</strong> the user is viewing Courses </p>
+            When</strong> reviewing current dates from the Calendar </p>
+            Then</strong> the Hide events button function works correctly  </p>
+
+    Scenario: Validate there is a Hide Events button option within Courses appHide </h2>
+        Given</strong> the user is working within the Courses app</p>
+            When</strong> wanting to Hide the displayed events</p>
+            Then</strong> the Privileges service enforces the same Room Only entitlement</p>
+
+    Scenario: Validate an Entitlement is used to Hide events </h2>
+        Given</strong> the user is working in Course app</p>
+            When</strong> the events are added to the platform within Courses</p>
+            Then</strong> the events info is controlled behind the Event entitlement</p>
+
+            --CALENDAR VIEW--<br>
+            --Month View--
+    
+    Scenario: Validate the Calendar Month view is displaying Events correctly </h2>
+        Given</strong> the user has Hively events already created</p>
+            When</strong> viewing the Calendar month view is used</p>
+            Then</strong> existing events are displaying</p>
+
+            --Day View--
+
+    Scenario: Validate the Calendar Day view is displaying Events correctly </h2>
+        Given</strong> the user has Hively events already created</p>
+            When</strong> viewing the Calendar month view is used</p>
+            Then</strong> existing events are displaying</p>
+
+    Scenario: Validate the hover over Day calendar item highlights in Event tooltip</h2>
+        Given</strong> user is wortking in the Events calendar</p>
+            When</strong> the user hovers on the specified Event</p>
+            Then</strong> the correct highlighted tool tip opens as expected </p>
+
+    Scenario: Validate that clicking the Event item on the Day view grid opens the detail curtain view opens</h2>
+        Given</strong> user is wortking in the Events calendar</p>
+            When</strong> the user hovers on the specified Event and selects the event item</p>
+            Then</strong> the Event detail curtain view opens </p>
+
+            --List View--
+
+    Scenario: Validate that clicking the Event item on the Day view grid opens the detail curtain view opens</h2>
+        Given</strong> user is wortking in the Events calendar</p>
+            When</strong> the user hovers on the specified Event and selects the event item</p>
+            Then</strong> the Event detail curtain view opens </p>
+
 </code></pre>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
 
  <pre><code class="language-gherkin">
- Feature: Example feature
-    Scenario: Example scenario
-        Given some precondition
-        When some action happens
-        Then some outcome
+    Feature: Example feature
+        Scenario: Example scenario
+            Given some precondition
+            When some action happens
+            Then some outcome
 </code></pre>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
