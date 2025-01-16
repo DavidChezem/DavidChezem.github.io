@@ -52,7 +52,7 @@
         Then</strong> the Event will process correctly through the Snowflake integration and external_activities table</p> 
         Then</strong> the Event details will match in the Courses platform calendar</p> 
 
-    Scenario: Validate when an event is Cancalled in Hively that the update migrates and viewed as cancelled in Courses calendar
+    Scenario: Validate when an event is Cancelled in Hively that the update migrates and viewed as cancelled in Courses calendar
         Given</strong> the user has cancelled an Event</p>
             When</strong> the new Event status has been saved in Hively</p>
             Then</strong> the Event will process correctly through the Snowflake integration and external_activities table and display as Cancelled in Courses</p> 
