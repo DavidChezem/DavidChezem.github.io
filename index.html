@@ -307,12 +307,6 @@
             When</strong> the user is using the Add Course inout button</p>
             Then</strong> the input button should match the other primary inputs with the updated marketing blue shade</p>
 
-    Scenario: Validate the Align top nav headers are freezing on page scroll</h2>
-        Given</strong> the user is logging into the platform</p>
-            When</strong> user is working within the Align grid</p>
-            And</strong> scrolls the page thus moving the grid</p>
-            Then</strong> the Schedule top nav headers should not scroll with the grid and reamin frozen and viewable</p> 
-
 </code></pre>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
@@ -368,6 +362,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-gherkin.min.js"></script>
 
+<!--Astra-49353-->
+<pre><code class="language-gherkin">
+    Astra - 49353
+    Feature: Schedule Grid - Removing Term filter on a further filtered course list breaks the page
+    Scenario: Validate the page does not return an error when entering a Course name and clearing the Term filter</h2>
+        Given</strong> the user is working within the platform and enters a search for a Course</p>
+            When</strong> the user enters a Course title or abbreviation</p>
+            And</strong> deletes the current Term filter</p>
+            Then</strong> the page will refresh correctly and will not throw a system error</p>    
 
 </code></pre>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
