@@ -35,14 +35,18 @@
             overflow: hidden;
             background-color: #757070;
         }
+        .center-text { 
+            text-align: center; 
+        }
     </style>
 </head>
 <body>
     <img src="https://www.aais.com/hs-fs/hubfs/ad_astra-color.png?width=300&height=300&name=ad_astra-color.png" alt="Logo" class="logo"><br>
     <img src="https://tootsie.com/app/themes/tootsie/public/images/mr-owl/mr-owl.430a08.png" alt="Logo" style="display: block; margin-left: 0; margin-right: auto; width: 100px; height: auto;"><br>
 
-<h2>who functional test scenarios (Click Jira number to display test scenario breakouts)</h2>
+<h2 class="center-text">who functional test scenarios (Click Jira row for details)</h2>
 
+<!--Astra-47286-->
 <button class="collapsible">Astra-47286</button>
 <div class="content">
 <pre><code class="language-gherkin">
@@ -78,8 +82,9 @@
             Given the user has cancelled an Event
                 When the new Event status has been saved in Hively
                 Then the Event will process correctly through the Snowflake integration and external_activities table and display as Cancelled in Courses
-</div>
 
+<!--Astra-49353-->
+</div>
 <button class="collapsible">Astra-49353</button>
 <div class="content">
 <pre><code class="language-gherkin"></code>
@@ -90,7 +95,7 @@
                 And</strong> deletes the current Term filter
                 Then</strong> the page will refresh correctly and will not throw a system error 
 
-
+<!--Astra-46700-->
 </div>
 <button class="collapsible">Astra-46700</button>
 <div class="content">
@@ -111,6 +116,7 @@
             When</strong> opening the "Add Meeting Pattern" action bultton and modal
             Then</strong> the "Add Meeting Pattern" modal opens correctly as it did prior to the UX label change
 
+<!--Astra-45194-->
 </div>
 <button class="collapsible">Astra-45194</button>
 <div class="content">
@@ -136,6 +142,7 @@
             When</strong> user is viewing the spaces viewer
             Then</strong> the name formatting has been updated correctly - Sample of new format = "BCH 00000 - 00000"
 
+<!--Astra-48473-->
 </div>
 <button class="collapsible">Astra-48473</button>
 <div class="content">
@@ -147,7 +154,7 @@
                 And</strong> the user is either working within the menu or accidently hovers over the menu
                 Then</strong> there should be a slight delay which either reduces how quickly it opens or decreases the hyperlink coverage to improve the user experience
 
-
+<!--Astra-48685-->
 </div>
 <button class="collapsible">Astra-48685</button>
 <div class="content">
@@ -180,6 +187,89 @@
                 When</strong> the user inputs a Course subject abbr that is malformed
                 Then</strong> the "No results. Enter new search terms" error message is displayed
 
+ <!--Astra-45563-->
+</div>
+<button class="collapsible">Astra-48685</button>
+<div class="content">
+<pre><code class="language-gherkin"></code>
+        Feature: During the scheduling process we need to show more information about space conflicts
+        Scenario: Validate the UI now reflects IDs and data associated with improved conflicting info
+            Given</strong> the user is working in the meetings for Location: Building and Region
+                When</strong> viewing the Building - Region feature options
+                Then</strong> UI will display more detailed info and relevant conflict information for the user
+
+        Scenario: Validate the available rooms only toggle displays the correct rooms listings based on the view ALL toggle criteria 
+            Given</strong> the user is viewinq the room spaces list based on the ALL rooms toggle
+                When</strong> viewing the rooms listings
+                Then</strong> UI will display a list of ALL rooms spaces reagrdless of available status
+
+        Scenario: Validate when the toggle is set to Available Rooms Only is TRUE
+            Given</strong> the user is viewinq the room spaces list based on the rooms toggle "Available Rooms Only" toggle is set ON/TRUE
+                When</strong> user is viewing the selected Rooms which are tagged as Unavailable
+                Then</strong> the room listing link will redirect the user to room details including the Unavailable indicating icon
+
+        Scenario: Validate when user selects the Building Space link that it directs the user to the Building details displaying availability
+            Given</strong> the user is working within the Building and Spaces availability details page
+                When</strong> selecting a Building with conflicts from the listing
+                Then</strong> the conflicting outcomes will display correctly on the "Suggested Rooms" table listing of those Rooms
+
+        Scenario: Validate when a Room space is available that the Room Selector lists the Room with the Green check inidcating all is good
+            Given</strong> the user is working within the Building and Spaces availability details page
+                When</strong> viewing the Building spaces with no conflicts
+                Then</strong> those rooms are displayted on the Room Selector with the Green "check" icon meaning No Conflicts Found
+
+<!--Astra-39196-->
+</div>
+<button class="collapsible">Astra-39196</button>
+<div class="content">
+<pre><code class="language-gherkin"></code>
+        Feature: Manage access by user/group for a department. As an admin, I want to control some users' access to change Part of Term because it can break processes in Banner
+        Scenario: User is able to access the Settings > Departments option
+            Given</strong> the user is logging into the platform
+                When</strong> the Admin user selects the Settings > Departments menu option
+                Then</strong> the Department Management options are displayed and accessible to the Admin user
+
+        Scenario: User is able to search a specific departtment using the search field using department code
+            Given</strong> the Admin user has opened the Department Management section within Departments
+                When</strong> the user executes a search using a department code such as ABLW or CDC
+                 Then</strong> the correct department name search result will be displayed within the Department Management display field
+
+        Scenario: User is able to select and Edit Permissions for the the Department search results
+            Given</strong> the user has executed a search and results are displayed in the Department view
+                When</strong> the user selects a specific Department and clicks the Kebob icon for Edit Permissions
+                Then</strong> the Edit curtan will display for the user
+
+        Scenario: User is able to select the All Departments option to apply Permissions settings
+            Given</strong> the user is working within the Departments settings in the Platform
+                When</strong> the user selects All Departments from the Department Management listing
+                Then</strong> clicking on Edit Permissions opens the Add Users and Groups input field
+
+        Scenario: Admin user is able to select a Permission level from the drop down menu of Permission options of View, Edit, Publish, and Custom
+            Given</strong> the user is working within the Add Users or Groups options within a specific Department
+                When</strong> the user clicks into the Permissions drop down menu
+                Then</strong> the Permissions option drop down displays current options of View, Edit, Publish, and Custom
+
+         Scenario: Validate the Permisisons menu selector displays the available options
+            Given</strong> the Admin user needs to set a user Permission for another plaform user
+                When</strong> the Admin user navigates to Settings > Departments
+                 And</strong> selects a specific Department
+                And</strong> clicks the Edit Permissions Kabob menu for that user
+                Then</strong> the UI displays new Permissions options (View, Edit, Publish, Custom)
+
+        Scenario: Validate the current "User" based permission does NOT have any Courses/Sections "EDIT" priv
+            Given</strong> the platform user is logged in as a "User" based permission while working in the Courses/Sections curtain
+                When</strong> viewing the Courses curtain and the details within the Courses detail view
+                Then</strong> the User permission only has the View option and no Edit privs
+
+        Scenario: Validate when Custom permissions have been set and Saved - the UI retains the checked Departments
+             Given</strong> a user has been assigned Custom level permissions within a specific Department
+                 When</strong>  the Admin user checks specific View and/or Edit checkboxes next to the section viewer elements and Saved
+                 Then</strong> the selected Saved checks are reatained when the Admin user leaves the modal and opens it again
+
+        Scenario: Validate when Custom permissions View options allows user to Select All from the Field row and All permissions details are checked correctly
+             Given</strong> a user has been assigned Custom level permissions within a specific Department
+                 When</strong>  the Admin user checks the the View check at the Field level
+                 Then</strong> all of the View check options have been selected 
 <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
@@ -196,6 +286,5 @@
         });
     }
 </script>
-
 </body>
 </html>
