@@ -15,7 +15,7 @@
             border-radius: 5px; /* Optional: Rounded corners */
         }
         .collapsible {
-            background-color: #f1f1f1;
+            background-color: #FFFFFF;
             cursor: pointer;
             padding: 18px;
             width: 100%;
@@ -26,7 +26,7 @@
         }
 
         .active, .collapsible:hover {
-            background-color: #ccc;
+            background-color: #A85F85;
         }
 
         .content {
@@ -189,7 +189,7 @@
 
  <!--Astra-45563-->
 </div>
-<button class="collapsible">Astra-48685</button>
+<button class="collapsible">Astra-45563</button>
 <div class="content">
 <pre><code class="language-gherkin"></code>
         Feature: During the scheduling process we need to show more information about space conflicts
@@ -263,13 +263,27 @@
 
         Scenario: Validate when Custom permissions have been set and Saved - the UI retains the checked Departments
              Given</strong> a user has been assigned Custom level permissions within a specific Department
-                 When</strong>  the Admin user checks specific View and/or Edit checkboxes next to the section viewer elements and Saved
+                 When</strong> the Admin user checks specific View and/or Edit checkboxes next to the section viewer elements and Saved
                  Then</strong> the selected Saved checks are reatained when the Admin user leaves the modal and opens it again
 
         Scenario: Validate when Custom permissions View options allows user to Select All from the Field row and All permissions details are checked correctly
              Given</strong> a user has been assigned Custom level permissions within a specific Department
-                 When</strong>  the Admin user checks the the View check at the Field level
+                 When</strong> the Admin user checks the the View check at the Field level
                  Then</strong> all of the View check options have been selected 
+
+<!--Astra-48547-->
+</div>
+<button class="collapsible">Astra-48547</button>
+<div class="content">
+<pre><code class="language-gherkin"></code>
+        Feature:  UX- Add Course button needs the marketing blue shading
+        Scenario: Validate the Add Course button has the updated marketing blue shading</h2>
+            Given</strong> the user is working within the platform and Courses</p>
+                 When</strong> the user is using the Add Course inout button</p>
+                 Then</strong> the input button should match the other primary inputs with the updated marketing blue shade</p>
+
+
+
 <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
