@@ -218,6 +218,25 @@
                 When</strong> viewing the Building spaces with no conflicts
                 Then</strong> those rooms are displayted on the Room Selector with the Green "check" icon meaning No Conflicts Found
 
+        Scenario: Validate the newly added Hively events are integrating correctly with the Course "Monthly" calendar views
+            Given the user is adding new Hively events within the "Monthly" view
+                When the new Event has been saved in Hively
+                Then the Event will process correctly through the Snowflake integration and external_activities table
+        
+        Scenario: Validate the newly added Hively events viewed in Weekly view are visible in Courses calendar
+            Given the user is adding new Hively events within the "Week" view
+                When the new Event has been saved in Hively
+                And the new Event is being viewed from the Week view in Hively and the Astra platform
+                Then the Event will process correctly through the Snowflake integration and external_activities table 
+                Then the Event details will match in the Courses platform calendar
+    
+        Scenario: Validate when an event is Cancelled in Hively that the update migrates and viewed as cancelled in Courses calendar
+            Given the user has cancelled an Event
+                When the new Event status has been saved in Hively
+                Then the Event will process correctly through the Snowflake integration and external_activities table and display as Cancelled in Courses
+
+        
+
 <!--Astra-39196-->
 </div>
 <button class="collapsible">Astra-39196</button>
