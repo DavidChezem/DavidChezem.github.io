@@ -296,12 +296,27 @@
 <div class="content">
 <pre><code class="language-gherkin"></code>
         Feature:  UX- Add Course button needs the marketing blue shading
-        Scenario: Validate the Add Course button has the updated marketing blue shading</h2>
-            Given</strong> the user is working within the platform and Courses</p>
-                 When</strong> the user is using the Add Course inout button</p>
-                 Then</strong> the input button should match the other primary inputs with the updated marketing blue shade</p>
+        Scenario: Validate the Add Course button has the updated marketing blue shading
+            Given</strong> the user is working within the platform and Courses
+                 When</strong> the user is using the Add Course inout button
+                 Then</strong> the input button should match the other primary inputs with the updated marketing blue shade
 
-
+<!--Astra-48447-->
+</div>
+<button class="collapsible">Astra-48547 (Section Details - Cancelling a new Meeting retains the new Meeting shell)</button>
+<div class="content">
+<pre><code class="language-gherkin">
+        Bug:  Section Details - Cancelling a new Meeting retains the new Meeting shell
+        Scenario: Validate when a Meeting is deleted it's removed from the Sections UI
+            Given</strong> the user is deleting a new Meeting from the Section UI
+                 When</strong> the user completes the deletion of the Meeting
+                 Then</strong> the meeting is completely removed from the Sections UI
+        
+        Scenario: Validate when a Meeting is deleted it's removed from the Sections UI
+            Given</strong> the user is deleting a new Meeting from the Section UI
+                 When</strong> the user completes the deletion of the Meeting
+                 Then</strong> the meeting is completely removed from the Sections UI
+        
 
 <script>
     var coll = document.getElementsByClassName("collapsible");
