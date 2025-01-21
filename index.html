@@ -46,6 +46,8 @@
 
 <h2 class="left-text">"who" Neapolitan flavor test scenarios (click Jira row for details)</h2>
 
+
+
 <!--Astra-47286-->
 <button class="collapsible">Astra-47286 (Astra Events activities aren't being created in snowflake)</button>
 <div class="content">
@@ -152,7 +154,9 @@
         Given</strong> the user is working within the platform and hovers on the main sidebar menu
                 When the menu opens
                 And</strong> the user is either working within the menu or accidently hovers over the menu
-                Then</strong> there should be a slight delay which reduces accidental opening of the sidebar and/or decreases the sensitivity of the hyperlink coverage
+                Then</strong> there should be a slight delay to reducce accidental opening of the menu 
+                Or
+                Then</strong> the sidebar is changed to more of an intential click and removing the On Hover behavior from the menu
 
 <!--Astra-48685-->
 </div>
@@ -316,8 +320,9 @@
             Given</strong> the user is deleting a new Meeting from the Section UI
                  When</strong> the user completes the deletion of the Meeting
                  Then</strong> the meeting is completely removed from the Sections UI and the shell of the Meeting is also deleted
-        
 
+
+    
 <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
