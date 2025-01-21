@@ -156,7 +156,12 @@
                 And</strong> the user is either working within the menu or accidently hovers over the menu
                 Then</strong> there should be a slight delay to reduce accidental opening of the menu 
                 Or
-                Then</strong> the sidebar is changed to more of an intential click and removing the On Hover behavior from the menu
+                Then</strong> the sidebar is changed to more of an intentional click and removing the On Hover behavior from the menu
+        Given</strong> the user is working within the platform and hovers on the main sidebar menu
+                When the menu opens 
+                Then</strong> the sidebar menu will have a slight delay added when opening thus providing a better UX. 
+        
+
 
 <!--Astra-48685-->
 </div>
@@ -321,8 +326,7 @@
                  When</strong> the user completes the deletion of the Meeting
                  Then</strong> the meeting is completely removed from the Sections UI and the shell of the Meeting is also deleted
 
-
-    
+ 
 <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
