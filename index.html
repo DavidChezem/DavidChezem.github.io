@@ -312,7 +312,7 @@
 
 <!--Astra-48447-->
 </div>
-<button class="collapsible">Astra-48447 (Section Details - Cancelling a new Meeting retains the new Meeting shell)</button>
+<button class="collapsible">Astra-49209 (Section Details - Cancelling a new Meeting retains the new Meeting shell)</button>
 <div class="content">
 <pre><code class="language-gherkin">
         Bug:  Section Details - Cancelling a new Meeting retains the new Meeting shell
@@ -326,7 +326,22 @@
                  When</strong> the user completes the deletion of the Meeting
                  Then</strong> the meeting is completely removed from the Sections UI and the shell of the Meeting is also deleted
 
- 
+ <!--Astra-49209-->
+</div>
+<button class="collapsible">Astra-48447 (Schedule & Align grid Top Nav headers do not freeze on scroll)</button>
+<div class="content">
+<pre><code class="language-gherkin">
+        Feature:  The Schedule and Align top nav headers need to freeze when user scrolls the page (freeze pane)
+        Scenario: Validate when scrolling the page, the top nav headers will freeze and stay at the top of the grid
+            Given</strong> the user is working in the Schedule grid
+                 When</strong> the user scrolls over the grid
+                 Then</strong> the header top nav columns will stay frozen and displayed - similar to the freeze pane function on an .XLS view
+        
+        Scenario: Validate when scrolling the page has the same top nav functons as the Courses grid
+            Given</strong> the user is working in the Schedule and Courses grid
+                 When</strong> the user scrolls over the grid data
+                 Then</strong> the header top nav columns will stay frozen just as they function within the Courses table 
+
 <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
