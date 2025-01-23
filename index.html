@@ -349,6 +349,11 @@
                  When</strong> the user makes Section details changes and invokes a Publish Status update
                  Then</strong> when the user views the updated section, the Publish Status column displays the green status "Succeeded" message
 
+        Scenario: Validate the UI status message matches the Dynamo table updates
+            Given</strong> the user is working in the Schedule grid
+                When</strong> the user makes Section details changes and invokes a Publish Status update
+                Then</strong> when the user views the updated section, the Publish Status column displays the green status "Succeeded" message
+                And</strong> the status update matches the corresponding status update to the Dynamo DB record 
 
 <script>
     var coll = document.getElementsByClassName("collapsible");
