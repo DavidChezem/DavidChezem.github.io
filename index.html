@@ -355,6 +355,18 @@
                  Then</strong> the header top nav columns will stay frozen just as they function within the Courses table 
 
 
+ <!--Astra-48423-->
+</div>
+<button class="collapsible">Astra-48423 (Schedule Grid - Publish Status does not update)</button>
+<div class="content">
+<pre><code class="language-gherkin">
+        Feature:  The Schedule Grid publish status grid column needs to be updated when the Section publish status changes
+        Scenario: Validate when the publish is updated that the status column display is also updated 
+            Given</strong> the user is working in the Schedule grid
+                 When</strong> the user makes Section details changes and does a Publish Status update
+                 Then</strong> when the user views the updated section, the Publish Status column displays the green status "Succeeded" message
+
+
 <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
