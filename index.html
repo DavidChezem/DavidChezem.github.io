@@ -352,6 +352,31 @@
                 Then</strong> when the user views the updated section, the Publish Status column displays the green status "Succeeded" message
                 And</strong> the status update matches the corresponding status update to the Dynamo DB record 
 
+
+<!--Astra-48852-->
+</div>
+<button class="collapsible">Astra-48852 (Schedule Grid - Publish Status does not update)</button>
+<div class="content">
+<pre><code class="language-gherkin">
+<p><b>Feature:</b>: Space conflicts on calendar
+        Scenario: Validate the Room Selector has a Calendar viee embedded
+            Given</strong> the user is updating the information within the Selector
+                 When</strong> updating the information within the Selector
+                 Then</strong> the modal has an embedded calendar view
+
+        Scenario: Validate the Calendar is aligned with the current product concept mock
+            Given</strong> the user is working within the Room Selector
+                When</strong> the user makes Section details changes and invokes a Publish Status update
+                Then</strong> updating the information within the Selector
+                And</strong> the embedded calendar will have the similar look and feel of the product mock
+
+        Scenario: Validate the existing conflicts are now visible on the new Calendar view within Room Selector
+            Given</strong> the user is working within the Room Selector
+                 When</strong> the user is working within the Room Selector
+                 Then</strong> the Calendar view will display the current conflicts 
+                
+
+
 <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
