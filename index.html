@@ -380,6 +380,20 @@
             Given</strong> the user is working within the Room Selector
                   When</strong> the user is working within the Room Selector
                   Then</strong> the Calendar view will display the current conflicts 
+
+        Scenario: Validate the Available spaces toggle is defaulted to ON when user first opens the Room Selector
+            Given</strong> the user is working within the Course details page
+                  When</strong> the user selects the Find link to open the Meetings > Room Selector
+                  And</strong> the user enters a Building value and the Room Type value
+                  Then</strong> the Room Selector will default to ON
+
+        Scenario: Validate the Unavailable icon displays correctly on the Unavailable Spaces when selecting the Available Rooms Only toggle to OFF
+            Given</strong> the user is working within the Room Selector
+                  When</strong> the user is working within the Room Selector and toggles off the Available Rooms Only option
+                  Then</strong> the availability Space listing will only show the Unavailable Spaces 
+        
+
+        
                 
 
 
