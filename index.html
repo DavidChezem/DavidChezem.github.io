@@ -391,7 +391,29 @@
             Given</strong> the user is working within the Room Selector
                   When</strong> the user is working within the Room Selector and toggles off the Available Rooms Only option
                   Then</strong> the availability Space listing will only show the Unavailable Spaces 
-          
+    
+                  
+ <!--Astra-44936-->
+</div>  
+<button class="collapsible">Astra-44936 (Create an ‘Add Section’ permission for a user/contributor.)</button>
+** In Progress **
+<div class="content">
+<pre><code class="language-gherkin">
+<p><b>Feature:</b>:  Currently when a user has customized permissions, there’s no way to control whether they can Publish, Add, Clone, or Delete sections.
+        Scenario: Validate users with the customized permission are able toggle on/off Publish permissions
+            Given</strong> the user is working in the Permissions 
+                 When</strong> the user is given the customized permission for Publish
+                 Then</strong> the user is able to Publish with those customized permnissions
+
+        Scenario: Validate users with the customized permission are able toggle on/off Add Sections permissions
+            Given</strong> the user is working in the Permissions
+                When</strong> the user toggles on/off the permission for Add Sections
+                Then</strong> the user can control the Add Sections actions within Courses - Meetings
+        Scenario: Validate users with the customized permission are able toggle on/off Add Sections permissions
+            Given</strong> the user is working in the Permissions
+                When</strong> the user toggles on/off the permission for Add Sections
+                Then</strong> the user can control the Add Sections actions within Courses - Meetings       
+        
 
 <script>
     var coll = document.getElementsByClassName("collapsible");
