@@ -424,15 +424,17 @@
         Functional Scenario: Validate when the Add/Clone toggle is set to TRUE - the Clone option is enabled for the user
             Given</strong> the user is working in the Courses app
                 When</strong> the user is working in the Courses detail and selects the Edit kabob option
-                Then</strong> the Clone option is enabled 
+                Then</strong> the Edit kabob Clone option is enabled 
 
-        Functional Scenario: Validate when the Add/Clone toggle is set to TRUE - the Clone option is enabled for the user
-            Given</strong> the user is working in the Courses app
+        Functional Scenario: Validate when the Add/Clone toggle is set to False  - the Clone option is disabled for the user
+            Given</strong> the user is working in the Courses app and the Add/Clone toggle is set to False
                 When</strong> the user is working in the Courses detail and selects the Edit kabob option
-                Then</strong> the Clone option is enabled 
-        
-        
-        
+                Then</strong> the Edit kabob Clone option is grayed and disabled 
+              
+        Functional Scenario: Validate when the Delete Sections toggle is set to TRUE - the user can Delete a section
+            Given</strong> the user is working in the Courses app
+                When</strong> the user selectes the Edit option - edit button
+                Then</strong> the Delete button is now visiable      
     
                          
 
