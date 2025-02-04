@@ -452,13 +452,21 @@
                 When</strong> the user selects the Edit button
                 Then</strong> the Delete button is not visible for the user 
 
+        Functional Scenario: Validate from the Schedule app that when Add/Clone Sections permission is set to False (off) - the Clone kebbob is grayed out
+            Given</strong> the user is working in the Schedule app within the Schedule > Section detail
+                When</strong> the user selects the Edit kabob option
+                Then</strong> the Clone option is grayed out (off) 
+
+        Functional Scenario: Validate from the Schedule app that when Add/Clone Sections permission is set to True (on) - the Clone kebbob is active 
+            Given</strong> the user is working in the Schedule app within the Schedule > Section detail
+                When</strong> the user selects the Edit kabob option
+                Then</strong> the Clone option is active (on) 
         
 
-        
 
-        
-    
-                         
+          
+
+
 
 <script>
     var coll = document.getElementsByClassName("collapsible");
