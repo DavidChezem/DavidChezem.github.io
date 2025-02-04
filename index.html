@@ -391,30 +391,50 @@
             Given</strong> the user is working within the Room Selector
                   When</strong> the user is working within the Room Selector and toggles off the Available Rooms Only option
                   Then</strong> the availability Space listing will only show the Unavailable Spaces 
-    
+
                   
  <!--Astra-44936-->
-</div>  
+</div>
 <button class="collapsible">Astra-44936 (Fields: Implement Add, Clone, and Delete section permissions)</button>
-** In Progress **
 <div class="content">
 <pre><code class="language-gherkin">
-<p><b>Feature:</b>:  Currently when a user has customized permissions, there’s no way to control whether they can Publish, Add, Clone, or Delete sections.
-        Scenario: Validate users with the customized permission are able toggle on/off Publish permissions
-            Given</strong> the user is working in the Permissions 
-                 When</strong> the user is given the customized permission for Publish
-                 Then</strong> the user is able to Publish with those customized permnissions
+<p><b>Feature:</b>: Create an ‘Add Section’ permission for a user/contributor - Admins need the ability to control permissions for Add, Clone, and Delete section permissions
 
-        Scenario: Validate users with the customized permission are able toggle on/off Add Sections permissions
-            Given</strong> the user is working in the Permissions
-                When</strong> the user toggles on/off the permission for Add Sections
-                Then</strong> the user can control the Add Sections actions within Courses - Meetings
+        UI Scenario: Validate the term "Add/Clone Section" and "Delete Section" has been updated to "Sections" (s)
+            Given</strong> the user is working in the Edit Field Permissions app
+                 When</strong> the user opens the Permissions for a specific user
+                 Then</strong> the headers display as Add/Clone Sections and Delete Sections
 
-        Scenario: Validate users with the customized permission are able toggle on/off Clone actions 
-            Given</strong> the user is working in the Permissions
-                When</strong> the user toggles on/off the permission for Clone actions
-                Then</strong> the user is able to Clone or not have permnissions to Clone sections    
+        UI Scenario: Validate the updated toggles for both Add/Clone Section and Delete Sections are functional 
+            Given</strong> the user is working in the Edit Field Permissions app
+                When</strong> the user selects the toggle for the Add/Clone Sections permission
+                When</strong> the user selects the toggle for the Delete Sections permission
+                Then</strong> each toggle can be set to the ON and OFF positions and remain engaged when the user clicks out and back into the Edit Field Permissions modal
+                
+        UI Scenario: Validate the toggles are defaulted to the OFF position and display with GRAY shade
+            Given</strong> the user is working in the Edit Field Permissions modal app
+                When</strong> the user opens the Edit Field Permissions modal
+                Then</strong> the new toggle are defaulted to the OFF gray position
         
+        UI Scenario: Validate the toggles are displaying with the updated GREEN background indicating the toggle is ON
+            Given</strong> the user is working in the Edit Field Permissions app
+                When</strong> the user selects the toggles for the Add/Clone Sections or Delete Sections permission
+                Then</strong> the toggle will display with the updated GREEN background indicating the toggle is set to ON
+        
+        Functional Scenario: Validate when the Add/Clone toggle is set to TRUE - the Clone option is enabled for the user
+            Given</strong> the user is working in the Courses app
+                When</strong> the user is working in the Courses detail and selects the Edit kabob option
+                Then</strong> the Clone option is enabled 
+
+        Functional Scenario: Validate when the Add/Clone toggle is set to TRUE - the Clone option is enabled for the user
+            Given</strong> the user is working in the Courses app
+                When</strong> the user is working in the Courses detail and selects the Edit kabob option
+                Then</strong> the Clone option is enabled 
+        
+        
+        
+    
+                         
 
 <script>
     var coll = document.getElementsByClassName("collapsible");
