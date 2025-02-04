@@ -417,12 +417,12 @@
                 When</strong> the user opens the Edit Field Permissions modal
                 Then</strong> the new toggle are defaulted to the OFF gray position
         
-        UI Scenario: Validate the toggles are displaying with the updated GREEN background indicating the toggle is ON
+        UI Scenario: Validate the toggles are displaying with the updated Green background indicating the toggle is ON
             Given</strong> the user is working in the Edit Field Permissions app
                 When</strong> the user selects the toggles for the Add/Clone Sections or Delete Sections permission
                 Then</strong> the toggle will display with the updated GREEN background indicating the toggle is set to ON
         
-        Functional Scenario: Validate when the Add/Clone toggle is set to TRUE - the Clone option is enabled for the user
+        Functional Scenario: Validate when the Add/Clone toggle is set to True  - the Clone option is enabled for the user
             Given</strong> the user is working in the Courses app
                 When</strong> the user is working in the Courses detail and selects the Edit kabob option
                 Then</strong> the Edit kabob Clone option is enabled 
@@ -432,10 +432,31 @@
                 When</strong> the user is working in the Courses detail and selects the Edit kabob option
                 Then</strong> the Edit kabob Clone option is grayed and disabled 
               
-        Functional Scenario: Validate when the Delete Sections toggle is set to TRUE - the user can Delete a section
+        Functional Scenario: Validate when the Delete Sections toggle is set to False (on) - the user can Delete a section
             Given</strong> the user is working in the Courses app
                 When</strong> the user selectes the Edit option - edit button
-                Then</strong> the Delete button is now visiable      
+                Then</strong> the Delete button is now available
+                
+        Functional Scenario: Validate when the Delete Sections toggle is set to False (off) - the user is unable to Delete a section
+            Given</strong> the user is working in the Courses app
+                When</strong> the user selectes the Edit option - edit button
+                Then</strong> the Delete button is now visible   
+
+        Functional Scenario: Validate from the Schedule app that when Delete Sections permission is set to True (on) - the user can Delete a section
+            Given</strong> the user is working in the Schedule app within the Schedule > Section detail
+                When</strong> the user selects the Edit button
+                Then</strong> the Delete button is now visible and active for the user 
+
+        Functional Scenario: Validate from the Schedule app that when Delete Sections permission is set to False (off) - the user is unable to Delete a section 
+            Given</strong> the user is working in the Schedule app within the Schedule > Section detail
+                When</strong> the user selects the Edit button
+                Then</strong> the Delete button is not visible for the user 
+
+        
+
+        
+
+        
     
                          
 
