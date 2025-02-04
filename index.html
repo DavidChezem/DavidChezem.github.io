@@ -461,7 +461,23 @@
             Given</strong> the user is working in the Schedule app within the Schedule > Section detail
                 When</strong> the user selects the Edit kabob option
                 Then</strong> the Clone option is active (on) 
+
+        Functional Scenario: Validate from the Courses calendar view that clicking the item opens Courses and displays the updated permissions for both options
+            Given</strong> the user is working in the Courses calendar "Day" view
+                When</strong> the user selects the Section course item on the Day view - and both Add/Clone Sections and Delete Sections are set to False (off) 
+                Then</strong> both of these permissions are still honored and are set to False (off) matching the custom permissions for that User 
+
+        Functional Scenario: Validate from the Courses calendar view that clicking the item opens Courses and displays the updated permissions for both options
+            Given</strong> the user is working in the Courses calendar "Day" view
+                When</strong> the user selects the Section course item on the Day view - and both Add/Clone Sections and Delete Sections are set to True (on) 
+                Then</strong> both of these permissions are still honored and are set to True (on) matching the custom permissions for that User 
+
+    
+
+
         
+        
+
 
 
 <script>
