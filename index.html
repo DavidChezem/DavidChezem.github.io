@@ -467,10 +467,18 @@
                 When</strong> the user selects the Section course item on the Day view - and both Add/Clone Sections and Delete Sections are set to False (off) 
                 Then</strong> both of these permissions are still honored and are set to False (off) matching the custom permissions for that User 
 
-        Functional Scenario: Validate from the Courses calendar view that clicking the item opens Courses and displays the updated permissions for both options
+        Functional Scenario: Validate from the Courses calendar Day view that clicking the item opens Courses and displays the updated permissions for both options
             Given</strong> the user is working in the Courses calendar "Day" view
                 When</strong> the user selects the Section course item on the Day view - and both Add/Clone Sections and Delete Sections are set to True (on) 
                 Then</strong> both of these permissions are still honored and are set to True (on) matching the custom permissions for that User 
+                Then</strong> the Cancel, Delete, and Save buttons are active
+
+        Functional Scenario: Validate from the Courses calendar Week view that clicking the item opens Courses and displays the updated permissions for both options
+            Given</strong> the user is working in the Courses calendar "Week" view and selects a Calendar item
+                When</strong> the user selects the Section course item on the Week view - and both Add/Clone Sections and Delete Sections are set to True (on) 
+                Then</strong> both of these permissions are still honored and are set to True (on) matching the custom permissions for that User 
+                Then</strong> the Cancel, Delete, and Save buttons are active
+        
 
 <script>
     var coll = document.getElementsByClassName("collapsible");
