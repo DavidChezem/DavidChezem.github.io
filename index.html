@@ -473,12 +473,17 @@
                 Then</strong> both of these permissions are still honored and are set to True (on) matching the custom permissions for that User 
                 Then</strong> the Cancel, Delete, and Save buttons are active
 
-        Functional Scenario: Validate from the Courses calendar Week view that clicking the item opens Courses and displays the updated permissions for both options
+        Functional Scenario: Validate from the Courses calendar Week view that clicking the item opens Courses and displays the updated permissions for both options when set to True
             Given</strong> the user is working in the Courses calendar "Week" view and selects a Calendar item
                 When</strong> the user selects the Section course item on the Week view - and both Add/Clone Sections and Delete Sections are set to True (on) 
                 Then</strong> both of these permissions are still honored and are set to True (on) matching the custom permissions for that User 
                 Then</strong> the Cancel, Delete, and Save buttons are active
         
+        Functional Scenario: Validate from the Courses calendar Week view that clicking the item opens Courses and displays the updated permissions for both options when set to False
+            Given</strong> the user is working in the Courses calendar "Week" view and selects a Calendar item
+                 When</strong> the user selects the Section course item on the Week view - and both Add/Clone Sections and Delete Sections are set to True (on) 
+                 Then</strong> both of these permissions are still honored and are set to True (on) matching the custom permissions for that User 
+                 Then</strong> the Cancel and Save buttons are active aligned with the permissions - Delete button is not displayed
 
 <script>
     var coll = document.getElementsByClassName("collapsible");
