@@ -39,6 +39,7 @@
         .center-text { 
             text-align: center; 
         }
+        
     </style>
    
 <body>
@@ -398,7 +399,7 @@
 <button class="collapsible">Astra-44936 (Fields: Implement Add, Clone, and Delete section permissions)</button>
 <div class="content">
 <pre><code class="language-gherkin">
-    ** 2/04/25: In Progress **
+    ** 2/10/25: In Progress **
 <p><b>Feature:</b>: Create an ‘Add Section’ permission for a user/contributor - Admins need the ability to control permissions for Add, Clone, and Delete section permissions
 
         UI Scenario: Validate the term "Add/Clone Section" and "Delete Section" has been updated to "Sections" (s)
@@ -484,6 +485,12 @@
                  When</strong> the user selects the Section course item on the Week view - and both Add/Clone Sections and Delete Sections are set to True (on) 
                  Then</strong> both of these permissions are still honored and are set to True (on) matching the custom permissions for that User 
                  Then</strong> the Cancel and Save buttons are active  - Delete button is not displayed
+
+        Functional Scenario: Validate 
+            Given</strong> the user is working in the Courses calendar "Week" view and selects a Calendar item
+                 When</strong> the user selects the Section course item on the Week view - and both Add/Clone Sections and Delete Sections are set to True (on) 
+                 Then</strong> both of these permissions are still honored and are set to True (on) matching the custom permissions for that User 
+           
 
 <script>
     var coll = document.getElementsByClassName("collapsible");
