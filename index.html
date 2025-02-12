@@ -399,7 +399,7 @@
 <button class="collapsible">Astra-44936 (Fields: Implement Add, Clone, and Delete section permissions)</button>
 <div class="content">
 <pre><code class="language-gherkin">
-    ** 2/10/25: In Progress **
+    ** Updated 2/11/2025**
 <p><b>Feature:</b>: Create an ‘Add Section’ permission for a user/contributor - Admins need the ability to control permissions for Add, Clone, and Delete section permissions
 
         UI Scenario: Validate the term "Add/Clone Section" and "Delete Section" has been updated to "Sections" (s)
@@ -503,10 +503,13 @@
                  When</strong> viewing Add Section, Delete, and Status
                  Then</strong> these options will be enabled
 
-        Scenario: Validate when the samne custom permissions are set to False - the Add Section align option is disabled 
+        Scenario: Validate when the samne custom permissions are set to False - the Add Section align option button is disabled 
             Given</strong> the user does not have Custom permissions for Add or Delete Sections
                  When</strong> viewing Add Section, Delete, and Status
                  Then</strong> these options are disabled 
+
+
+        
 
       
 
