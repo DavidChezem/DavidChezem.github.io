@@ -531,7 +531,26 @@
                  Then</strong> the instructor selection is removed and the Add Instructor button displays again from the original view
 
         
+<!--Astra-50058-->
+</div>
+<button class="collapsible">Astra-50058 (Peoplesoft: Meeting building recommendations not updating when the Campus is changed)</button>
+<div class="content">
+<pre><code class="language-gherkin">
+<p><b>Feature:</b>: Validate the "campus code" and "alt_campus_code" updates correctly when Campus is changed  
+        Scenario: Campus code and alt campus code are updating correctly
+            Given</strong> the user is working within the Courses and Meetings app
+                 When</strong> whehn updating the Campus to a specific value 
+                 Then</strong> then the codes are reflected of that change and update correctly
 
+        Scenario: Validate the building selector listing updates when Campus is changed respectively 
+            Given</strong>  the user is working within the Courses and Meetings app 
+                 When</strong> the user changes the Campus to a different value within the Meetings editor
+                 Then</strong> the Location > Building selector listing also updates the buildings to match the updated Campus codes 
+
+        Scenario: Validate the Remove button cancels the Add Instructor option and closes the view
+            Given</strong> the user is working in the Add Instructor 
+                 When</strong> selecting the Remove button option
+                 Then</strong> the instructor selection is removed and the Add Instructor button displays again from the original view
         
 
       
