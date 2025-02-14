@@ -542,15 +542,15 @@
                  When</strong> whehn updating the Campus to a specific value 
                  Then</strong> then the codes are reflected of that change and update correctly
 
-        Scenario: Validate the building selector listing updates when Campus is changed respectively 
+        Scenario: Validate the Location > building selector listing updates when Campus is changed respectively 
             Given</strong>  the user is working within the Courses and Meetings app 
                  When</strong> the user changes the Campus to a different value within the Meetings editor
                  Then</strong> the Location > Building selector listing also updates the buildings to match the updated Campus codes 
 
-        Scenario: Validate the Remove button cancels the Add Instructor option and closes the view
-            Given</strong> the user is working in the Add Instructor 
-                 When</strong> selecting the Remove button option
-                 Then</strong> the instructor selection is removed and the Add Instructor button displays again from the original view
+        Scenario: Validate the changed Campus code and Alt campus code are saved when user is done editing the  
+            Given</strong> the user is working within the Courses and Meetings app  
+                 When</strong> the user changes the Campus to a different value within the Meetings editor - and exits Edit mode within the app 
+                 Then</strong> the updated Campus code and Alt campus codes are stickey and saved when user edits Meeting again 
         
 
       
