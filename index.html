@@ -551,6 +551,13 @@
             Given</strong> the user is working within the Courses and Meetings app  
                  When</strong> the user changes the Campus to a different value within the Meetings editor - and exits Edit mode within the app 
                  Then</strong> the updated Campus code and Alt campus codes are stickey and saved when user edits Meeting again 
+
+
+        Scenario: Validate the Building listings also update and match the selected Campus
+            Given</strong> the user is working within the Courses and Meetings app  
+                 When</strong> the user changes the Campus
+                 When</strong> is now viewing the Meetings details and opens an edit of the Location > Building field
+                 Then</strong> the building reccomendations are not matching the selected/saved Campus 
         
 
       
