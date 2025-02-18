@@ -631,7 +631,9 @@
         Scenario:  Validate the Schedule Workflow grid contains a Color element picker
             Given</strong> the user is working within the new Schedule Workflow grid 
                  When</strong> using the Color picker function 
+                 And</strong> needs to apply a specific color code to a specfic Workflow step
                  Then</strong> the user is able to apply a custom color to the Workflow steps
+
            
         Scenario: Validate the Schedule Workflow grid contains a display column showing the Workflow Step name
             Given</strong> the user is working within the new Schedule Workflow grid
@@ -643,6 +645,13 @@
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> selecting workflow steps 
                  Then</strong> the user is able to customize and apply a Step by it's Workflow name
+
+
+        Scenario: Validate the Schedule Workflow grid contains a display column showing the Workflow Step name
+            Given</strong> the user is working within the new Schedule Workflow grid
+                 When</strong> selecting workflow steps 
+                 Then</strong> the user is able to customize and apply a Step by it's Workflow name
+     
 
 
 
