@@ -689,8 +689,8 @@
         
         Scenario: Validate when the user adds more then two Assignees to a Step - the grid only shows 2 actual user pills and a "+ more" pill for the remainder of Assignees
             Given</strong> the user is working within the new Schedule Workflow grid
-                 When</strong> the user is adding an Assignee to the selected Step and has already selected a system User to be added
-                 Then</strong> a Workflow Steps name can be added and saved for the new Assignee
+                 When</strong> the user is adding multiple Assignees to a given Step
+                 Then</strong> two Assignee name pills will display and a "+ more" pill displays indicating more then 2 Assignees are assigned 
         
 
 
