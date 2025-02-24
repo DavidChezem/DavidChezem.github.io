@@ -623,7 +623,7 @@
 <button class="collapsible">Astra-50029 (Define steps in schedule building workflow process)</button>
 <div class="content">
 <pre><code class="language-gherkin">
-<p style="font-size: 20px;">2/24/2025: Feature branch tests In Progress</p>
+<p style="font-size: 20px;">2/24/2025: feature branch tests (In Progress)</p>
 <p><b>Feature</b>: Support customers' workflow process for creating and approving schedules by allowing users to define workflow steps
     
         UX Scenario: Validate the Schedule Workflow has been added to the Admin apps as "Admin > Settings > Workflow"
@@ -685,6 +685,13 @@
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> the user is adding an Assignee to the selected Step and has already selected a system User to be added
                  Then</strong> a Workflow Steps name can be added and saved for the new Assignee
+
+        
+        Scenario: Validate the user can enter the correct Workflow step name for the added Assignee
+            Given</strong> the user is working within the new Schedule Workflow grid
+                 When</strong> the user is adding an Assignee to the selected Step and has already selected a system User to be added
+                 Then</strong> a Workflow Steps name can be added and saved for the new Assignee
+        
 
 
                     
