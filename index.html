@@ -673,10 +673,16 @@
             
 
 
-        Scenario: Validate the user can ADD a new user (Assignee) to the Steps and an added Pill label  is now displayed
+        Scenario: Validate the user can ADD a new Assignee to the Steps and the added user is displayed with a new Pill label
                  Given</strong> the user is working within the new Schedule Workflow grid
                       When</strong> the user is adding an Assignee to the selected Step and has already selected a system User to be added
                       Then</strong> the newly added user will display in the Assignees column within a Pill label 
+
+        
+        Scenario: Validate the user can enter the correct Workflow step name for the added Assignee
+                 Given</strong> the user is working within the new Schedule Workflow grid
+                       When</strong> the user is adding an Assignee to the selected Step and has already selected a system User to be added
+                       Then</strong> a Workflow Steps name can be added and saved for the new Assignee
                 
 
 
