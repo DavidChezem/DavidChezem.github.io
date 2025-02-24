@@ -638,6 +638,12 @@
                  And</strong> needs to apply a specific color code to a specfic Workflow step
                  Then</strong> the user is able to apply a custom color to the Workflow steps using a drop down color picker chart
 
+
+        Scenario: Validate the Steps ordering and numbering updates correctly when the Steps are changed
+            Given</strong> the user is working within the new Schedule Workflow grid
+                 When</strong> the user is changning the ordering of the Steps
+                 Then</strong> the numbering of the Steps will also change to remain in chronologicaL Steps order
+
            
         UX Scenario: Validate the Schedule Workflow grid contains a display column showing the Workflow Step name
             Given</strong> the user is working within the new Schedule Workflow grid
@@ -681,9 +687,7 @@
                  Then</strong> a Workflow Steps name can be added and saved for the new Assignee
 
 
-        
-                
-
+                    
 
 <script>
     var coll = document.getElementsByClassName("collapsible");
