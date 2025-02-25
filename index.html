@@ -64,25 +64,25 @@
                 When the new Event has been saved in Hively
                 Then the Event will process correctly through the Snowflake integration and external_activities table
 
-
+         <hr>
         Scenario: Validate the new Hively event time is displaying correctly on the Course calendar day view
             Given the user is adding new Hively events within the "Day" view
                 When the new Event has been saved in Hively
                 Then the Event time is also showing on the platform Courses day view
 
-
+                <hr>
         Scenario: Validate the new Hively building assignment is displaying correctly on the Course calendar day view
             Given the user is adding new Hively events within the "Day" view
                 When the new Event has been saved in Hively
                 Then the building assignment (BLD) is displaying on the platform Courses day view
 
-    
+                <hr>
         Scenario: Validate the newly added Hively events are integrating correctly with the Course "Monthly" calendar views
             Given the user is adding new Hively events within the "Monthly" view
                 When the new Event has been saved in Hively
                 Then the Event will process correctly through the Snowflake integration and external_activities table
 
-    
+                <hr>
         Scenario: Validate the newly added Hively events viewed in Weekly view are visible in Courses calendar
             Given the user is adding new Hively events within the "Week" view
                 When the new Event has been saved in Hively
@@ -90,7 +90,7 @@
                 Then the Event will process correctly through the Snowflake integration and external_activities table 
                 Then the Event details will match in the Courses platform calendar
 
-
+                <hr>
         Scenario: Validate when an event is Cancelled in Hively that the update migrates and viewed as cancelled in Courses calendar
             Given the user has cancelled an Event
                 When the new Event status has been saved in Hively
@@ -120,13 +120,13 @@
             When</strong> using the action button
             Then</strong> the action button will be updated with the new label of "Add Meeting Pattern"
 
-
+            <hr>
         Scenario: Validate the "Add Meeting Pattern" button no longer has the "plus +" graphical icon
         Given</strong> the new "Add Meeting Pattern" action button has been added to the UI
             When</strong> its in place
             Then</strong> the button will NOT contain the prior non-compliant graphical icon "plus sign +"
 
-
+            <hr>
         Scenario: Validate the action button continues to open the "Add Meeting Pattern" modal window
         Given</strong> the user is adding a new "Add Meeting Pattern" to the schedule
             When</strong> opening the "Add Meeting Pattern" action bultton and modal
@@ -143,19 +143,19 @@
             When</strong> viewing the new format
             Then</strong> the nomenclature will follow {building name} {room code} - {room name}  
 
-
+            <hr>
         Scenario: Validate the UI locations impacted by the Room formatting updates
         Given</strong> the user is viewing the spaces viewer > header
             When</strong> user is viewing the spaces viewer
             Then</strong> the name formatting has been updated correctly - Sample of new format = "BCH 00000 - 00000"
 
-
+            <hr>
         Scenario: Validate the changes within the Timeline
         Given</strong> user is working within the "Timeline" feature
             When</strong> changing the view dropdown entry from Rooms to Spaces
             Then</strong> update the list on the left to the new format
 
-    
+            <hr>
         Scenario: Validate the UI locations impacted by the Room formatting updates
         Given</strong> the user is viewing the spaces viewer > header
             When</strong> user is viewing the spaces viewer
@@ -174,7 +174,7 @@
                 Then</strong> there should be a slight delay to reduce accidental opening of the menu 
                 Or
                 Then</strong> the sidebar is changed to more of an intentional click and removing the On Hover behavior from the menu
-
+                <hr>
         Given</strong> the user is working within the platform and hovers on the main sidebar menu
                 When the sidebar menu opens 
                 Then</strong> there will be a slight delay added when sidebar is opening thus providing a better UX. 
@@ -195,7 +195,7 @@
                 And</strong> the user makes the replacement with a new course
                 Then</strong> the system will find the Subject replacement and save the change
 
-
+                <hr>
         Scenario: Validate the Select Course Group option is working correctly 
         Given</strong> the user is selecting the Select Course Group fly out menu
                 When</strong> the link is selected
@@ -205,13 +205,13 @@
                 And</strong> the user clicks Next
                 Then</strong> the found courses search results should display with the checkboxes
 
-
+                <hr>
         Scenario: Validate the Search Course by course abbr is functional
         Given</strong> the user is working in the Find and Replace modal within the platform
                 When</strong> the user inputs a Course subject abbr
                 Then</strong> the matching course loads in the Search Results window pane
 
-
+                <hr>
         Scenario: Validate when entering a Course Code abbr that is malformed it will not return a search value
         Given</strong> the user is working in the Find and Replace modal within the platform
                 When</strong> the user inputs a Course subject abbr that is malformed
@@ -228,37 +228,37 @@
                 When</strong> viewing the Building - Region feature options
                 Then</strong> UI will display more detailed info and relevant conflict information for the user
 
-
+                <hr>
         Scenario: Validate the available rooms only toggle displays the correct rooms listings based on the view ALL toggle criteria 
             Given</strong> the user is viewinq the room spaces list based on the ALL rooms toggle
                 When</strong> viewing the rooms listings
                 Then</strong> UI will display a list of ALL rooms spaces reagrdless of available status
 
-
+                <hr>
         Scenario: Validate when the toggle is set to Available Rooms Only is TRUE
             Given</strong> the user is viewinq the room spaces list based on the rooms toggle "Available Rooms Only" toggle is set ON/TRUE
                 When</strong> user is viewing the selected Rooms which are tagged as Unavailable
                 Then</strong> the room listing link will redirect the user to room details including the Unavailable indicating icon
 
-
+                <hr>
         Scenario: Validate when user selects the Building Space link that it directs the user to the Building details displaying availability
             Given</strong> the user is working within the Building and Spaces availability details page
                 When</strong> selecting a Building with conflicts from the listing
                 Then</strong> the conflicting outcomes will display correctly on the "Suggested Rooms" table listing of those Rooms
 
-
+                <hr>
         Scenario: Validate when a Room space is available that the Room Selector lists the Room with the Green check inidcating all is good
             Given</strong> the user is working within the Building and Spaces availability details page
                 When</strong> viewing the Building spaces with no conflicts
                 Then</strong> those rooms are displayted on the Room Selector with the Green "check" icon meaning No Conflicts Found
 
-
+                <hr>
         Scenario: Validate the newly added Hively events are integrating correctly with the Course "Monthly" calendar views
             Given the user is adding new Hively events within the "Monthly" view
                 When the new Event has been saved in Hively
                 Then the Event will process correctly through the Snowflake integration and external_activities table
 
-        
+                <hr>
         Scenario: Validate the newly added Hively events viewed in Weekly view are visible in Courses calendar
             Given the user is adding new Hively events within the "Week" view
                 When the new Event has been saved in Hively
@@ -266,7 +266,7 @@
                 Then the Event will process correctly through the Snowflake integration and external_activities table 
                 Then the Event details will match in the Courses platform calendar
 
-    
+                <hr>
         Scenario: Validate when an event is Cancelled in Hively that the update migrates and viewed as cancelled in Courses calendar
             Given the user has cancelled an Event
                 When the new Event status has been saved in Hively
@@ -284,32 +284,32 @@
             Given</strong> the user is logging into the platform
                 When</strong> the Admin user selects the Settings > Departments menu option
                 Then</strong> the Department Management options are displayed and accessible to the Admin user
-
-
+                
+                <hr>
         Scenario: User is able to search a specific departtment using the search field using department code
             Given</strong> the Admin user has opened the Department Management section within Departments
                 When</strong> the user executes a search using a department code such as ABLW or CDC
                  Then</strong> the correct department name search result will be displayed within the Department Management display field
 
-
+                 <hr>
         Scenario: User is able to select and Edit Permissions for the the Department search results
             Given</strong> the user has executed a search and results are displayed in the Department view
                 When</strong> the user selects a specific Department and clicks the Kebob icon for Edit Permissions
                 Then</strong> the Edit curtan will display for the user
 
-
+                <hr>
         Scenario: User is able to select the All Departments option to apply Permissions settings
             Given</strong> the user is working within the Departments settings in the Platform
                 When</strong> the user selects All Departments from the Department Management listing
                 Then</strong> clicking on Edit Permissions opens the Add Users and Groups input field
 
-
+                <hr>
         Scenario: Admin user is able to select a Permission level from the drop down menu of Permission options of View, Edit, Publish, and Custom
             Given</strong> the user is working within the Add Users or Groups options within a specific Department
                 When</strong> the user clicks into the Permissions drop down menu
                 Then</strong> the Permissions option drop down displays current options of View, Edit, Publish, and Custom
 
-
+                <hr>
          Scenario: Validate the Permisisons menu selector displays the available options
             Given</strong> the Admin user needs to set a user Permission for another plaform user
                 When</strong> the Admin user navigates to Settings > Departments
@@ -317,19 +317,19 @@
                 And</strong> clicks the Edit Permissions Kabob menu for that user
                 Then</strong> the UI displays new Permissions options (View, Edit, Publish, Custom)
 
-
+                <hr>
         Scenario: Validate the current "User" based permission does NOT have any Courses/Sections "EDIT" priv
             Given</strong> the platform user is logged in as a "User" based permission while working in the Courses/Sections curtain
                 When</strong> viewing the Courses curtain and the details within the Courses detail view
                 Then</strong> the User permission only has the View option and no Edit privs
 
-
+                <hr>
         Scenario: Validate when Custom permissions have been set and Saved - the UI retains the checked Departments
              Given</strong> a user has been assigned Custom level permissions within a specific Department
                  When</strong> the Admin user checks specific View and/or Edit checkboxes next to the section viewer elements and Saved
                  Then</strong> the selected Saved checks are reatained when the Admin user leaves the modal and opens it again
 
-
+                 <hr>
         Scenario: Validate when Custom permissions View options allows user to Select All from the Field row and All permissions details are checked correctly
              Given</strong> a user has been assigned Custom level permissions within a specific Department
                  When</strong> the Admin user checks the the View check at the Field level
@@ -358,7 +358,7 @@
                  When</strong> the user completes the deletion of the Meeting
                  Then</strong> the meeting is completely removed from the Sections UI
 
-        
+                 <hr>
         Scenario: Validate the meeting shell is also deleted when the Meeting is deleted
             Given</strong> the user is deleting a new Meeting from the Section UI
                  When</strong> the user completes the deletion of the Meeting
@@ -377,7 +377,7 @@
                  When</strong> the user makes Section details changes and invokes a Publish Status update
                  Then</strong> when the user views the updated section, the Publish Status column displays the green status "Succeeded" message
 
-
+                 <hr>
         Scenario: Validate the UI status message matches the Dynamo table updates
             Given</strong> the user is working in the Schedule grid
                 When</strong> the user makes Section details changes and invokes a Publish Status update
@@ -396,33 +396,33 @@
                  When</strong> updating the information within the Selector
                  Then</strong> the modal has an embedded calendar view
 
-
+                 <hr>
         Scenario: Validate the Calendar is aligned with the current product concept mock
             Given</strong> the user is working within the Room Selector
                 When</strong> the user makes Section details changes and invokes a Publish Status update
                 Then</strong> updating the information within the Selector
                 And</strong> the embedded calendar will have the similar look and feel of the product mock
 
-
+                <hr>
         Scenario: Validate the existing conflicts are now visible on the new Calendar view within Room Selector
             Given</strong> the user is working within the Room Selector
                  When</strong> the user is working within the Room Selector
                  Then</strong> the Calendar view will display the current conflicts 
 
-
+                 <hr>
         Scenario: Validate the existing conflicts are now visible on the new Calendar view within Room Selector
             Given</strong> the user is working within the Room Selector
                   When</strong> the user is working within the Room Selector
                   Then</strong> the Calendar view will display the current conflicts 
 
-
+                  <hr>
         Scenario: Validate the Available spaces toggle is defaulted to ON when user first opens the Room Selector
             Given</strong> the user is working within the Course details page
                   When</strong> the user selects the Find link to open the Meetings > Room Selector
                   And</strong> the user enters a Building value and the Room Type value
                   Then</strong> the Room Selector set to Avaiable Spaces toggle will default to ON
 
-
+                  <hr>
         Scenario: Validate the Unavailable icon displays correctly on the Unavailable Spaces when selecting the Available Rooms Only toggle to OFF
             Given</strong> the user is working within the Room Selector
                   When</strong> the user is working within the Room Selector and toggles off the Available Rooms Only option
@@ -443,102 +443,102 @@
                  When</strong> the user opens the Permissions for a specific user
                  Then</strong> the headers display as Add/Clone Sections and Delete Sections
 
-
+                 <hr>
         UI Scenario: Validate the updated toggles for both Add/Clone Section and Delete Sections are functional 
             Given</strong> the user is working in the Edit Field Permissions app
                 When</strong> the user selects the toggle for the Add/Clone Sections permission
                 When</strong> the user selects the toggle for the Delete Sections permission
                 Then</strong> each toggle can be set to the ON and OFF positions and remain engaged when the user clicks out and back into the Edit Field Permissions modal
              
-                
+                <hr>              
         UI Scenario: Validate the toggles are defaulted to the OFF position and display with GRAY shade
             Given</strong> the user is working in the Edit Field Permissions modal app
                 When</strong> the user opens the Edit Field Permissions modal
                 Then</strong> the new toggle are defaulted to the OFF gray position
 
-        
+                <hr>
         UI Scenario: Validate the toggles are displaying with the updated Blue background indicating the toggle is ON
             Given</strong> the user is working in the Edit Field Permissions app
                 When</strong> the user selects the toggles for the Add/Clone Sections or Delete Sections permission
                 Then</strong> the toggle will display with the updated GREEN background indicating the toggle is set to ON
 
-        
+                <hr>
         Functional Scenario: Validate when the Add/Clone toggle is set to True  - the Clone option is enabled for the user
             Given</strong> the user is working in the Courses app
                 When</strong> the user is working in the Courses detail and selects the Edit kabob option
                 Then</strong> the Edit kabob Clone option is enabled 
 
 
-
+                <hr>
         Functional Scenario: Validate when the Add/Clone toggle is set to False  - the Clone option is disabled for the user
             Given</strong> the user is working in the Courses app and the Add/Clone toggle is set to False
                 When</strong> the user is working in the Courses detail and selects the Edit kabob option
                 Then</strong> the Edit kabob Clone option is grayed and disabled 
 
-              
+                <hr>    
         Functional Scenario: Validate when the Delete Sections toggle is set to False (on) - the user can Delete a section
             Given</strong> the user is working in the Courses app
                 When</strong> the user selectes the Edit option - edit button
                 Then</strong> the Delete button is now available
 
-                
+                <hr>              
         Functional Scenario: Validate when the Delete Sections toggle is set to False (off) - the user is unable to Delete a section
             Given</strong> the user is working in the Courses app
                 When</strong> the user selectes the Edit option - edit button
                 Then</strong> the Delete button is now visible  
 
-
+                <hr>
         Functional Scenario: Validate from the Schedule app that when Delete Sections permission is set to True (on) - the user can Delete a section
             Given</strong> the user is working in the Schedule app within the Schedule > Section detail
                 When</strong> the user selects the Edit button
                 Then</strong> the Delete button is now visible and active for the user 
 
-
+                <hr>
         Functional Scenario: Validate from the Schedule app that when Delete Sections permission is set to False (off) - the user is unable to Delete a section 
             Given</strong> the user is working in the Schedule app within the Schedule > Section detail
                 When</strong> the user selects the Edit button
                 Then</strong> the Delete button is not visible for the user 
 
-
+                <hr>
         Functional Scenario: Validate from the Schedule app that when Add/Clone Sections permission is set to False (off) - the Clone kabob is grayed out
             Given</strong> the user is working in the Schedule app within the Schedule > Section detail
                 When</strong> the user selects the Edit kabob option
                 Then</strong> the Clone option is grayed out (off) 
 
-
+                <hr>
         Functional Scenario: Validate from the Schedule app that when Add/Clone Sections permission is set to True (on) - the Clone kabob is active 
             Given</strong> the user is working in the Schedule app within the Schedule > Section detail
                 When</strong> the user selects the Edit kabob option
                 Then</strong> the Clone option is active (on) 
 
-
+                <hr>
         Functional Scenario: Validate from the Courses calendar view that clicking the item opens Courses and displays the updated permissions for both options
             Given</strong> the user is working in the Courses calendar "Day" view
                 When</strong> the user selects the Section course item on the Day view - and both Add/Clone Sections and Delete Sections are set to False (off) 
                 Then</strong> both of these permissions are still honored and are set to False (off) matching the custom permissions for that User 
 
-
+                <hr>
         Functional Scenario: Validate from the Courses calendar Day view that clicking the item opens Courses and displays the updated permissions for both options
             Given</strong> the user is working in the Courses calendar "Day" view
                 When</strong> the user selects the Section course item on the Day view - and both Add/Clone Sections and Delete Sections are set to True (on) 
                 Then</strong> both of these permissions are still honored and are set to True (on) matching the custom permissions for that User 
                 Then</strong> the Cancel, Delete, and Save buttons are active
 
-
+                <hr>
         Functional Scenario: Validate from the Courses calendar Week view that clicking the item opens Courses and displays the updated permissions for both options when set to True
             Given</strong> the user is working in the Courses calendar "Week" view and selects a Calendar item
                 When</strong> the user selects the Section course item on the Week view - and both Add/Clone Sections and Delete Sections are set to True (on) 
                 Then</strong> both of these permissions are still honored and are set to True (on) matching the custom permissions for that User 
                 Then</strong> the Cancel, Delete, and Save buttons are active
 
-        
+                <hr>
         Functional Scenario: Validate from the Courses calendar Week view that clicking the item opens Courses and displays the updated permissions for both options when set to False
             Given</strong> the user is working in the Courses calendar "Week" view and selects a Calendar item
                  When</strong> the user selects the Section course item on the Week view - and both Add/Clone Sections and Delete Sections are set to True (on) 
                  Then</strong> both of these permissions are still honored and are set to True (on) matching the custom permissions for that User 
                  Then</strong> the Cancel and Save buttons are active  - Delete button is not displayed
 
-
+                 <hr>
         Functional Scenario: Validate 
             Given</strong> the user is working in the Courses calendar "Week" view and selects a Calendar item
                  When</strong> the user selects the Section course item on the Week view - and both Add/Clone Sections and Delete Sections are set to True (on) 
@@ -555,6 +555,7 @@
             Given</strong> the user already has custom level permissions set true 
                  When</strong> viewing Add Section, Delete, and Status
                  Then</strong> these options will be enabled
+                 <hr>
 
         Scenario: Validate when the samne custom permissions are set to False - the Add Section align option button is disabled 
             Given</strong> the user does not have Custom permissions for Add or Delete Sections
@@ -573,13 +574,13 @@
                  When</strong> adding an instructor to a Meeting
                  Then</strong> the add button is now shaded Gray
 
-
+                <hr>
         Scenario: Validate the Add Instructor button opens the Remove and Profile button options
             Given</strong> the user is adding an instructor and clicks the button
                  When</strong> the user clicks the Add Instructor button
                  Then</strong> the Profile and Remove button panel displays 
 
-
+                 <hr>
         Scenario: Validate the Remove button cancels the Add Instructor option and closes the view
             Given</strong> the user is working in the Add Instructor 
                  When</strong> selecting the Remove button option
@@ -597,19 +598,19 @@
                  When</strong> when updating the Campus to a specific value 
                  Then</strong> then the codes are reflected of that change and update correctly
 
-
+                 <hr>
         Scenario: Validate the Location > building selector listing updates when Campus is changed respectively 
             Given</strong>  the user is working within the Courses and Meetings app 
                  When</strong> the user changes the Campus to a different value within the Meetings editor
                  Then</strong> the Location > Building selector listing also updates the buildings to match the updated Campus codes 
 
-
+                 <hr>
         Scenario: Validate the changed Campus code and Alt campus code are saved when user is done editing
             Given</strong> the user is working within the Courses and Meetings app  
                  When</strong> the user changes the Campus to a different value within the Meetings editor - and exits Edit mode within the app 
                  Then</strong> the updated Campus code and Alt campus codes are stickey and saved when user edits Meeting again 
 
-
+                 <hr>
         Scenario: Validate the Building listings also update and match the selected Campus
             Given</strong> the user is working within the Courses and Meetings app  
                  When</strong> the user changes the Campus
@@ -631,74 +632,74 @@
                 When</strong> when selecting the Admin > Workflow 
                 Then</strong> the user is able to open the Workflow grid from the Settings app module 
     
-    
+                <hr>
         UX Scenario:  Validate the Schedule Workflow grid contains a Color element picker
             Given</strong> the user is working within the new Schedule Workflow grid 
                  When</strong> using the Color picker function 
                  And</strong> needs to apply a specific color code to a specfic Workflow step
                  Then</strong> the user is able to apply a custom color to the Workflow steps using a drop down color picker chart
 
-
+                 <hr>
         Scenario: Validate the Steps ordering and numbering updates correctly when the Steps are changed
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> the user is changning the ordering of the Steps
                  Then</strong> the numbering of the Steps will also change to remain in chronologicaL order
 
-           
+                 <hr>
         UX Scenario: Validate the Schedule Workflow grid contains a display column showing the Workflow Step name
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> selecting workflow steps 
                  Then</strong> the user is able to customize and apply a Step by it's Workflow name
 
-
+                 <hr>
         UX Scenario: Validate the Schedule Workflow grid contains a display column showing the Workflow Step name
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> selecting workflow steps 
                  Then</strong> the user is able to customize and apply a Step by it's Workflow name
 
-
+                 <hr>
         UX Scenario: Validate the Schedule Workflow grid contains a display column showing the Workflow Step name
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> selecting workflow steps 
                  Then</strong> the user is able to customize and apply a Step by it's Workflow name
 
-        
+                 <hr>
         UX Scenario: Validate the user can Add (+) a new item to the Workflow grid UI
             Given</strong> the user is working within the new Workflow grid
                  When</strong> needing to Add a new Step to current Workflow steps
                  Then</strong> there is a newly added icon which creates a the "Step" row to the Workflow grid
 
-    
+                 <hr>
         UX Scenario: Validate when the new Step is added to the grid - the color picker defaults to white (no color)
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> the user has added a new Step to the Workflow grid
                  Then</strong> the user Color picker component will default to NO color selected
             
-
+                 <hr>
         Scenario: Validate the user can ADD a new Assignee to the Steps and the added user is displayed with a new Pill label
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> the user is adding an Assignee to the selected Step and has already selected a system User to be added
                  Then</strong> the newly added user will display in the Assignees column within a Pill label 
 
-        
+                 <hr>
         Scenario: Validate the user can enter the correct Workflow step name for the added Assignee
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> the user is adding an Assignee to the selected Step and has already selected a system User to be added
                  Then</strong> a Workflow Steps name can be added and saved for the new Assignee
 
-        
+                 <hr>
         Scenario: Validate when the user adds more then two Assignees to a Step - the grid only shows 2 actual user pills and a "+ more" pill for the remainder of Assignees
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> the user is adding multiple Assignees to a given Step
                  Then</strong> two Assignee name pills will display and a "+ more" pill displays indicating more then 2 Assignees are assigned 
 
-
+                 <hr>
         Scenario: Validate when the user adds more then two Assignees to a Step - the grid only shows 2 actual user pills and a "+ more" pill for the remainder of Assignees
             Given</strong> the user is working within the new Schedule Workflow grid
                 When</strong> the user is adding multiple Assignees to a given Step
                 Then</strong> two Assignee name pills will display and a "+ more" pill displays indicating more then 2 Assignees are assigned 
         
-        
+                 <hr>
         Scenario: Validate when the user Assignee is deleted from the Step - the Assignee is removed and their pill is also removed and the number of Assignees is adjusted correctly
             Given</strong> the user is working within the new Schedule Workflow grid
                 When</strong> a user Assignee is deleted from a Step and is removed
