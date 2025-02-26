@@ -746,7 +746,11 @@
                 When</strong> the user is utlizing the TAB key and is navigating from the workflow Steps to the Assignees edit icon
                 Then</strong> the focus moves from the Workflow Steps to the Assigneees edit and the Enter key activates the Edit function (pencil icon)
         
-        
+      
+        Scenario: Validate tabbing cursor focus moves from the Assignees to the Actions kabobs
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> the user is utlizing the TAB key and is navigating from Assignees and needs to move to the Actions option
+                Then</strong> the focus moves from the Assignees edit function and will TAB to the Actions kabob option - and the Enter key activates the kabob options
                 
                     
 
