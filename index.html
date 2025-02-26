@@ -763,6 +763,56 @@
 
 <b>Service Updates</b>
 
+
+        Scenario: Validate when creating a new Workflow Step - the full JSON response body is returned confirming the Workflow was created
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> the user creates a new Workflow
+                Then</strong> the full response is returned for the new Workflow 
+
+                {
+                    "workflowId": "68eea836-7634-42e5-81ac-04ea2234f8b1",
+                    "name": "I'm too sexy for my shirt",
+                    "steps": [
+                        {
+                            "stepId": "69faa47c-5f5d-462a-959d-e8217d7c874b",
+                            "color": "#FF0000",
+                            "stepNumber": 1,
+                            "name": "Tip"
+                        },
+                        {
+                            "stepId": "723c9592-6f6f-4308-bfa4-5ed5faf726fc",
+                            "color": "#00FFFF",
+                            "stepNumber": 2,
+                            "name": "Toep"
+                        },
+                        {
+                            "stepId": "f1b7e1f0-430a-4e9a-aed7-e3ddd8a394ab",
+                            "color": "#FF69B4",
+                            "stepNumber": 3,
+                            "name": "Hamburger"
+                        },
+                        {
+                            "stepId": "2758b6f2-dfc2-4410-97d0-5af674a700d4",
+                            "color": "#CD5C5C",
+                            "stepNumber": 4,
+                            "name": "Toss Salad"
+                        },
+                        {
+                            "stepId": "d282f5fe-5b6e-4ba6-b9d1-480b35c011e2",
+                            "color": "#FFD700",
+                            "stepNumber": 5,
+                            "name": "Green Jello"
+                        },
+                        {
+                            "stepId": "f073c2ef-fb07-42cb-8746-c1cefe9fc9ae",
+                            "color": "#000000",
+                            "stepNumber": 6,
+                            "name": "Banana"
+                        }
+                    ]
+                }
+            
+
         Scenario: Validate when creating a new Workflow Step - JSON is returned with the Color, Name, stepID, and stepNumber
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user creates a new Step on an existing Workflow
