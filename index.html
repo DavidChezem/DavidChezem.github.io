@@ -700,10 +700,26 @@
                 Then</strong> the corresponding Assignee pill is also removed from the Step
                 Then</strong> the tally of Assignees is also updated correctly
 
+                <hr>
         Scenario: Validate the Delete button proprely removes a Step from the grid 
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user selects the Kabob to Delete an existing Step
                 Then</strong> the Steps numbering correctly remains in chrono Steps order 
+
+                <hr>
+        Accessibility
+
+        Scenario: Validate the TAB key navigates to the Color picker and hitting Enter opens the picker
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> the user is utlizing the TAB key and is navigating down the Workflow app to the Color picker
+                Then</strong> once the Color picker is in focus - hitting the Enter key opens the Color picker 
+
+
+        Scenario: Validate within the Color picker - the TAB key moves cursor focus around the color options of the Color picker 
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> the user is utlizing the TAB key and is navigating down the Workflow app to the Color picker
+                Then</strong> once the Color picker is in focus - the TAB key moves focus through each color option within the picker 
+        
                 
                     
 
