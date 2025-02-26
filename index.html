@@ -716,44 +716,44 @@
                 When</strong> the user is utlizing the TAB key and begins Tabbing
                 Then</strong> the cursor focus highlights the first Step in the grid
 
-
+                <hr>
         Scenario: Validate the TAB key navigates to the Color picker and hitting Enter opens the picker
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating down the Workflow app to the Color picker
                 Then</strong> once the Color picker is in focus - hitting the Enter key opens the Color picker 
 
-
+                <hr>
         Scenario: Validate within the Color picker - the TAB key moves cursor focus around the color options of the Color picker 
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating down the Workflow app to the Color picker
                 Then</strong> once the Color picker is in TAB focus - the cursor moves through each color option within the picker and keeps focus within the picker
 
-        
+                <hr>
         Scenario: Validate within the Color picker, the user selects a specific color using only the ENTER key
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating down the Workflow app to the Color picker
                 Then</strong> once the Color picker is within TAB focus, the user can select a specific color using only the ENTER 
                 Then</strong> the cursor focus returns to the Step row
 
-
+                <hr>
         Scenario: Validate tabbing cursor focus moves from the Color picker to the Workflow Steps field
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating from the Color picker to the Workflow Steps fields
                 Then</strong> the focus moves from the Color picker to the Workflow Steps field and the text field is in highlighted focus (user can now type)  
     
-                
+                <hr> 
         Scenario: Validate tabbing cursor focus moves from the Workflow Steps field to the Assignee edit icon
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating from the workflow Steps to the Assignees edit icon
                 Then</strong> the focus moves from the Workflow Steps to the Assigneees edit and the Enter key activates the Edit function (pencil icon)
         
-      
+                <hr> 
         Scenario: Validate tabbing cursor focus moves from the Assignees to the Actions kabobs
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating from Assignees and needs to move to the Actions option
                 Then</strong> the focus moves from the Assignees edit function and will TAB to the Actions kabob option - and the Enter key activates the kabob (More options)
 
-
+                <hr>
         Scenario: Validate tabbing cursor focus moves from the Actions kabob to the next Steps row 
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating from the Action kabob to the next cursor section
@@ -812,7 +812,7 @@
                     ]
                 }
             
-
+                <hr>
         Scenario: Validate when creating a new Workflow Step - JSON is returned with the Color, Name, stepID, and stepNumber
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user creates a new Step on an existing Workflow
@@ -823,6 +823,19 @@
                     "name": "Tip",
                     "stepId": "69faa47c-5f5d-462a-959d-e8217d7c874b",
                     "stepNumber": 1
+                }
+
+
+        Scenario: Validate when creating a new Workflow step that a stepID is created
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> the user creates a new Step on an existing Workflow
+                Then</strong> the JSON response has the stepID created for the Step record
+
+                {
+                    <b>"stepId": "ce5aa072-3ddd-4b08-b584-c867772ad534",</b>
+                    "color": "#DEB887",
+                    "stepNumber": 5,
+                    "name": "Hot Dog"
                 }
                 
                     
