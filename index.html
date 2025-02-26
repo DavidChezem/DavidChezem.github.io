@@ -692,12 +692,6 @@
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> the user is adding multiple Assignees to a given Step
                  Then</strong> two Assignee name pills will display and a "+ more" pill displays indicating more then 2 Assignees are assigned 
-
-                 <hr>
-        Scenario: Validate when the user adds more then two Assignees to a Step - the grid only shows 2 actual user pills and a "+ more" pill for the remainder of Assignees
-            Given</strong> the user is working within the new Schedule Workflow grid
-                When</strong> the user is adding multiple Assignees to a given Step
-                Then</strong> two Assignee name pills will display and a "+ more" pill displays indicating more then 2 Assignees are assigned 
         
                  <hr>
         Scenario: Validate when the user Assignee is deleted from the Step - the Assignee is removed and their pill is also removed and the number of Assignees is adjusted correctly
@@ -705,6 +699,12 @@
                 When</strong> a user Assignee is deleted from a Step and is removed
                 Then</strong> the corresponding Assignee pill is also removed from the Step
                 Then</strong> the tally of Assignees is also updated correctly
+
+        Scenario: Validate the Delete button proprely removes a Step from the grid 
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> the user selects the Kabob to Delete an existing Step
+                Then</strong> the Steps numbering correctly remains in chrono Steps order 
+                
                     
 
 <script>
