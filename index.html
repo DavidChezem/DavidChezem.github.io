@@ -707,7 +707,14 @@
                 Then</strong> the Steps numbering correctly remains in chrono Steps order 
 
                 <hr>
-        Accessibility
+                
+<b>Accessibility</b>
+
+        Scenario: Validate the TAB key navigates from the top of the page to the first Step within the Workflow gris
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> the user is utlizing the TAB key and begins Tabbing
+                Then</strong> the cursor focus highlights the first Step in the grid
+
 
         Scenario: Validate the TAB key navigates to the Color picker and hitting Enter opens the picker
             Given</strong> the user is working within the new Workflow grid
@@ -719,6 +726,14 @@
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating down the Workflow app to the Color picker
                 Then</strong> once the Color picker is in TAB focus - the cursor moves through each color option within the picker and keeps focus within the picker
+        
+        Scenario: Validate within the Color picker, the user selects a specific color using only the ENTER key
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> the user is utlizing the TAB key and is navigating down the Workflow app to the Color picker
+                Then</strong> once the Color picker is within TAB focus, the user can select a specific color using only the ENTER 
+                Then</strong> the cursor focus returns to the Step row
+
+        
         
                 
                     
