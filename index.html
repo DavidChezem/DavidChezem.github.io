@@ -59,6 +59,8 @@
 <div class="content">
 <pre><code class="language-gherkin">
 <p><b>Feature</b>: Astra Events activities aren't being created in snowflake
+
+
         Scenario: Validate the newly added Hively events are integrating correctly with the Course "Day" calendar views
             Given the user is adding new Hively events within the "Day" view
                 When the new Event has been saved in Hively
@@ -706,8 +708,7 @@
                 When</strong> the user selects the Kabob to Delete an existing Step
                 Then</strong> the Steps numbering correctly remains in chrono Steps order 
 
-                <hr>
-                
+                <hr>             
 <b>Accessibility</b>
 
         Scenario: Validate the TAB key navigates from the top of the page to the first Step within the Workflow gris
@@ -757,6 +758,22 @@
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating from the Action kabob to the next cursor section
                 Then</strong> the focus moves from the Actions kabob to the next Steps row in the grid
+
+<hr>
+
+<b>Service Updates</b>
+
+        Scenario: Validate when creating a new Workflow Step - JSON is returned with the Color, Name, stepID, and stepNumber
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> the user creates a new Step on an existing Workflow
+                Then</strong> the request is sent and the Step response is in the following JSON:
+                
+                {
+                    "color": "#FF0000",
+                    "name": "Tip",
+                    "stepId": "69faa47c-5f5d-462a-959d-e8217d7c874b",
+                    "stepNumber": 1
+                }
                 
                     
 
