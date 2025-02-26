@@ -726,12 +726,20 @@
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating down the Workflow app to the Color picker
                 Then</strong> once the Color picker is in TAB focus - the cursor moves through each color option within the picker and keeps focus within the picker
+
         
         Scenario: Validate within the Color picker, the user selects a specific color using only the ENTER key
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating down the Workflow app to the Color picker
                 Then</strong> once the Color picker is within TAB focus, the user can select a specific color using only the ENTER 
                 Then</strong> the cursor focus returns to the Step row
+
+
+        Scenario: Validate tabbing cursoir focus moves from the Color picker to the Workflow Steps field
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> the user is utlizing the TAB key and is navigating from the Color picker to the Workflow Steps fields
+                Then</strong> the focus moves from the Color picker to the Workflow Steps field and the text field is in highlighted focus (user can now type)  
+    
 
         
         
