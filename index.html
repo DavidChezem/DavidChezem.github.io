@@ -115,7 +115,7 @@
 
 <!--Astra-46700-->
 </div>
-<button class="collapsible"><b>UX Standards - </b>Astra-46700 (UX - Add Meeting Pattern Management input needs to be updated)</button>
+<button class="collapsible"><b>UX Standards - </b>Astra-46700 (Add Meeting Pattern Management input needs to be updated)</button>
 <div class="content"> 
 <pre><code class="language-gherkin"></code>
 <p><b>Feature</b>: UX - Add Meeting Pattern Management input needs to be updated.
@@ -135,6 +135,30 @@
         Given</strong> the user is adding a new "Add Meeting Pattern" to the schedule
             When</strong> opening the "Add Meeting Pattern" action bultton and modal
             Then</strong> the "Add Meeting Pattern" modal opens correctly as it did prior to the UX label change
+
+
+<!--Astra-50090-->
+</div>
+<button class="collapsible"><b>UX Standards - </b>Astra-50090 (Courses/Meetings - Find (Instructor) modal link does not need text underlined) **This ticket addresses graphical element on Add Instructor button**</button>
+<div class="content">
+<pre><code class="language-gherkin">
+<p><b>Feature</b>: Validate the Add Instructor graphical element has been changed to the current grey input button
+        Scenario: The Add Instructor button is changed to the Gray background instead of the graphic element
+            Given</strong> the user is working within the Courses and Meetings app
+                 When</strong> adding an instructor to a Meeting
+                 Then</strong> the add button is now shaded Gray
+
+                <hr>
+        Scenario: Validate the Add Instructor button opens the Remove and Profile button options
+            Given</strong> the user is adding an instructor and clicks the button
+                 When</strong> the user clicks the Add Instructor button
+                 Then</strong> the Profile and Remove button panel displays 
+
+                 <hr>
+        Scenario: Validate the Remove button cancels the Add Instructor option and closes the view
+            Given</strong> the user is working in the Add Instructor 
+                 When</strong> selecting the Remove button option
+                 Then</strong> the instructor selection is removed and the Add Instructor button displays again from the original view
 
 <!--Astra-45194-->
 </div>
@@ -801,31 +825,6 @@
                     <b>"name": "Hot Dog"</b>
                 }
                 
-
-
-<!--Astra-50090-->
-</div>
-<button class="collapsible">Astra-50090 (Courses/Meetings - Find (Instructor) modal link does not need text underlined) **This ticket addresses graphical element on Add Instructor button**</button>
-<div class="content">
-<pre><code class="language-gherkin">
-<p><b>Feature</b>: Validate the Add Instructor graphical element has been changed to the current grey input button
-        Scenario: The Add Instructor button is changed to the Gray background instead of the graphic element
-            Given</strong> the user is working within the Courses and Meetings app
-                 When</strong> adding an instructor to a Meeting
-                 Then</strong> the add button is now shaded Gray
-
-                <hr>
-        Scenario: Validate the Add Instructor button opens the Remove and Profile button options
-            Given</strong> the user is adding an instructor and clicks the button
-                 When</strong> the user clicks the Add Instructor button
-                 Then</strong> the Profile and Remove button panel displays 
-
-                 <hr>
-        Scenario: Validate the Remove button cancels the Add Instructor option and closes the view
-            Given</strong> the user is working in the Add Instructor 
-                 When</strong> selecting the Remove button option
-                 Then</strong> the instructor selection is removed and the Add Instructor button displays again from the original view
-
         
 <!--Astra-50058-->
 </div>
