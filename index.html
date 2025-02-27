@@ -54,8 +54,9 @@
     </ul><br>
     
  
+
 <!--Astra-47286-->
-<button class="collapsible">Astra-47286 (Astra Events activities aren't being created in snowflake)</button>
+<button class="collapsible"> Astra-47286 (Astra Events activities aren't being created in snowflake)</button>
 <div class="content">
 <pre><code class="language-gherkin">
 <p><b>Feature</b>: Astra Events activities aren't being created in snowflake
@@ -114,7 +115,7 @@
 
 <!--Astra-46700-->
 </div>
-<button class="collapsible">Astra-46700 (UX - Add Meeting Pattern Management input needs to be updated)</button>
+<button class="collapsible"><b>UX Standards - </b>Astra-46700 (UX - Add Meeting Pattern Management input needs to be updated)</button>
 <div class="content"> 
 <pre><code class="language-gherkin"></code>
 <p><b>Feature</b>: UX - Add Meeting Pattern Management input needs to be updated.
@@ -137,7 +138,7 @@
 
 <!--Astra-45194-->
 </div>
-<button class="collapsible">Astra-45194 (Validate Space title update)</button>
+<button class="collapsible"><b>Space Titles - </b>Astra-45194 (Validate Space title update)</button>
 <div class="content">
 <pre><code class="language-gherkin"></code>
 <p><b>Feature</b>: Validate Space title update
@@ -163,6 +164,51 @@
         Given</strong> the user is viewing the spaces viewer > header
             When</strong> user is viewing the spaces viewer
             Then</strong> the name formatting has been updated correctly - Sample of new format = "BCH 00000 - 00000"
+
+
+<!--Astra-48852-->
+</div>
+<button class="collapsible"><b>Calendar Space Conflicts - </b>Astra-48852 (Space conflicts on calendar)</button>
+<div class="content">
+<pre><code class="language-gherkin">
+<p><b>Feature</b>: Space conflicts on calendar
+        Scenario: Validate the Room Selector has a Calendar viee embedded
+            Given</strong> the user is updating the information within the Selector
+                 When</strong> updating the information within the Selector
+                 Then</strong> the modal has an embedded calendar view
+
+                 <hr>
+        Scenario: Validate the Calendar is aligned with the current product concept mock
+            Given</strong> the user is working within the Room Selector
+                When</strong> the user makes Section details changes and invokes a Publish Status update
+                Then</strong> updating the information within the Selector
+                And</strong> the embedded calendar will have the similar look and feel of the product mock
+
+                <hr>
+        Scenario: Validate the existing conflicts are now visible on the new Calendar view within Room Selector
+            Given</strong> the user is working within the Room Selector
+                 When</strong> the user is working within the Room Selector
+                 Then</strong> the Calendar view will display the current conflicts 
+
+                 <hr>
+        Scenario: Validate the existing conflicts are now visible on the new Calendar view within Room Selector
+            Given</strong> the user is working within the Room Selector
+                  When</strong> the user is working within the Room Selector
+                  Then</strong> the Calendar view will display the current conflicts 
+
+                  <hr>
+        Scenario: Validate the Available spaces toggle is defaulted to ON when user first opens the Room Selector
+            Given</strong> the user is working within the Course details page
+                  When</strong> the user selects the Find link to open the Meetings > Room Selector
+                  And</strong> the user enters a Building value and the Room Type value
+                  Then</strong> the Room Selector set to Avaiable Spaces toggle will default to ON
+
+                  <hr>
+        Scenario: Validate the Unavailable icon displays correctly on the Unavailable Spaces when selecting the Available Rooms Only toggle to OFF
+            Given</strong> the user is working within the Room Selector
+                  When</strong> the user is working within the Room Selector and toggles off the Available Rooms Only option
+                  Then</strong> the availability Space listing will only show the Unavailable Spaces 
+
 
 <!--Astra-48473-->
 </div>
@@ -222,7 +268,7 @@
 
  <!--Astra-45563-->
 </div>
-<button class="collapsible">Astra-45563 (During the scheduling process we need to show more information about space conflicts)</button>
+<button class="collapsible"><b>Scheduling - </b>Astra-45563 (During the scheduling process we need to show more information about space conflicts)</button>
 <div class="content">
 <pre><code class="language-gherkin"></code>
 <p><b>Feature</b>: During the scheduling process we need to show more information about space conflicts
@@ -277,9 +323,61 @@
 
         
 
+
+
+<!--Astra-48547-->
+</div>
+<button class="collapsible">Astra-48547 (UX- Add Course button needs the marketing blue shading)</button>
+<div class="content">
+<pre><code class="language-gherkin"></code>
+<p><b>Feature</b>:  UX- Add Course button needs the marketing blue shading
+        Scenario: Validate the Add Course button has the updated marketing blue shading
+            Given</strong> the user is working within the platform and Courses
+                 When</strong> the user is using the Add Course inout button
+                 Then</strong> the input button should match the other primary inputs with the updated marketing blue shade
+
+                 
+<!--Astra-48447-->
+</div>
+<button class="collapsible"> Astra-48447 (Section Details - Cancelling a new Meeting retains the new Meeting shell)</button>
+<div class="content">
+<pre><code class="language-gherkin">
+        Bug:  Section Details - Cancelling a new Meeting retains the new Meeting shell
+        Scenario: Validate when a Meeting is deleted it's removed from the Sections UI
+            Given</strong> the user is deleting a new Meeting from the Section UI
+                 When</strong> the user completes the deletion of the Meeting
+                 Then</strong> the meeting is completely removed from the Sections UI
+
+                 <hr>
+        Scenario: Validate the meeting shell is also deleted when the Meeting is deleted
+            Given</strong> the user is deleting a new Meeting from the Section UI
+                 When</strong> the user completes the deletion of the Meeting
+                 Then</strong> the meeting is completely removed from the Sections UI and the shell of the Meeting is also deleted
+
+ 
+
+ <!--Astra-48423-->
+</div>
+<button class="collapsible">Astra-48423 (Schedule Grid - Publish Status does not update)</button>
+<div class="content">
+<pre><code class="language-gherkin">
+<p><b>Feature</b>:  The Schedule Grid publish status grid column needs to be updated when the Section publish status changes
+        Scenario: Validate when the publish is updated that the status column display is also updated 
+            Given</strong> the user is working in the Schedule grid
+                 When</strong> the user makes Section details changes and invokes a Publish Status update
+                 Then</strong> when the user views the updated section, the Publish Status column displays the green status "Succeeded" message
+
+                 <hr>
+        Scenario: Validate the UI status message matches the Dynamo table updates
+            Given</strong> the user is working in the Schedule grid
+                When</strong> the user makes Section details changes and invokes a Publish Status update
+                Then</strong> when the user views the updated section, the Publish Status column displays the green status "Succeeded" message
+                And</strong> the status update matches the corresponding status update to the Dynamo DB record 
+
+  
 <!--Astra-39196-->
 </div>
-<button class="collapsible">Astra-39196 (Manage access by user/group for a department. As an admin, I want to control some users' access to change Part of Term because it can break processes in Banner)</button>
+<button class="collapsible"><b>Permissions Access - </b>Astra-39196 (Manage access by user/group for a department. As an admin, I want to control some users' access to change Part of Term because it can break processes in Banner)</button>
 <div class="content">
 <pre><code class="language-gherkin"></code>
 <p><b>Feature</b>: Manage access by user/group for a department. As an admin, I want to control some users' access to change Part of Term because it can break processes in Banner
@@ -338,104 +436,11 @@
                  When</strong> the Admin user checks the the View check at the Field level
                  Then</strong> all of the View check options have been selected 
 
-<!--Astra-48547-->
-</div>
-<button class="collapsible">Astra-48547 (UX- Add Course button needs the marketing blue shading)</button>
-<div class="content">
-<pre><code class="language-gherkin"></code>
-<p><b>Feature</b>:  UX- Add Course button needs the marketing blue shading
-        Scenario: Validate the Add Course button has the updated marketing blue shading
-            Given</strong> the user is working within the platform and Courses
-                 When</strong> the user is using the Add Course inout button
-                 Then</strong> the input button should match the other primary inputs with the updated marketing blue shade
-
-                 
-<!--Astra-48447-->
-</div>
-<button class="collapsible"> Astra-48447 (Section Details - Cancelling a new Meeting retains the new Meeting shell)</button>
-<div class="content">
-<pre><code class="language-gherkin">
-        Bug:  Section Details - Cancelling a new Meeting retains the new Meeting shell
-        Scenario: Validate when a Meeting is deleted it's removed from the Sections UI
-            Given</strong> the user is deleting a new Meeting from the Section UI
-                 When</strong> the user completes the deletion of the Meeting
-                 Then</strong> the meeting is completely removed from the Sections UI
-
-                 <hr>
-        Scenario: Validate the meeting shell is also deleted when the Meeting is deleted
-            Given</strong> the user is deleting a new Meeting from the Section UI
-                 When</strong> the user completes the deletion of the Meeting
-                 Then</strong> the meeting is completely removed from the Sections UI and the shell of the Meeting is also deleted
-
- 
-
- <!--Astra-48423-->
-</div>
-<button class="collapsible">Astra-48423 (Schedule Grid - Publish Status does not update)</button>
-<div class="content">
-<pre><code class="language-gherkin">
-<p><b>Feature</b>:  The Schedule Grid publish status grid column needs to be updated when the Section publish status changes
-        Scenario: Validate when the publish is updated that the status column display is also updated 
-            Given</strong> the user is working in the Schedule grid
-                 When</strong> the user makes Section details changes and invokes a Publish Status update
-                 Then</strong> when the user views the updated section, the Publish Status column displays the green status "Succeeded" message
-
-                 <hr>
-        Scenario: Validate the UI status message matches the Dynamo table updates
-            Given</strong> the user is working in the Schedule grid
-                When</strong> the user makes Section details changes and invokes a Publish Status update
-                Then</strong> when the user views the updated section, the Publish Status column displays the green status "Succeeded" message
-                And</strong> the status update matches the corresponding status update to the Dynamo DB record 
 
 
-<!--Astra-48852-->
-</div>
-<button class="collapsible">Astra-48852 (Space conflicts on calendar)</button>
-<div class="content">
-<pre><code class="language-gherkin">
-<p><b>Feature</b>: Space conflicts on calendar
-        Scenario: Validate the Room Selector has a Calendar viee embedded
-            Given</strong> the user is updating the information within the Selector
-                 When</strong> updating the information within the Selector
-                 Then</strong> the modal has an embedded calendar view
-
-                 <hr>
-        Scenario: Validate the Calendar is aligned with the current product concept mock
-            Given</strong> the user is working within the Room Selector
-                When</strong> the user makes Section details changes and invokes a Publish Status update
-                Then</strong> updating the information within the Selector
-                And</strong> the embedded calendar will have the similar look and feel of the product mock
-
-                <hr>
-        Scenario: Validate the existing conflicts are now visible on the new Calendar view within Room Selector
-            Given</strong> the user is working within the Room Selector
-                 When</strong> the user is working within the Room Selector
-                 Then</strong> the Calendar view will display the current conflicts 
-
-                 <hr>
-        Scenario: Validate the existing conflicts are now visible on the new Calendar view within Room Selector
-            Given</strong> the user is working within the Room Selector
-                  When</strong> the user is working within the Room Selector
-                  Then</strong> the Calendar view will display the current conflicts 
-
-                  <hr>
-        Scenario: Validate the Available spaces toggle is defaulted to ON when user first opens the Room Selector
-            Given</strong> the user is working within the Course details page
-                  When</strong> the user selects the Find link to open the Meetings > Room Selector
-                  And</strong> the user enters a Building value and the Room Type value
-                  Then</strong> the Room Selector set to Avaiable Spaces toggle will default to ON
-
-                  <hr>
-        Scenario: Validate the Unavailable icon displays correctly on the Unavailable Spaces when selecting the Available Rooms Only toggle to OFF
-            Given</strong> the user is working within the Room Selector
-                  When</strong> the user is working within the Room Selector and toggles off the Available Rooms Only option
-                  Then</strong> the availability Space listing will only show the Unavailable Spaces 
-
-
-                                
  <!--Astra-44936-->
 </div> 
-<button class="collapsible">Astra-44936 (Fields: Implement Add, Clone, and Delete section permissions)</button>
+<button class="collapsible"><b>Section Permissions - </b>Astra-44936 (Fields: Implement Add, Clone, and Delete section permissions)</button>
 <div class="content">
 <pre><code class="language-gherkin">
     ** Updated 2/11/2025**
@@ -550,7 +555,7 @@
                  
 <!--Astra-49891-->
 </div>
-<button class="collapsible">Astra-49891 (The Add Section, Delete, Status button should be enabled for users with "Custom" permissions if they have the required field-level edit permissions)</button>
+<button class="collapsible"><b>Custom Permissions - </b>Astra-49891 (The Add Section, Delete, Status button should be enabled for users with "Custom" permissions if they have the required field-level edit permissions)</button>
 <div class="content">
 <pre><code class="language-gherkin">
 <p><b>Feature</b>: Ensure required fields (e.g., sectionCode, sectionTitle) are editable for "Custom" users.
@@ -566,65 +571,9 @@
                  Then</strong> these options are disabled 
 
 
-<!--Astra-50090-->
-</div>
-<button class="collapsible">Astra-50090 (Courses/Meetings - Find (Instructor) modal link does not need text underlined) **This ticket addresses graphical element on Add Instructor button**</button>
-<div class="content">
-<pre><code class="language-gherkin">
-<p><b>Feature</b>: Validate the Add Instructor graphical element has been changed to the current grey input button
-        Scenario: The Add Instructor button is changed to the Gray background instead of the graphic element
-            Given</strong> the user is working within the Courses and Meetings app
-                 When</strong> adding an instructor to a Meeting
-                 Then</strong> the add button is now shaded Gray
-
-                <hr>
-        Scenario: Validate the Add Instructor button opens the Remove and Profile button options
-            Given</strong> the user is adding an instructor and clicks the button
-                 When</strong> the user clicks the Add Instructor button
-                 Then</strong> the Profile and Remove button panel displays 
-
-                 <hr>
-        Scenario: Validate the Remove button cancels the Add Instructor option and closes the view
-            Given</strong> the user is working in the Add Instructor 
-                 When</strong> selecting the Remove button option
-                 Then</strong> the instructor selection is removed and the Add Instructor button displays again from the original view
-
-        
-<!--Astra-50058-->
-</div>
-<button class="collapsible">Astra-50058 (Peoplesoft: Meeting building recommendations not updating when the Campus is changed)</button>
-<div class="content">
-<pre><code class="language-gherkin">
-<p><b>Feature</b>: Validate the "campus code" and "alt_campus_code" updates correctly when Campus is changed  
-        Scenario: Campus code and alt campus code are updating correctly
-            Given</strong> the user is working within the Courses and Meetings app
-                 When</strong> when updating the Campus to a specific value 
-                 Then</strong> then the codes are reflected of that change and update correctly
-
-                 <hr>
-        Scenario: Validate the Location > building selector listing updates when Campus is changed respectively 
-            Given</strong>  the user is working within the Courses and Meetings app 
-                 When</strong> the user changes the Campus to a different value within the Meetings editor
-                 Then</strong> the Location > Building selector listing also updates the buildings to match the updated Campus codes 
-
-                 <hr>
-        Scenario: Validate the changed Campus code and Alt campus code are saved when user is done editing
-            Given</strong> the user is working within the Courses and Meetings app  
-                 When</strong> the user changes the Campus to a different value within the Meetings editor - and exits Edit mode within the app 
-                 Then</strong> the updated Campus code and Alt campus codes are stickey and saved when user edits Meeting again 
-
-                 <hr>
-        Scenario: Validate the Building listings also update and match the selected Campus
-            Given</strong> the user is working within the Courses and Meetings app  
-                 When</strong> the user changes the Campus
-                 And</strong> is now viewing the Meetings details and opens an edit of the Location > Building field
-                 Then</strong> the building reccomendations match the selected & saved Campus 
-        
-
-
 <!--Astra-50029-->
 </div>
-<button class="collapsible">Astra-50029 (Define steps in schedule building workflow process)</button>
+<button class="collapsible"><b>Workflow - </b> Astra-50029 (Define steps in schedule building workflow process)</button>
 <div class="content">
 <pre><code class="language-gherkin">
 <p style="font-size: 20px;">2/24/2025: feature branch scenarios (In Progress)</p>
@@ -852,7 +801,63 @@
                     <b>"name": "Hot Dog"</b>
                 }
                 
-                    
+
+
+<!--Astra-50090-->
+</div>
+<button class="collapsible">Astra-50090 (Courses/Meetings - Find (Instructor) modal link does not need text underlined) **This ticket addresses graphical element on Add Instructor button**</button>
+<div class="content">
+<pre><code class="language-gherkin">
+<p><b>Feature</b>: Validate the Add Instructor graphical element has been changed to the current grey input button
+        Scenario: The Add Instructor button is changed to the Gray background instead of the graphic element
+            Given</strong> the user is working within the Courses and Meetings app
+                 When</strong> adding an instructor to a Meeting
+                 Then</strong> the add button is now shaded Gray
+
+                <hr>
+        Scenario: Validate the Add Instructor button opens the Remove and Profile button options
+            Given</strong> the user is adding an instructor and clicks the button
+                 When</strong> the user clicks the Add Instructor button
+                 Then</strong> the Profile and Remove button panel displays 
+
+                 <hr>
+        Scenario: Validate the Remove button cancels the Add Instructor option and closes the view
+            Given</strong> the user is working in the Add Instructor 
+                 When</strong> selecting the Remove button option
+                 Then</strong> the instructor selection is removed and the Add Instructor button displays again from the original view
+
+        
+<!--Astra-50058-->
+</div>
+<button class="collapsible">Astra-50058 (Peoplesoft: Meeting building recommendations not updating when the Campus is changed)</button>
+<div class="content">
+<pre><code class="language-gherkin">
+<p><b>Feature</b>: Validate the "campus code" and "alt_campus_code" updates correctly when Campus is changed  
+        Scenario: Campus code and alt campus code are updating correctly
+            Given</strong> the user is working within the Courses and Meetings app
+                 When</strong> when updating the Campus to a specific value 
+                 Then</strong> then the codes are reflected of that change and update correctly
+
+                 <hr>
+        Scenario: Validate the Location > building selector listing updates when Campus is changed respectively 
+            Given</strong>  the user is working within the Courses and Meetings app 
+                 When</strong> the user changes the Campus to a different value within the Meetings editor
+                 Then</strong> the Location > Building selector listing also updates the buildings to match the updated Campus codes 
+
+                 <hr>
+        Scenario: Validate the changed Campus code and Alt campus code are saved when user is done editing
+            Given</strong> the user is working within the Courses and Meetings app  
+                 When</strong> the user changes the Campus to a different value within the Meetings editor - and exits Edit mode within the app 
+                 Then</strong> the updated Campus code and Alt campus codes are stickey and saved when user edits Meeting again 
+
+                 <hr>
+        Scenario: Validate the Building listings also update and match the selected Campus
+            Given</strong> the user is working within the Courses and Meetings app  
+                 When</strong> the user changes the Campus
+                 And</strong> is now viewing the Meetings details and opens an edit of the Location > Building field
+                 Then</strong> the building reccomendations match the selected & saved Campus 
+        
+
 
 <script>
     var coll = document.getElementsByClassName("collapsible");
