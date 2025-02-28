@@ -120,9 +120,9 @@
 <pre><code class="language-gherkin"></code>
 <p><b>Feature</b>: UX - Quick Filters button should not have a tooltip
         Scenario: Validate the Quick Filters button does not have a tooltip because it already has button text
-        Given</strong> the user is working within the platform
-            When</strong> using the Quick Filters buttons which happen to appear on multiple pages
-            Then</strong> the action button does not open a tooltip on mouse hover due to existing descriptive text on the button
+            Given</strong> the user is working within the platform
+                When</strong> using the Quick Filters buttons which happen to appear on multiple pages
+                Then</strong> the action button does not open a tooltip on mouse hover due to existing descriptive text on the button
 
 <!--Astra-46700-->
 </div>
@@ -131,21 +131,21 @@
 <pre><code class="language-gherkin"></code>
 <p><b>Feature</b>: UX - Add Meeting Pattern Management input needs to be updated.
         Scenario: Validate the New button used to add a Meeting Pattern Management has an updated UX change
-        Given</strong> the user is adding a new Meeting Pattern Management pattern to the schedule
-            When</strong> using the action button
-            Then</strong> the action button will be updated with the new label of "Add Meeting Pattern"
+            Given</strong> the user is adding a new Meeting Pattern Management pattern to the schedule
+                When</strong> using the action button
+                Then</strong> the action button will be updated with the new label of "Add Meeting Pattern"
 
             <hr>
         Scenario: Validate the "Add Meeting Pattern" button no longer has the "plus +" graphical icon
-        Given</strong> the new "Add Meeting Pattern" action button has been added to the UI
-            When</strong> its in place
-            Then</strong> the button will NOT contain the prior non-compliant graphical icon "plus sign +"
+            Given</strong> the new "Add Meeting Pattern" action button has been added to the UI
+                When</strong> its in place
+                Then</strong> the button will NOT contain the prior non-compliant graphical icon "plus sign +"
 
             <hr>
         Scenario: Validate the action button continues to open the "Add Meeting Pattern" modal window
-        Given</strong> the user is adding a new "Add Meeting Pattern" to the schedule
-            When</strong> opening the "Add Meeting Pattern" action bultton and modal
-            Then</strong> the "Add Meeting Pattern" modal opens correctly as it did prior to the UX label change
+            Given</strong> the user is adding a new "Add Meeting Pattern" to the schedule
+                When</strong> opening the "Add Meeting Pattern" action bultton and modal
+                Then</strong> the "Add Meeting Pattern" modal opens correctly as it did prior to the UX label change
 
 
 <!--Astra-50090-->
@@ -191,27 +191,27 @@
 <pre><code class="language-gherkin"></code>
 <p><b>Feature</b>: Validate Space title update
         Scenario: Validate new formatting
-        Given</strong> the recent updates to Rooms name formatting
-            When</strong> viewing the new format
-            Then</strong> the nomenclature will follow {building name} {room code} - {room name}  
+            Given</strong> the recent updates to Rooms name formatting
+                When</strong> viewing the new format
+                Then</strong> the nomenclature will follow {building name} {room code} - {room name}  
 
             <hr>
         Scenario: Validate the UI locations impacted by the Room formatting updates
-        Given</strong> the user is viewing the spaces viewer > header
-            When</strong> user is viewing the spaces viewer
-            Then</strong> the name formatting has been updated correctly - Sample of new format = "BCH 00000 - 00000"
+            Given</strong> the user is viewing the spaces viewer > header
+                When</strong> user is viewing the spaces viewer
+                Then</strong> the name formatting has been updated correctly - Sample of new format = "BCH 00000 - 00000"
 
             <hr>
         Scenario: Validate the changes within the Timeline
-        Given</strong> user is working within the "Timeline" feature
-            When</strong> changing the view dropdown entry from Rooms to Spaces
-            Then</strong> update the list on the left to the new format
+            Given</strong> user is working within the "Timeline" feature
+                When</strong> changing the view dropdown entry from Rooms to Spaces
+                Then</strong> update the list on the left to the new format
 
             <hr>
         Scenario: Validate the UI locations impacted by the Room formatting updates
-        Given</strong> the user is viewing the spaces viewer > header
-            When</strong> user is viewing the spaces viewer
-            Then</strong> the name formatting has been updated correctly - Sample of new format = "BCH 00000 - 00000"
+            Given</strong> the user is viewing the spaces viewer > header
+                When</strong> user is viewing the spaces viewer
+                Then</strong> the name formatting has been updated correctly - Sample of new format = "BCH 00000 - 00000"
 
 
 <!--Astra-48852-->
@@ -265,16 +265,16 @@
 <pre><code class="language-gherkin"></code>
 <p><b>Feature</b>: Adding more milliseconds to the hover state for application sidebar
         Scenario: Validate the main sidebar menu can be modified to fly out with a more user friendly delay
-        Given</strong> the user is working within the platform and hovers on the main sidebar menu
-                When the menu opens
-                And</strong> the user is either working within the menu or accidently hovers over the menu
-                Then</strong> there should be a slight delay to reduce accidental opening of the menu 
-                Or
-                Then</strong> the sidebar is changed to more of an intentional click and removing the On Hover behavior from the menu
+            Given</strong> the user is working within the platform and hovers on the main sidebar menu
+                    When the menu opens
+                    And</strong> the user is either working within the menu or accidently hovers over the menu
+                    Then</strong> there should be a slight delay to reduce accidental opening of the menu 
+                    Or
+                    Then</strong> the sidebar is changed to more of an intentional click and removing the On Hover behavior from the menu
                 <hr>
-        Given</strong> the user is working within the platform and hovers on the main sidebar menu
-                When the sidebar menu opens 
-                Then</strong> there will be a slight delay added when sidebar is opening thus providing a better UX. 
+            Given</strong> the user is working within the platform and hovers on the main sidebar menu
+                    When the sidebar menu opens 
+                    Then</strong> there will be a slight delay added when sidebar is opening thus providing a better UX. 
         
 
 
@@ -285,34 +285,34 @@
 <pre><code class="language-gherkin"></code>
 <p><b>Feature</b>: Pathways - Find and Replace Course Functionality not Working
         Scenario: User is needing to execute a Find and Replace of a specific course
-        Given</strong> the user is logging into the platform
-                When</strong> the user selects the kabob for Find and Replace Course
-                And</strong> executes a Find and Replace of a specific course Subject
-                And</strong> the user searches for the Subject
-                And</strong> the user makes the replacement with a new course
-                Then</strong> the system will find the Subject replacement and save the change
+            Given</strong> the user is logging into the platform
+                    When</strong> the user selects the kabob for Find and Replace Course
+                    And</strong> executes a Find and Replace of a specific course Subject
+                    And</strong> the user searches for the Subject
+                    And</strong> the user makes the replacement with a new course
+                    Then</strong> the system will find the Subject replacement and save the change
 
                 <hr>
         Scenario: Validate the Select Course Group option is working correctly 
-        Given</strong> the user is selecting the Select Course Group fly out menu
-                When</strong> the link is selected
-                And</strong> the user is selecting the Select Course Group fly out menu
-                And</strong> the Course Group options are displayed
-                And</strong> when clicked the course will move into the Course Group column
-                And</strong> the user clicks Next
-                Then</strong> the found courses search results should display with the checkboxes
+            Given</strong> the user is selecting the Select Course Group fly out menu
+                    When</strong> the link is selected
+                    And</strong> the user is selecting the Select Course Group fly out menu
+                    And</strong> the Course Group options are displayed
+                    And</strong> when clicked the course will move into the Course Group column
+                    And</strong> the user clicks Next
+                    Then</strong> the found courses search results should display with the checkboxes
 
                 <hr>
         Scenario: Validate the Search Course by course abbr is functional
-        Given</strong> the user is working in the Find and Replace modal within the platform
-                When</strong> the user inputs a Course subject abbr
-                Then</strong> the matching course loads in the Search Results window pane
+            Given</strong> the user is working in the Find and Replace modal within the platform
+                    When</strong> the user inputs a Course subject abbr
+                    Then</strong> the matching course loads in the Search Results window pane
 
                 <hr>
         Scenario: Validate when entering a Course Code abbr that is malformed it will not return a search value
-        Given</strong> the user is working in the Find and Replace modal within the platform
-                When</strong> the user inputs a Course subject abbr that is malformed
-                Then</strong> the "No results. Enter new search terms" error message is displayed
+            Given</strong> the user is working in the Find and Replace modal within the platform
+                    When</strong> the user inputs a Course subject abbr that is malformed
+                    Then</strong> the "No results. Enter new search terms" error message is displayed
 
  <!--Astra-45563-->
 </div>
