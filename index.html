@@ -113,6 +113,30 @@
                 Then</strong> the page will refresh correctly and will not throw a system error 
             
 
+<!--Astra-50742-->
+</div>
+<button class="collapsible"><b>UX Standards - </b>Astra-50742 (Settings-removal of unnecessary tooltips)</button>
+<div class="content"> 
+<pre><code class="language-gherkin"></code>
+<p><b>Feature</b>: UX - Multiple areas needing UX updates
+        Scenario: Validate the Academics> Pathway Courses tab> Add Pathway Course Mapping button
+            Given</strong> the user is working within the platform
+                When</strong> using the user is interacting with the Add Pathway Course Mapping button
+                Then</strong> the action button does not require a tooltip
+
+        Scenario: Validate the Exclusions> Exclusions tab > Add Exclusion button does not need a tooltip
+            Given</strong> the user is working within the Exclusions app
+                When</strong> using the user is interacting with the Add Exclusion button
+                Then</strong> the action button does not require a tooltip
+
+        Scenario: Validate the Exclusions> Faculty Exclusions tab > Add Exclusion button does not need a tooltip
+            Given</strong> the user is working within the Exclusions app
+                When</strong> using the user is interacting with the Add Exclusion button
+                Then</strong> the action button does not require a tooltip
+
+
+    
+
 <!--Astra-50762-->
 </div>
 <button class="collapsible"><b>UX Standards - </b>Astra-50762 (Filter Remove Button Tooltips)</button>
