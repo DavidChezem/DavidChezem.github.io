@@ -138,6 +138,14 @@
                 Then</strong> the action button does not require a tooltip
 
 
+        Scenario: Validate within the feature branch build environment that the preceeding platform tooltips have been removed from the specific actions buttons
+            Given</strong> the user is working within the Exclusions, Faculty Exclusions, and Pathways
+                When</strong> the user is interacting with the Action buttons mentioned 
+                Then</strong> the action button does not require a tooltip because of the existing button, action text
+
+        
+
+
 
 <!--Astra-50762-->
 </div>
