@@ -808,6 +808,50 @@
 
 <b>Service Updates</b>
 
+        Scenario: Validate when the user creates a new Workflow step - the Attributes Dynamo record is created
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> adding a new Step to the Workflow
+                And</strong> the new Step is named "Testing2"
+                Then</strong> the Step is added to Dynamo
+            
+            Adding new Step
+            {
+              "M": {
+                "color": {
+                  "S": "#FF0000"
+                },
+                "name": {
+                  "S": "Testing2"
+                },
+                "stepId": {
+                  "S": "8e15922a-e20b-4692-9bc1-30f14134c243"
+                },
+                "stepNumber": {
+                  "N": "4"
+                }
+              }
+            }
+          ]
+
+          {
+            "M": {
+              "color": {
+                "S": "#008000"
+              },
+              "name": {
+                "S": "Dynamo_Test"
+              },
+              "stepId": {
+                "S": "6e89431b-c3ed-4168-8e20-106b1df00d7f"
+              },
+              "stepNumber": {
+                "N": "5"
+              }
+            }
+          }
+        
+
+
         Scenario: Validate when creating a new Workflow - the full JSON response body is returned confirming the Workflow was created
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user creates a new Workflow
