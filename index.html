@@ -909,6 +909,22 @@
                 }
             
                 <hr>
+        Scenario: Validate when creating a new Workflow - the Workflow ID is created in Dynamo
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> a Workflow is created
+                Then</strong> the Workflow ID is created and saved in Item record
+
+                {
+                    "tenantId": {
+                      "S": "074e662e-42f1-49a1-84ed-e4a8eb73e0a3"
+                    },
+                    "sk": {
+                      "S": <b>WORKFLOW|12494ab7-0bd1-47df-bc2d-145df79abec0"</b>
+                    }
+                }
+
+
+
         Scenario: Validate when creating a new Workflow Step - JSON is returned with the Color, Name, stepID, and stepNumber
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user creates a new Step on an existing Workflow
