@@ -132,6 +132,13 @@
                  When</strong> the user selects the Edit Custom Permissions icon
                  Then</strong> the Edit Custom Permissions modal window (for the user) should open 
 
+
+        Scenario: Validate the Edit Custom Permissions modal goes away when another Permissions option is selected from the list (Regression)
+            Given</strong> the user is working within the platform and Custom Permisisons (Regression)
+                 When</strong> the user selects a different Permission from the list (Regression)
+                 Then</strong> the Edit Custom Permissions icon is not displayed (Regression)
+    
+
    
 
 
