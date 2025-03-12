@@ -1108,8 +1108,22 @@
                       }
                     ]
                   }
+                  <hr>
 
 
+        Scenario: Validate when creating a new Workflow step that the Workflow Step name is created
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> the user creates a new Step in the existing Workflow
+                Then</strong> the JSON response has the "name" created as part of the Step record
+      
+                      {
+                          "stepId": "ce5aa072-3ddd-4b08-b584-c867772ad534",
+                          "color": "#DEB887",
+                          "stepNumber": 5,
+                          <b>"name": "Hot Dog"</b>
+                      }
+                         
+                      
                 <hr>
         Scenario: Validate when creating a new Workflow step that a stepID is created
             Given</strong> the user is working within the new Workflow grid
@@ -1125,18 +1139,7 @@
 
 
                 <hr>
-        Scenario: Validate when creating a new Workflow step that the Workflow Step name is created
-            Given</strong> the user is working within the new Workflow grid
-                When</strong> the user creates a new Step in the existing Workflow
-                Then</strong> the JSON response has the "name" created as part of the Step record
-
-                {
-                    "stepId": "ce5aa072-3ddd-4b08-b584-c867772ad534",
-                    "color": "#DEB887",
-                    "stepNumber": 5,
-                    <b>"name": "Hot Dog"</b>
-                }
-                
+       
         
 <!--Astra-50058-->
 </div>
