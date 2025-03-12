@@ -965,6 +965,80 @@
                     "stepNumber": 1
                 }
 
+
+        Scenario: Validate when creating a new Workflow Step- the entire JSON array is created and saved correctly
+            Given</strong> the user is working within the new Workflow grid
+                When</strong> the user creates a new Step on an existing Workflow
+                Then</strong> the request is sent and the full Step response is added to the following array
+
+
+                {
+                    "workflowId": "12494ab7-0bd1-47df-bc2d-145df79abec0",
+                    "name": "Schedule Workflow",
+                    "steps": [
+                        {
+                            "stepId": "97f1507d-dbd3-460d-9386-315dcce37be9",
+                            "color": "#32CD32",
+                            "stepNumber": 1,
+                            "name": "Test 1"
+                        },
+                        {
+                            "stepId": "7c2f7956-b488-4b66-b1aa-dd6c25371b50",
+                            "color": "#000000",
+                            "stepNumber": 2,
+                            "name": "Test 2"
+                        },
+                        {
+                            "stepId": "e85b2967-4a8b-4616-acf3-f96d5d01b0a9",
+                            "color": "#0000FF",
+                            "stepNumber": 3,
+                            "name": "DynamoTest1"
+                        },
+                        {
+                            "stepId": "d1d436be-c84d-4596-82f2-4de2b15af240",
+                            "color": "#800080",
+                            "stepNumber": 4,
+                            "name": "DynamoTest2"
+                        },
+                        {
+                            "stepId": "0d6b31c3-a0cf-4c63-b931-2d087d7be8e7",
+                            "color": "#FFA500",
+                            "stepNumber": 5,
+                            "name": "DynamoTest3"
+                        },
+                        {
+                            "stepId": "7d15e9e5-0538-4faa-87f6-743799db57f9",
+                            "color": "#F5F5DC",
+                            "stepNumber": 6,
+                            "name": "Test 3"
+                        },
+                        {
+                            "stepId": "217b3599-f95a-4e9c-9962-319a00839d80",
+                            "color": "#FFFF00",
+                            "stepNumber": 7,
+                            "name": "Test 4"
+                        },
+                        {
+                            "stepId": "330e28b4-e044-44bc-9998-85b278095066",
+                            "color": "#FFA500",
+                            "stepNumber": 8,
+                            "name": "Test 5"
+                        }
+                    ]
+                }
+
+
+                {
+                    "color": "#FFA500",
+                    "name": "Test 5",
+                    "stepId": "330e28b4-e044-44bc-9998-85b278095066",
+                    "stepNumber": 8
+                }
+            ]
+        
+
+
+
                 <hr>
         Scenario: Validate when creating a new Workflow step that a stepID is created
             Given</strong> the user is working within the new Workflow grid
