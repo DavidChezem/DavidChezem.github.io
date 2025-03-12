@@ -1051,8 +1051,8 @@
             <hr>
         Scenario: Validate a Workflow ID is the correct response from the <b>GET /workflows/{workflow_id} endpoint"</b>
             Given</strong> the user is working within the new Workflow grid
-                When</strong> the user creates a new Step on an existing Workflow
-                Then</strong> the request is sent and the full Step response is added to the following array
+                When</strong> the new Workflow request is sent 
+                Then</strong> the following array is returned:
 
                 {
                     <b>"workflowId": "12494ab7-0bd1-47df-bc2d-145df79abec0",</b>
