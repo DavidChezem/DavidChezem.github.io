@@ -730,81 +730,81 @@
                 When</strong> when selecting the Admin > Workflow 
                 Then</strong> the user is able to open the Workflow grid from the Settings app module 
     
-                <hr>
+                
         UX Scenario:  Validate the Schedule Workflow grid contains a Color element picker
             Given</strong> the user is working within the new Schedule Workflow grid 
                  When</strong> using the Color picker function 
                  And</strong> needs to apply a specific color code to a specfic Workflow step
                  Then</strong> the user is able to apply a custom color to the Workflow steps using a drop down color picker chart
 
-                 <hr>
+                 
         Scenario: Validate the Steps ordering and numbering updates correctly when the Steps are changed
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> the user is changning the ordering of the Steps using the "grabhandles" icons
                  Then</strong> the numbering of the Steps will also change to remain in chronologicaL order
 
-                 <hr>
+                 
         UX Scenario: Validate the Schedule Workflow grid contains a display column showing the Workflow Step name
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> selecting workflow steps 
                  Then</strong> the user is able to customize and apply a Step by it's Workflow name
 
-                 <hr>
+                 
         UX Scenario: Validate the Schedule Workflow grid contains a display column showing the Workflow Step name
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> selecting workflow steps 
                  Then</strong> the user is able to customize and apply a Step by it's Workflow name
 
-                 <hr>
+                 
         UX Scenario: Validate the Schedule Workflow grid contains a display column showing the Workflow Step name
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> selecting workflow steps 
                  Then</strong> the user is able to customize and apply a Step by it's Workflow name
 
-                 <hr>
+                 
         UX Scenario: Validate the user can Add (+) a new item to the Workflow grid UI
             Given</strong> the user is working within the new Workflow grid
                  When</strong> needing to Add a new Step to current Workflow steps
                  Then</strong> there is a newly added icon which creates a the "Step" row to the Workflow grid
 
-                 <hr>
+                 
         UX Scenario: Validate when the new Step is added to the grid - the color picker defaults to white (no color)
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> the user has added a new Step to the Workflow grid
                  Then</strong> the user Color picker component will default to NO color selected
             
-                 <hr>
+                 
         Scenario: Validate the user can ADD a new Assignee to the Steps and the added user is displayed with a new Pill label
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> the user is adding an Assignee to the selected Step and has already selected a system User to be added
                  Then</strong> the newly added user will display in the Assignees column within a Pill label 
 
-                 <hr>
+                 
         Scenario: Validate the user can enter the correct Workflow step name for the added Assignee
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> the user is adding an Assignee to the selected Step and has already selected a system User to be added
                  Then</strong> a Workflow Steps name can be added and saved for the new Assignee
 
-                 <hr>
+                 
         Scenario: Validate when the user adds more then two Assignees to a Step - the grid only shows 2 actual user pills and a "+ more" pill for the remainder of Assignees
             Given</strong> the user is working within the new Schedule Workflow grid
                  When</strong> the user is adding multiple Assignees to a given Step
                  Then</strong> two Assignee name pills will display and a "+ more" pill displays indicating more then 2 Assignees are assigned 
         
-                 <hr>
+                 
         Scenario: Validate when the user Assignee is deleted from the Step - the Assignee is removed and their pill is also removed and the number of Assignees is adjusted correctly
             Given</strong> the user is working within the new Schedule Workflow grid
                 When</strong> a user Assignee is deleted from a Step and is removed
-                Then</strong> the corresponding Assignee pill is also removed from the Step
+                And</strong> the corresponding Assignee pill is also removed from the Step
                 Then</strong> the tally of Assignees is also updated correctly
 
-                <hr>
+                
         Scenario: Validate the Delete button proprely removes a Step from the grid 
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user selects the Kabob to Delete an existing Step
                 Then</strong> the Steps numbering correctly remains in chrono Steps order 
 
-                <hr>
+                
         Scenario: Validate the Display workflow info in Section Viewer
                 Given</strong> the user is working within the new Workflow grid
                     When</strong> the user selects the Kabob to Delete an existing Step
@@ -822,13 +822,13 @@
                     When</strong> the user views the updated Courses grid
                     Then</strong> the Schedule grid now contains the Workflow column 
                     
-                    <hr>
+                    
         Scenario: Validate the Schedule / Courses grid now has the Workflow filter option parallel to the current filter options
                 Given</strong> the user is working within the new Courses grid
                     When</strong> the user views the filtering options
                     Then</strong> the Schedule grid now contains the Workflow filtering window 
 
-                    <hr>
+                    
         Scenario: Validate the Schedule / Courses grid now has a column functiuon which groups the grid by Workflow step ordering
                 Given</strong> the user is working within the new Courses grid
                     When</strong> the user views the updated Schedule grid
@@ -845,7 +845,7 @@
                     Then</strong> the user can only view those Workflow step options they have permission to view / edit  
 
 
-                    <hr>
+                    
         Scenario: Validate when user does not have Workflow permission - there's option to route forward a Workflow step
                 Given</strong> the user is working within the Courses grid
                     When</strong> the user views the updated Schedule grid
@@ -858,8 +858,8 @@
                     When</strong> the user views the updated Schedule grid
                     Then</strong> the user can multi-select and Route Forward multiple steps together 
             
+                                
                                 <hr>
-
 
 <b>Accessibility</b>
 
@@ -868,50 +868,50 @@
                 When</strong> the user is utlizing the TAB key and begins Tabbing
                 Then</strong> the cursor focus highlights the first Step in the grid
 
-                <hr>
+                
         Scenario: Validate the TAB key navigates to the Color picker and hitting Enter opens the picker
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating down the Workflow app to the Color picker
                 Then</strong> once the Color picker is in focus - hitting the Enter key opens the Color picker 
 
-                <hr>
+                
         Scenario: Validate within the Color picker - the TAB key moves cursor focus around the color options of the Color picker 
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating down the Workflow app to the Color picker
                 Then</strong> once the Color picker is in TAB focus - the cursor moves through each color option within the picker and keeps focus within the picker
 
-                <hr>
+                
         Scenario: Validate within the Color picker, the user selects a specific color using only the ENTER key
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating down the Workflow app to the Color picker
                 Then</strong> once the Color picker is within TAB focus, the user can select a specific color using only the ENTER 
                 Then</strong> the cursor focus returns to the Step row
 
-                <hr>
+                
         Scenario: Validate tabbing cursor focus moves from the Color picker to the Workflow Steps field
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating from the Color picker to the Workflow Steps fields
                 Then</strong> the focus moves from the Color picker to the Workflow Steps field and the text field is in highlighted focus (user can now type)  
     
-                <hr> 
+                
         Scenario: Validate tabbing cursor focus moves from the Workflow Steps field to the Assignee edit icon
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating from the workflow Steps to the Assignees edit icon
                 Then</strong> the focus moves from the Workflow Steps to the Assigneees edit and the Enter key activates the Edit function (pencil icon)
         
-                <hr> 
+                
         Scenario: Validate tabbing cursor focus moves from the Assignees to the Actions kabobs
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating from Assignees and needs to move to the Actions option
                 Then</strong> the focus moves from the Assignees edit function and will TAB to the Actions kabob option - and the Enter key activates the kabob (More options)
 
-                <hr>
+                
         Scenario: Validate tabbing cursor focus moves from the Actions kabob to the next Steps row 
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user is utlizing the TAB key and is navigating from the Action kabob to the next cursor section
                 Then</strong> the focus moves from the Actions kabob to the next Steps row in the grid
 
-                <hr>
+                
 
         Scenario: Validate when the Worflow feature flipper is set to TRUE - the Settings will include the Workflow option
             Given</strong> the user is working within the new Workflow grid
@@ -923,14 +923,14 @@
 <b>Service Updates</b>
 
 
-    Scenario: Validate when a workflow is created the record is created in Workflows-v1
+        Scenario: Validate when a workflow is created the record is created in Workflows-v1
             Given</strong> the user is working within the Settings and creates a Workflow
                 When</strong> adding a new Workflow
                 Then</strong> the Workflow is added to the table
                 
                 Includes the table attributes: <b>"tenantId (String). sk (String), name, steps, workflowId"</b>"
 
-        <hr>
+        
 
         Scenario: Validate when the user creates a new Workflow step - the Attributes Dynamo record is created
             Given</strong> the user is working within the new Workflow grid
