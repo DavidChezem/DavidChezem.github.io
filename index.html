@@ -740,7 +740,7 @@
                  <hr>
         Scenario: Validate the Steps ordering and numbering updates correctly when the Steps are changed
             Given</strong> the user is working within the new Schedule Workflow grid
-                 When</strong> the user is changning the ordering of the Steps
+                 When</strong> the user is changning the ordering of the Steps using the "grabhandles" icons
                  Then</strong> the numbering of the Steps will also change to remain in chronologicaL order
 
                  <hr>
@@ -808,9 +808,32 @@
         Scenario: Validate the Display workflow info in Section Viewer
                 Given</strong> the user is working within the new Workflow grid
                     When</strong> the user selects the Kabob to Delete an existing Step
-                    Then</strong> the Steps numbering correctly remains in chrono Steps order    
+                    Then</strong> the Steps numbering correctly remains in chrono Steps order   
                     
-                     
+                    <hr>   
+
+
+<b>Schedule grid perspective</b> 
+
+
+                <hr>
+        Scenario: Validate the Schedule / Courses grid display has the Workflow column
+                Given</strong> the user is working within the new Courses grid
+                    When</strong> the user views the updated Courses grid
+                    Then</strong> the Schedule grid now contains the Workflow column 
+                    
+                    <hr>
+        Scenario: Validate the Schedule / Courses grid now has the Workflow filter option parallel to the current filter options
+                Given</strong> the user is working within the new Courses grid
+                    When</strong> the user views the filtering options
+                    Then</strong> the Schedule grid now contains the Workflow filtering window 
+
+
+        Scenario: Validate the Schedule / Courses grid now has a column functiuon which groups the grid by Workflow step ordering
+                Given</strong> the user is working within the new Courses grid
+                    When</strong> the user views the updated Schedule grid
+                    Then</strong> the Schedule grid can be sorted by current Workflow steps ordering
+
 
                 <hr>             
 <b>Accessibility</b>
