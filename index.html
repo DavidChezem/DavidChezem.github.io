@@ -7,11 +7,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />  
     <style>
         body {
-            background-color: #c9f2d1; /* Light gray background for the entire page */
+            background-color: #6bd2db; /* Light gray background for the entire page */
             font-family: 'Roboto', sans-serif;
         }
         pre {
-            background-color: #c9f2d1; /* Light gray background for code blocks */
+            background-color: #ffffff; /* Light gray background for code blocks */
             padding: 10px; /* Adding some padding for better readability */
             border-radius: 5px; /* Optional: Rounded corners */
         }
@@ -27,14 +27,14 @@
         }
 
         .active, .collapsible:hover {
-            background-color: #faebd7;
+            background-color: #a4c2ff;
         }
 
         .content {
             padding: 0 30px;
             display: none;
             overflow: hidden;
-            background-color: #396d7c;
+            background-color: #000000;
         }
         .center-text { 
             text-align: center; 
@@ -561,6 +561,12 @@
                  Then</strong> all of the View check options have been selected 
 
 
+        Scenario: Validate when Custom permissions View options allows user to Select All from the Field row and All permissions details are checked correctly
+             Given</strong> a user has been assigned Custom level permissions within a specific Department
+             When</strong> the Admin user checks the the View check at the Field level
+                     Then</strong> all of the View check options have been selected 
+
+
 
  <!--Astra-44936-->
 </div> 
@@ -780,6 +786,17 @@
             Given</strong> the user is working within the new Workflow grid
                 When</strong> the user selects the Kabob to Delete an existing Step
                 Then</strong> the Steps numbering correctly remains in chrono Steps order 
+
+        
+        Scenario: Validate the Display workflow info in Section Viewer
+                Given</strong> the user is working within the new Workflow grid
+                    When</strong> the user selects the Kabob to Delete an existing Step
+                    Then</strong> the Steps numbering correctly remains in chrono Steps order    
+                    
+                    
+
+
+        
 
                 <hr>             
 <b>Accessibility</b>
