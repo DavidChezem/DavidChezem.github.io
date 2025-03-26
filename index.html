@@ -834,6 +834,18 @@
                     When</strong> the user views the updated Schedule grid
                     Then</strong> the Schedule grid can be sorted by current Workflow steps ordering
 
+                    <hr>
+        Scenario: Validate when user does not have Workflow permission - there's option to route forward a Workflow step
+                Given</strong> the user is working within the Courses grid
+                    When</strong> the user views the updated Schedule grid
+                    Then</strong> the user has Read Only view of the Workflow for each Course 
+                    
+                    
+                    <hr>
+        Scenario: Validate when user has Workflow permission - they can use the Route Forward button to move multiple steps forward  
+                    Given</strong> the user is working within the Courses grid
+                        When</strong> the user views the updated Schedule grid
+                        Then</strong> the user can multi-select and Route Forward multiple steps together 
 
                     <hr>
 
