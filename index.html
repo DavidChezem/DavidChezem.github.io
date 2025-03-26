@@ -816,7 +816,7 @@
 <b>Schedule grid perspective</b> 
 
 
-                    <hr>
+                    
         Scenario: Validate the Schedule / Courses grid display has the Workflow column
                 Given</strong> the user is working within the new Courses grid
                     When</strong> the user views the updated Courses grid
@@ -835,7 +835,22 @@
                     Then</strong> the Schedule grid can be sorted by current Workflow steps ordering
 
 
-                <hr>             
+                    <hr>
+        Scenario: Validate the 
+                 Given</strong> the user is working within the new Courses grid
+                    When</strong> the user views the updated Schedule grid
+                    Then</strong> the Schedule grid can be sorted by current Workflow steps ordering
+                    <hr>
+
+<b>Schedule grid permission functions</b> 
+
+
+        Scenario: Validate the current user permissions level determines which Workflow status is viewable on the schedule grid
+                Given</strong> the user is working within the new Workflow / Courses grid
+                    When</strong> the user views the updated schedule grid with Workflow column options 
+                    Then</strong> the user can only view those Workflow step options they have permission to view / edit  
+
+
 <b>Accessibility</b>
 
         Scenario: Validate the TAB key navigates from the top of the page to the first Step within the Workflow gris
