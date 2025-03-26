@@ -677,10 +677,29 @@
                  Then</strong> the Cancel and Save buttons are active  - Delete button is not displayed
 
                  <hr>
-        Functional Scenario: Validate 
-            Given</strong> the user is working in the Courses calendar "Week" view and selects a Calendar item
-                 When</strong> the user selects the Section course item on the Week view - and both Add/Clone Sections and Delete Sections are set to True (on) 
-                 Then</strong> both of these permissions are still honored and are set to True (on) matching the custom permissions for that User 
+                 
+        Functional Scenario: Validate the "Edit" department permissions function includes Add/Clone section level permissions
+            Given</strong> the user is working within the Permissions functions 
+                 When</strong> the user selects the Edit department permissions priv
+                 Then</strong> the permission allows the user to Edit, Add/Clobe, and Delete courses and sections
+
+
+                 <hr>
+                 
+        Functional Scenario: Validate the Publish permission allows the user access to Publish
+            Given</strong> the user is working within the Permissions functions 
+                 When</strong> an Admin user grants Publish permission to another user
+                 Then</strong> that user now has permission to Publish
+                 
+                 <hr>
+                 
+        Functional Scenario: Validate the Publish permission allows the user access to Publish
+            Given</strong> the user is working within the Permissions functions 
+                 When</strong> an Admin user grants Publish permission to another user
+                 Then</strong> that user now has permission to Publish
+
+
+        
   
                  
 <!--Astra-49891-->
