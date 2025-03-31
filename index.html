@@ -810,8 +810,8 @@
                     When</strong> the user selects the Kabob to Delete an existing Step
                     Then</strong> the Steps numbering correctly remains in chrono Steps order   
                     
+                    
                     <hr>   
-
 
 <b>Schedule grid perspective</b> 
 
@@ -833,6 +833,9 @@
                 Given</strong> the user is working within the new Courses grid
                     When</strong> the user views the updated Schedule grid
                     Then</strong> the Schedule grid can be sorted by current Workflow steps ordering
+
+
+            
 
         <hr>
 
@@ -930,7 +933,36 @@
                 
                 Includes the table attributes: <b>"tenantId (String). sk (String), name, steps, workflowId"</b>"
 
-        
+               
+         Scenario: Validate all the created Workflows can be queried within the new endpoint: https://69vm1n842j.execute-api.us-east-1.amazonaws.com/v1-dev/workflows/all
+                Given</strong> a series of Workflows have been created within a specific tenant
+                    When</strong> executing an endpoint query retrieval of all Workflows
+                    Then</strong> the saved Workflows come back as a successful data return
+
+                    [
+                    {
+                      "id": "12494ab7-0bd1-47df-bc2d-145df79abec0",
+                      "name": "Schedule"
+                    },
+                    {
+                      "id": "2acbf32d-e255-4b29-9612-4c000c903459",
+                      "name": "Lavaflow"
+                    },
+                    {
+                      "id": "7ea873f7-756f-493e-9769-3ff4648cf79b",
+                      "name": "Evenflow"
+                    },
+                    {
+                      "id": "9c1dca6c-62c2-439c-a9d7-89320f55e3e2",
+                      "name": "CauliFLOWer"
+                    },
+                    {
+                      "id": "acc0b307-ab80-4b8b-939f-245ab46cd1fd",
+                      "name": "Fruitflow"
+                    }
+                  ]
+    
+
 
         Scenario: Validate when the user creates a new Workflow step - the Attributes Dynamo record is created
             Given</strong> the user is working within the new Workflow grid
