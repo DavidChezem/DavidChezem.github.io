@@ -934,7 +934,7 @@
                 Includes the table attributes: <b>"tenantId (String). sk (String), name, steps, workflowId"</b>"
 
                
-         Scenario: Validate all the created Workflows can be queried within the new endpoint: https://69vm1n842j.execute-api.us-east-1.amazonaws.com/v1-dev/workflows/all
+         Scenario: Validate all the Workflows can be queried within the new endpoint: https://69vm1n842j.execute-api.us-east-1.amazonaws.com/v1-dev/workflows/all
                 Given</strong> a series of Workflows have been created within a specific tenant
                     When</strong> executing an endpoint query retrieval of all Workflows
                     Then</strong> the saved Workflows come back as a successful data return
@@ -1071,6 +1071,61 @@
                       "S": <b>WORKFLOW|12494ab7-0bd1-47df-bc2d-145df79abec0"</b>
                     }
                 }
+
+
+        Scenario: Validate the Workflow array can be returned based on workflow_ID
+            Given</strong> the the Workflow has been created for the tenant
+                When</strong> a Workflow is created within the data schema
+                Then</strong> the Workflow model is returned
+    
+                {
+                    "workflowId": "12494ab7-0bd1-47df-bc2d-145df79abec0",
+                    "name": "Schedule",
+                    "steps": [
+                      {
+                        "color": "#000000",
+                        "name": "Refining",
+                        "stepId": "7c2f7956-b488-4b66-b1aa-dd6c25371b50",
+                        "stepNumber": 1
+                      },
+                      {
+                        "color": "#0000FF",
+                        "name": "Feed The Goats",
+                        "stepId": "e85b2967-4a8b-4616-acf3-f96d5d01b0a9",
+                        "stepNumber": 2
+                      },
+                      {
+                        "color": "#800080",
+                        "name": "Pass The Red Ball",
+                        "stepId": "d1d436be-c84d-4596-82f2-4de2b15af240",
+                        "stepNumber": 3
+                      },
+                      {
+                        "color": "#FFA500",
+                        "name": "Hugs (Available upon Request)",
+                        "stepId": "0d6b31c3-a0cf-4c63-b931-2d087d7be8e7",
+                        "stepNumber": 4
+                      },
+                      {
+                        "color": "#F5F5DC",
+                        "name": "Serve Waffles",
+                        "stepId": "7d15e9e5-0538-4faa-87f6-743799db57f9",
+                        "stepNumber": 5
+                      },
+                      {
+                        "color": "#FFFF00",
+                        "name": "Disco Party",
+                        "stepId": "217b3599-f95a-4e9c-9962-319a00839d80",
+                        "stepNumber": 6
+                      },
+                      {
+                        "color": "#F08080",
+                        "name": "Cold Harbor Complete",
+                        "stepId": "e5b21d18-ae6b-44c7-bdcd-43b83a621a9f",
+                        "stepNumber": 7
+                      }
+                    ]
+                  }  
 
                 <hr>
 
