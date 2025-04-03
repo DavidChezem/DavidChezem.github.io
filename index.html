@@ -396,6 +396,7 @@
                     When</strong> the user inputs a Course subject abbr that is malformed
                     Then</strong> the "No results. Enter new search terms" error message is displayed
 
+
  <!--Astra-45563-->
 </div>
 <button class="collapsible"><b>Scheduling - </b>Astra-45563 (During the scheduling process we need to show more information about space conflicts)</button>
@@ -762,10 +763,10 @@
                  Then</strong> there is a newly added icon which creates a the "Step" row to the Workflow grid
 
                  
-        UX Scenario: Validate when the new Step is added to the grid - the color picker defaults to white (no color)
-            Given</strong> the user is working within the new Schedule Workflow grid
+        UX Scenario: Validate when the new Step is added - the assigned color is randomly assigned until the user selects a color 
+            Given</strong> the user is working within the new Workflow grid 
                  When</strong> the user has added a new Step to the Workflow grid
-                 Then</strong> the user Color picker component will default to NO color selected
+                 Then</strong> the user Color picker component will default to a random color until the user picks one 
             
                  
         Scenario: Validate the user can ADD a new Assignee to the Steps and the added user is displayed with a new Pill label
