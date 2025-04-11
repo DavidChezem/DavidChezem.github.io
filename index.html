@@ -808,7 +808,7 @@
                     <hr>  
 
                
-<b>Sections and Courses UI functions</b> 
+<b>Sections/Courses details UI functions</b> 
 
         Scenario: Validate when viewing the Courses details - the Workflow banner displays in the right corner of the screen
                 Given</strong> the user is working within the Sections/ Courses details view
@@ -833,6 +833,17 @@
                     When</strong> the user selects a specific Course section
                     Then</strong> the Workflow banner displays a functional Previous arrow and Next arrow for updating the Step
 
+
+        Scenario: Validate when viewing the Workflow details - when the final workflow Step is displayed the Next arrow is disabled
+                Given</strong> the user is working within the Sections/ Courses
+                    When</strong> the user selects a specific Course section and views the Workflow banner showing the final Workflow step
+                    Then</strong> the Workflow banner displays a disabled Next arrow button
+
+
+        Scenario: Validate when viewing the Workflow details - when the first workflow Step is displayed the Previous arrow is disabled
+                Given</strong> the user is working within the Sections/ Courses
+                    When</strong> the user selects a specific Course section and views the Workflow banner showing the first Workflow step
+                    Then</strong> the Workflow banner displays a disabled Previous arrow button
 
                     <hr>  
 
