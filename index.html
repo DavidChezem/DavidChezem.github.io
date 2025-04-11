@@ -822,10 +822,17 @@
                     Then</strong> the Workflow banner displays the labels "Workflow" and "Schedule"
                     
                     
-        Scenario: Validate when viewwing the Workflow details - the banner displays the label of "Workflow & Schedule"
+        Scenario: Validate when viewwing the Workflow details - the banner displays a viewer displaying the current Step status
                 Given</strong> the user is working within the Sections/ Courses
                     When</strong> the user selects a specific Course section
-                    Then</strong> the Workflow banner displays the labels "Workflow" and "Schedule"
+                    Then</strong> the Workflow banner displays the current Step status of the Workflow
+
+
+        Scenario: Validate when viewwing the Workflow details - the details includes the Previous and Next functional UI arrow buttons
+                Given</strong> the user is working within the Sections/ Courses
+                    When</strong> the user selects a specific Course section
+                    Then</strong> the Workflow banner displays a functional Previous arrow and Next arrow for updating the Step
+
 
                     <hr>  
 
