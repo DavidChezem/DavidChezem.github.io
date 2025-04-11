@@ -846,10 +846,16 @@
                     Then</strong> the Workflow banner displays a disabled Previous arrow button
 
 
-        Scenario: Validate when viewing the Workflow details, clicking the Next arrow will move to the next Step
+        Scenario: Validate when viewing the Workflow details, clicking the Workflow "Next" arrow will move to the next Step
                 Given</strong> the user is working within the Sections/ Courses
                     When</strong> the user selects a specific Course section Workflow and clicks the Next arrow button
                     Then</strong> the Workflow banner displays moves to the next Step
+
+
+        Scenario: Validate when viewing the Workflow details, clicking the Workflow "Previous" arrow will move to the Previous step in the Workflow sequence
+                Given</strong> the user is working within the Sections/ Courses
+                    When</strong> the user selects a specific Course section Workflow and clicks the Previous arrow button
+                    Then</strong> the Workflow banner displays moves to the Previous step in the sequence 
 
                     <hr>  
 
