@@ -1413,14 +1413,23 @@
 <p style="font-size: 20px;text-align: center;">Feature: Learn about the architecture and infrastructure so we can deploy bug fixes asap</p> 
         
 
-<b>Creating New Events</b>
+<b>Creating New Events and Bookings</b>
 
-        Scenario: Validate when New Events 
-            Given</strong> the user is 
-                When</strong> when 
-                Then</strong> then the 
+        Scenario: Validate when Events have a conflicting booking time, the Event sytem triggers a conflict message (Corresponding to Astra-51997)
+            Given</strong> the user is booking an event in a Room which already an existing booked event
+                When</strong> when attempting to book the event 
+                Then</strong> the Event Room/Time should display as Unavailable
+                Then</strong> the Event app will generated a triggered alert indicating the time and room is not avaiable for booking 
 
 
+        Scenario: Validate when 
+             Given</strong> the user is 
+                 When</strong> when 
+                 Then</strong> the 
+      
+
+
+        
        
         
 <!--Astra-50058-->
