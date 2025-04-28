@@ -1415,11 +1415,11 @@
 
 <b>Creating New Events and Bookings</b>
 
-        Scenario: Validate when Events have a conflicting booking time, the Event sytem triggers a conflict message (Scenario corresponds with Astra-51997)
-            Given</strong> the user is booking an event in a Room which already an existing booked event
-                When</strong> when attempting to book the event 
+        Scenario: Validate when Events have a conflicting booking time, the Event system triggers a conflict message (Scenario corresponds with Astra-51997)
+            Given</strong> the user is booking an event in a Room which already has an existing booked event
+                When</strong> attempting to book the event 
                 Then</strong> the Event Room/Time should display as Unavailable
-                Then</strong> the Event app will generated a triggered alert indicating the time and room is not avaiable for booking 
+                And</strong> the Event app will generated a triggered alert indicating the time and room is not availble for booking 
 
 
         Scenario: Validate when 
