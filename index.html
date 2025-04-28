@@ -1422,14 +1422,14 @@
                 And</strong> the Event app will generated a triggered alert indicating the time and room is not available for booking 
 
 
-        Scenario: Validate when 
-             Given</strong> the user is 
-                 When</strong> when 
-                 Then</strong> the 
-      
+        Scenario: Validate when a Booking is created for an Event - the system displays the new Booking without the user closing and re-opening the Event
+             Given</strong> the user has added a Booking to a new or existing Event
+                 When</strong> viewing the Event in the Events grid
+                 Then</strong> the new Booking automatically displays nested under the Event w/o requiring a reload of the Events
 
 
         
+
        
         
 <!--Astra-50058-->
