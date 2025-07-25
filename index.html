@@ -68,6 +68,19 @@
                 Then the schedule functions can be performed in a quick and performant manner
 
          ** Acceptance criteria: I can see my section and section details, grouped under my courses.
+
+         <hr>
+        Scenario: The users will have the ability to Open Filter Dropdown
+            Given the user is on the page with the filter functionality,
+                When the users click the "Filter" button (next to initials)
+                Then the filter dropdown should appear with existing filters (if any) pre-populated.
+
+        <hr>
+        Scenario: The users will have the ability to Add New Filter
+            Given the filter dropdown is in used
+                When the user clicks "Add Filter"
+                Then a new filter row with Column, Operator, and Value fields should be added to the dropdown
+
              
 
 
