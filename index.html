@@ -79,8 +79,12 @@
         Scenario: The users will have the ability to Add New Filter
             Given the filter dropdown is open and being used
                 When the user clicks "Add Filter"
-                Then a new filter row with Column, Operator, and Value fields should be added to the dropdown
+                Then a new filter row with Column, Operator, and Value fields is added to the dropdown
 
+          <hr>
+        Scenario: The users will have the ability to perform Logical Grouping
+            Given the user is working with multiple filters
+                Then a new filter row with Column, Operator, and Value fields is added to the dropdown
              
 
 
