@@ -72,22 +72,41 @@
          ** Acceptance criteria: I can see my section and section details, grouped under my courses.
 
          <hr>
-        Scenario: The users will have the ability to Open Filter Dropdown
+        Scenario: Validate users will have the ability to Open Filter Dropdown
             Given the user is on the page with the filter functionality,
                 When the users click the "Filter" button (next to initials)
                 Then the filter dropdown should appear with existing filters (if any) pre-populated.
 
         <hr>
-        Scenario: The users will have the ability to Add New Filter
+        Scenario: Validate users will have the ability to Add New Filter
             Given the filter dropdown is open and being used
                 When the user clicks "Add Filter"
                 Then a new filter row with Column, Operator, and Value fields is added to the dropdown
 
           <hr>
-        Scenario: The users will have the ability to perform Logical Grouping
+        Scenario: Validate users will have the ability to perform Logical Grouping
             Given the user is working within the Schedule application
               And the user is working with multiple filters
               Then a new filter row with Column, Operator, and Value fields is added to the dropdown
+
+        <hr>
+        Scenario: Validate users will have the ability to apply filters
+            Given the user has entered filter criteria
+              When the user clicks "Apply"
+              Then the dropdown should close and the filtered results should be shown based on the entered criteria
+
+        <hr>
+        Scenario: Validate the app can Show Filter Count
+            Given the user has at least one filter active
+              Then  the "Filter" button should display the number of active filters in parentheses, e.g., Filter (2)
+
+        <hr>
+        Scenario: Validate the app can Clear the Filter
+            Given the user has one or more filters displayed
+                When the user clicks the trash icon next to a filter row,
+                Then that filter should be removed from the list and the count should update accordingly after applying
+  
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -213,10 +232,21 @@
         <td>UX Standards - Validate the user knows where they are in the platform</td>
         <td class="failed">In development...</td>
        </tr>
-             <tr>
+        <tr>
         <td>UX Standards - Validate there is contrast in the column headers so user can differentiate between the data and the headers</td>
         <td class="failed">In development...</td>
        </tr>
+        <tr>
+        <td>Validate the user will have the ability to Apply filters</td>
+        <td class="failed">In development...</td>
+        </tr>
+        <tr>
+        <td>Validate the user will have the ability to Clear Filters</td>
+        <td class="failed">In development...</td>
+         </tr>
+        <tr>
+        <td>Validate the user will have the ability to Show Filter Count</td>
+        <td class="failed">In development...</td>
     </tbody>
   </table>
 
