@@ -83,8 +83,9 @@
 
           <hr>
         Scenario: The users will have the ability to perform Logical Grouping
-            Given the user is working with multiple filters
-                Then a new filter row with Column, Operator, and Value fields is added to the dropdown
+            Given the user is working within the Schedule application
+              And the user is working with multiple filters
+              Then a new filter row with Column, Operator, and Value fields is added to the dropdown
 
 <!DOCTYPE html>
 <html lang="en">
@@ -122,7 +123,7 @@
     }
 
     th, td {
-      padding: 12px 18px;
+      padding: 5px 8px;
       text-align: left;
     }
 
