@@ -113,7 +113,7 @@
 
          <hr>
         Scenario: Validate academic scheduler can view all their sections in an academic year across all 4 terms
-        Scenario: Validate an academic scheduler can create a schedule that provides the courses the students need
+        Scenario: Validate academic scheduler can create a schedule that provides the courses the students need
             Given the user is an academic scheduler and needs to view all their Sections
                 When the user clicks into the Sections dettails
                 Then the academic scheduler user can view and can create a schedule that provides the courses their students require
@@ -128,6 +128,18 @@
         Scenario: Validate there will be no additional migration and/or implementation issues with Annual Scheduling moving to PostgreSQL
             Given the user is working with Ad Astra to migrate data into the new platform
                 Then the courses, sections, section meetings data will migrate with minimal to no issues
+
+        <hr>
+        UX Scenario: Validate the user can view the Schedule page header
+            Given the user is working within the Schedule app
+                When opening the Schedule page
+                Then the Schedule title will display in the Upper left corner
+         <hr>
+        UX Scenario: Validate the Academic Year listings are displayed on the page using the Date - Date formatting
+            Given the user is working within the Schedule app
+                When opening the Schedule page
+                Then the Academic Years will are displayed as a Column header
+        
 
 
 <!DOCTYPE html>
@@ -201,7 +213,7 @@
   <div class="filter-container">
     <select id="status-filter" onchange="filterResults()">
       <option value="all">All</option>
-      <option value="passed">Things Are Looking Good</option>
+      <option value="passed">Looking Good</option>
       <option value="failed">In Development</option>
     </select>
   </div>
@@ -217,68 +229,90 @@
     <tbody>
       <tr>
         <td>Validate user can view all of the sections within an academic year</td>
-        <td class="passed ">Things Are Looking Good</td>
+        <td class="passed ">Looking Good</td>
       </tr>
+
        <tr>
         <td>Validate academic scheduler user can view all of the sections within an academic year</td>
         <td class="failed ">In Development</td>
-      </tr>
+      
+        </tr>
+
        <tr>
         <td>Validate user can view all their courses for an academic year in a performant way</td>
         <td class="failed">In Development</td>
       </tr>
+
        <tr>
         <td>Validate there are no additional migration and/or implementation issues with Annual Scheduling moving to PostgreSQL</td>
         <td class="failed">In Development</td>
       </tr>
+
        <tr>
         <td>Validate user can view each section row with the combined "Course/Section" identifier (e.g., "BIO101/01")</td>
         <td class="failed">In Development</td>
       </tr>
+
        <tr>
         <td>Validate user will have the ability to Open Filter Dropdown</td>
         <td class="failed">In Development</td>
       </tr>
+
       <tr>
         <td>Validate user will have the ability to Add New Filter</td>
         <td class="failed">In Development</td>
       </tr>
+
       <tr>
         <td>Validate user will have the ability to perform Logical Grouping</td>
         <td class="failed">In Development</td>
       </tr>
+
        <tr>
         <td>Validate user can filter my sections to see exactly what I want to streamline my workflows</td>
         <td class="failed">In Development</td>
       </tr>
+
        <tr>
         <td>Validate the user can view details for a specific section</td>
         <td class="failed">In Development</td>
        </tr>
+
        <tr>
         <td>Validate user can update the section details</td>
         <td class="failed">In Development</td>
        </tr>
+
          <tr>
         <td>Validate user can view all the sections without the course roll up</td>
         <td class="failed">In Development</td>
        </tr>
+
           <tr>
-        <td>UX Standards - Validate the user knows where they are in the platform</td>
+        <td>UX Standard - Validate the user knows where they are in the platform</td>
         <td class="failed">In Development</td>
        </tr>
+
         <tr>
-        <td>UX Standards - Validate there is contrast in the column headers so user can differentiate between the data and the headers</td>
+        <td>UX Standard - Validate there is contrast in the column headers so user can differentiate between the data and the headers</td>
         <td class="failed">In Development</td>
        </tr>
+
+        <tr>
+        <td>UX Standard - Validate the user can view the Schedule page header</td>
+        <td class="passed">Looking Good</td>
+       </tr>
+
         <tr>
         <td>Validate the user will have the ability to Apply filters</td>
         <td class="failed">In Development</td>
         </tr>
+
         <tr>
         <td>Validate the user will have the ability to Clear Filters</td>
         <td class="failed">In Development</td>
          </tr>
+
         <tr>
         <td>Validate the user will have the ability to Show Filter Count</td>
         <td class="failed">In Development</td>
