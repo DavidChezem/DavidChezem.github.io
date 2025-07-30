@@ -139,9 +139,21 @@
             Given the user is working within the Schedule app
                 When opening the Schedule page
                 Then the Academic Years will are displayed as a Column header
+
+         <hr>
+        UX Scenario: Validate the Courses grid is broken out into sortable columns
+            Given the user is working within the Schedule app
+                Then the courses grid will be displayed across sortable header columns
+
+
+        <hr>
+        UX Scenario: Validate the grid has a Course IDs row with Course ID displayed in the marketing Blue text
+            Given the user is working within the Schedule app
+                Then the Courses grid will display each horizontal course listing
+
         
-
-
+        
+        
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -161,7 +173,7 @@
 
     .filter-container {
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 25px;
     }
 
     select {
@@ -305,6 +317,16 @@
 
         <tr>
         <td>UX Standard - Validate the Academic Year listings are displayed on the page using the (YYYY - YYYY) formatting</td>
+        <td class="passed">Looking Good</td>
+       </tr>
+
+        <tr>
+        <td>UX Standard - Validate the Courses grid is broken out into sortable columns</td>
+        <td class="passed">Looking Good</td>
+       </tr>
+
+       <tr>
+        <td>UX Standard - Validate the Course grid has a Course IDs row with Course ID displayed in the marketing Blue text</td>
         <td class="passed">Looking Good</td>
        </tr>
 
