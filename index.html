@@ -53,7 +53,7 @@
 <!--Astra-54882-->
 </div>
 <button class="collapsible"><b><p style="color: blue;">Annual Scheduling (updated 7/29/2025)</p>
-</b>Astra-54882 (Schedule users should be able to view all their sections for an academic year in a performant way)</button>
+</b>Astra-54882,54625,54883 (Schedule users should be able to view all their sections for an academic year in a performant way)</button>
 <div class="content">
 <pre><code class="language-gherkin">
 <p style="font-size: 20px;text-align: center;"> Feature: Annual Scheduling - Phase 1 Room Scheduling</p>    
@@ -105,10 +105,27 @@
             Given the user has one or more filters displayed
                 When the user clicks the trash icon next to a filter row,
                 Then that filter should be removed from the list and the count should update accordingly after applying
+
+         <hr>
+        Scenario: Validate the user can see their Section and Section details
+            Given the user is working within the Section and Section details app
+                Then the user is able to view their Sections and Section details within the new Scheduling app 
+
+         <hr>
+        Scenario: Validate an academic scheduler can view all their sections in an academic year across all 4 terms
+        Scenario: Validate an academic scheduler can create a schedule that provides the courses the students need
+            Given the user is an academic scheduler and needs to view all their Sections
+                When the user clicks into the Sections dettails
+                Then the academic scheduler user can view and can create a schedule that provides the courses their students require
+
+         <hr>
+        Scenario: Validate a user can view each section row and see the combined "Course/Section" identifier (e.g., "BIO101/01")
+            Given the user is working within the Section pages
+                When the sections view is rendered 
+                Then the user can see each section row displayed with the combined "Course/Section" identifier (e.g., "BIO101/01")
+
   
 
-
-//Test Scenarios testing grid settings
 
 <!DOCTYPE html>
 <html lang="en">
@@ -187,8 +204,6 @@
   </div>
 
 
-//Test Scenarios table grid
-
   <table id="results-table">
     <thead>
       <tr>
@@ -202,56 +217,64 @@
         <td class="failed ">In Development</td>
       </tr>
        <tr>
+        <td>Validate academic scheduler user can view all of the sections within an academic year</td>
+        <td class="failed ">In Development</td>
+      </tr>
+       <tr>
         <td>Validate users can view all their courses for an academic year in a performant way</td>
-        <td class="failed">In development</td>
+        <td class="failed">In Development</td>
+      </tr>
+       <tr>
+        <td>Validate users can view each section row with the combined "Course/Section" identifier (e.g., "BIO101/01")</td>
+        <td class="failed">In Development</td>
       </tr>
        <tr>
         <td>Validate users will have the ability to Open Filter Dropdown</td>
-        <td class="failed">In development</td>
+        <td class="failed">In Development</td>
       </tr>
       <tr>
         <td>Validate users will have the ability to Add New Filter</td>
-        <td class="failed">In development</td>
+        <td class="failed">In Development</td>
       </tr>
       <tr>
         <td>Validate users will have the ability to perform Logical Grouping</td>
-        <td class="failed">In development</td>
+        <td class="failed">In Development</td>
       </tr>
        <tr>
         <td>Validate the user can filter my sections to see exactly what I want to streamline my workflows</td>
-        <td class="failed">In development</td>
+        <td class="failed">In Development</td>
       </tr>
        <tr>
         <td>Validate the user can view details for a specific section</td>
-        <td class="failed">In development</td>
+        <td class="failed">In Development</td>
        </tr>
        <tr>
         <td>Validate the user can update the section details</td>
-        <td class="failed">In development</td>
+        <td class="failed">In Development</td>
        </tr>
          <tr>
         <td>Validate the user can view all the sections without the course roll up</td>
-        <td class="failed">In development</td>
+        <td class="failed">In Development</td>
        </tr>
           <tr>
         <td>UX Standards - Validate the user knows where they are in the platform</td>
-        <td class="failed">In development</td>
+        <td class="failed">In Development</td>
        </tr>
         <tr>
         <td>UX Standards - Validate there is contrast in the column headers so user can differentiate between the data and the headers</td>
-        <td class="failed">In development</td>
+        <td class="failed">In Development</td>
        </tr>
         <tr>
         <td>Validate the user will have the ability to Apply filters</td>
-        <td class="failed">In development</td>
+        <td class="failed">In Development</td>
         </tr>
         <tr>
         <td>Validate the user will have the ability to Clear Filters</td>
-        <td class="failed">In development</td>
+        <td class="failed">In Development</td>
          </tr>
         <tr>
         <td>Validate the user will have the ability to Show Filter Count</td>
-        <td class="failed">In development</td>
+        <td class="failed">In Development</td>
     </tbody>
   </table>
 
