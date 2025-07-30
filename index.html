@@ -124,7 +124,10 @@
                 When the sections view is rendered 
                 Then the user can see each section row displayed with the combined "Course/Section" identifier (e.g., "BIO101/01")
 
-  
+    <hr>
+        Scenario: Validate there will be no additional migration and/or implementation issues with Annual Scheduling moving to PostgreSQL
+            Given the user is working with Ad Astra to migrate data into the new platform
+                Then the courses, sections, section meetings data will migrate with minimal to no issues
 
 
 <!DOCTYPE html>
@@ -198,7 +201,7 @@
   <div class="filter-container">
     <select id="status-filter" onchange="filterResults()">
       <option value="all">All</option>
-      <option value="passed">UI Testing Looking Good</option>
+      <option value="passed">UI Looking Good</option>
       <option value="failed">In Development</option>
     </select>
   </div>
@@ -222,6 +225,10 @@
       </tr>
        <tr>
         <td>Validate user can view all their courses for an academic year in a performant way</td>
+        <td class="failed">In Development</td>
+      </tr>
+       <tr>
+        <td>Validate there are no additional migration and/or implementation issues with Annual Scheduling moving to PostgreSQL</td>
         <td class="failed">In Development</td>
       </tr>
        <tr>
