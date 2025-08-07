@@ -165,6 +165,13 @@
             Given the user is working within the Sections app
                 And the user is a Scheduler or Academic Admin they can Edit the details of a section  
 
+         <hr>
+        Scenario: Validate the Academic admin user can view a list of Academic terms grouped by year,
+            Given the user is needing to Edit the associated Term
+                When working within the Acaedemics app
+                And each term card displays: Term description, Code, Start Dates, Term Type, and Academic Year.
+                Then the user is able to Expand & Collapse academic years to show & hide their Terms
+
 
         <hr>
         UX Scenario: Validate the user can view the Schedule page header
@@ -308,6 +315,11 @@
 
        <tr>
         <td>Validate the user can view Course details including historical data</td>
+        <td class="failed ">In Development</td>
+       </tr>
+
+       <tr>
+        <td>Validate the Academic admin user can view a list of Academic terms grouped by year</td>
         <td class="failed ">In Development</td>
        </tr>
 
