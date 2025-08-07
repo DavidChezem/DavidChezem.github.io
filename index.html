@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,7 +50,7 @@
 
 <!--Astra-54882-->
 </div>
-<button class="collapsible"><b><p style="color: blue;">Annual Scheduling (8/05/2025)</p>
+<button class="collapsible"><b><p style="color: blue;">Annual Scheduling (8/08/2025)</p>
 </b>Astra-54882,54625,54883 (Schedule users should be able to view all their sections for an academic year in a performant way)</button>
 <div class="content">
 <pre><code class="language-gherkin">
@@ -159,6 +156,11 @@
             Given the user is working within the Courses view
                 Then there is a collapsible UI to expand or hide the Academic Views section
                 And the user can quickly access them while keeping the view list manageable
+
+            <hr>
+        Scenario: Validate the Calendar view can be re-created in the new Annual Schedule. 
+            Given the user is working within the Calendar views
+                Then the user can view their Schedule in a Calendar view
 
         <hr>
         Scenario: Validate the Scheduler or Academic Admin user can edit the details of a specific section
@@ -343,6 +345,11 @@
 
        <tr>
         <td>Validate the user can view Course details including historical data</td>
+        <td class="failed ">In Development</td>
+       </tr>
+
+        <tr>
+        <td>Validate the Calendar view can be re-created in the new Annual Schedule</td>
         <td class="failed ">In Development</td>
        </tr>
 
