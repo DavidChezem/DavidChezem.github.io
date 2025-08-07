@@ -70,13 +70,19 @@
                 When the user performs schedule actions within the feature
                 Then the schedule functions can be performed in a quick and performant manner
 
-         ** Acceptance criteria: I can see my section and section details, grouped under my courses.
-
          <hr>
         Scenario: Validate user will have the ability to Open Filter Dropdown
             Given the user is on the page with the filter functionality,
                 When the users click the "Filter" button (next to initials)
                 Then the filter dropdown should appear with existing filters (if any) pre-populated.
+
+        <hr>
+        Scenario: Validate user can view academic without a required drill down into the Courses
+            Given the user is on the sections view page
+                When the list of sections is rendered
+                Then each section row should display a combined "Course/Section" identifier (e.g., "BIO101/01")
+                And should be similar to the current AS8 sections view
+                And  the columns that should be turned on. Basically the standard sections/meetings view will display all available columns
 
         <hr>
         Scenario: Validate user will have the ability to Add New Filter
