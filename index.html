@@ -166,12 +166,28 @@
                 And the user is a Scheduler or Academic Admin they can Edit the details of a section  
 
          <hr>
-        Scenario: Validate the Academic admin user can view a list of Academic terms grouped by year,
+        Scenario: Validate the Academic admin user can view a list of Academic terms grouped by year
             Given the user is needing to Edit the associated Term
                 When working within the Acaedemics app
                 And each term card displays: Term description, Code, Start Dates, Term Type, and Academic Year.
                 Then the user is able to Expand & Collapse academic years to show & hide their Terms
 
+        <hr>
+        Scenario: Validate user can update term-level analysis settings (e.g., prior term, baseline term, "like" terms),
+            Given the user is working within the term level analysis settings
+                When the user needs to run forecasting and comparison settings 
+                Then the forecasting activities are aligned with institutional planning practices
+        Scenario: Validate the user can use dropdowns allowing the selection of "Prior Term", "Baseline Term", and up to 3 "Like Terms"
+
+        Scenario: Validate that user changes are saved automatically or with a save button (depending on interaction model)
+
+        Scenario: Validate that user has toggle to that enables/disables the section editing restriction
+
+        Scenario: Validate that user has a date picker which defines when the restriction takes effect
+
+        Scenario: Validate that user has a date picker which defines when the restriction takes effect
+
+        
 
         <hr>
         UX Scenario: Validate the user can view the Schedule page header
