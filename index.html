@@ -96,7 +96,13 @@
         <hr>
         Scenario: Validate user will have the ability to Add New Filter
             Given the filter dropdown is open and being used
-                When the user clicks "Add Filter"
+                When the user needs to make edits and Add a Course
+                Then the user can make the required Schedule updates
+
+        <hr>
+        Scenario: Validate user can add a course in the Annual Schedule product
+            Given the user is working within Annual Schedule
+                When the user 
                 Then a new filter row with Column, Operator, and Value fields is added to the dropdown
 
           <hr>
@@ -345,6 +351,11 @@
 
        <tr>
         <td>Validate the user can view Course details including historical data</td>
+        <td class="failed ">In Development</td>
+       </tr>
+
+         <tr>
+        <td>Validate user will have the ability to Add New Filter</td>
         <td class="failed ">In Development</td>
        </tr>
 
