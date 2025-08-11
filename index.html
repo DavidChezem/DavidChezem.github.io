@@ -185,7 +185,6 @@
         Scenario: Validate user can update term-level analysis settings (e.g., prior term, baseline term, "like" terms),
             Given the user is working within the term level analysis settings
                 When the user needs to run forecasting and comparison settings 
-                Then the forecasting activities are aligned with institutional planning practices
                 And...
                 Validate the user can use dropdowns allowing the selection of "Prior Term", "Baseline Term", and up to 3 "Like Terms"
         
@@ -209,6 +208,8 @@
         
                 And...
                 Validate the user can edit and save Custom Dates are saved with the associated - selected term 
+
+                Then the forecasting activities are aligned with institutional planning practices
 
         <hr>
         UX Scenario: Validate the user can view the Schedule page header
