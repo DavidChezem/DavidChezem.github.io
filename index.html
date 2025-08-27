@@ -195,6 +195,12 @@
                 When the user selects a specific academic year to work within
                 Then that academic year will be cached and default when the user click into the Schedul grid again  
 
+      <hr>
+        Scenario: Validate when the user does NOT have a selected Term year displayed - that the Course grid will still load
+            Given the user is working within the Schedule grid
+                When the user clears (Xs) out the current Term year
+                Then that academic year will reload with no selected Term year and still display the full Course grid
+
          <hr>
         Scenario: Validate the Academic admin user can view a list of Academic terms grouped by year
             Given the user is needing to Edit the associated Term
