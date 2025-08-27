@@ -177,9 +177,17 @@
                 And the user is a Scheduler or Academic Admin they can Edit the details of a section  
 
         <hr>
-        Scenario: Validate the Schedule grid will default to the current term year when first opened by the user
+        Scenario: Validate the Schedule grid will default to displaying the full courses grid when first opened by the user
             Given the user is opening the Schedule grid for the first time
-                Then that grid defaults to the current term year
+                And no Terms have been selected yet
+                Then the grid still displays a listing of courses within the grid
+
+        <hr>
+         Scenario: Validate the user can still view the current Schedule Term years when clicking into another app and clicking back into Schedule
+            Given the user is working within the Schedule grid and selects a Term from the Academic Year selector
+                When the user selects a different app within the platform
+                And clicks back into the Schedule app
+                Then that academic year or Term will remain focused when the user clicks back into Schedule 
 
         <hr>
         Scenario: Validate the user's currently viewed Term year will cache and remain the active term year when user logs back into the Schedule grid
