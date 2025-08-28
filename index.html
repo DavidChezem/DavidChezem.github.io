@@ -59,11 +59,7 @@
 
 <h2 class="left-text" style="text-align: center;">Functional Scenarios</h2>
 
-        Scenario: Validate user can view all of the sections within an academic year
-            Given the user needs to filter their sections
-                When the user filters the sections page using the current filtering functions
-                Then the filtering will be done using the updated Figma style filtering
-
+       
         <hr>
         Scenario: Validate user can view Course details including historical data
             Given the user is working within the Courses app
@@ -82,11 +78,17 @@
                 When the user performs schedule actions within the feature
                 Then the schedule functions can be performed in a quick and performant manner
 
+
          <hr>
-        Scenario: Validate user will have the ability to Open Filter Dropdown
-            Given the user is on the page with the filter functionality,
-                When the users click the "Filter" button (next to initials)
-                Then the filter dropdown should appear with existing filters (if any) pre-populated.
+        Scenario: Validate user can add a course in the Annual Schedule product
+            Given the user is working within Annual Schedule
+                When the user 
+                Then a new filter row with Column, Operator, and Value fields is added to the dropdown
+
+        <hr>
+        Scenario: Validate user can see their Section and Section details
+            Given the user is working within the Section and Section details app
+                Then the user is able to view their Sections and Section details within the new Scheduling app 
 
         <hr>
         Scenario: Validate user can view academic year without a required drill down into the Courses
@@ -96,46 +98,6 @@
                 And should be similar to the current AS8 sections view
                 And the columns that should be turned on. Basically the standard sections/meetings view will display all available columns
 
-        <hr>
-        Scenario: Validate user will have the ability to Add New Filter
-            Given the filter dropdown is open and being used
-                When the user needs to make edits and Add a Course
-                Then the user can make the required Schedule updates
-
-        <hr>
-        Scenario: Validate user can add a course in the Annual Schedule product
-            Given the user is working within Annual Schedule
-                When the user 
-                Then a new filter row with Column, Operator, and Value fields is added to the dropdown
-
-          <hr>
-        Scenario: Validate user will have the ability to perform Logical Grouping
-            Given the user is working within the Schedule application
-              And the user is working with multiple filters
-              Then a new filter row with Column, Operator, and Value fields is added to the dropdown
-
-        <hr>
-        Scenario: Validate user will have the ability to apply filters
-            Given the user has entered filter criteria
-              When the user clicks "Apply"
-              Then the dropdown should close and the filtered results should be shown based on the entered criteria
-
-        <hr>
-        Scenario: Validate the app can Show Filter Count
-            Given the user has at least one filter active
-              Then  the "Filter" button should display the number of active filters in parentheses, e.g., Filter (2)
-
-        <hr>
-        Scenario: Validate the app can Clear the Filter
-            Given the user has one or more filters displayed
-                When the user clicks the trash icon next to a filter row,
-                Then that filter should be removed from the list and the count should update accordingly after applying
-
-         <hr>
-        Scenario: Validate user can see their Section and Section details
-            Given the user is working within the Section and Section details app
-                Then the user is able to view their Sections and Section details within the new Scheduling app 
-
          <hr>
         Scenario: Validate academic scheduler can view all their sections in an academic year across all 4 terms
 
@@ -144,13 +106,14 @@
                 When the user clicks into the Sections dettails
                 Then the academic scheduler user can view and can create a schedule that provides the courses their students require
 
-         <hr>
+        <hr>
         Scenario: Validate user can view each section row and see the combined "Course/Section" identifier (e.g., "BIO101/01")
             Given the user is working within the Section pages
                 When the sections view is rendered 
                 Then the user can see each section row displayed with the combined "Course/Section" identifier (e.g., "BIO101/01")
 
-         <hr>
+
+      <hr>
         Scenario: Validate no additional migration time and/or implementation issues will arise with Annual Scheduling while moving to PostgreSQL
             Given the user is working with Ad Astra to migrate data into the new platform
                 Then the courses, sections, section meetings data will migrate with minimal to no issues
@@ -171,7 +134,8 @@
             Given the user is working within the Calendar views
                 Then the user can view their Schedule in a Calendar view
 
-        <hr>
+
+          <hr>
         Scenario: Validate the Scheduler or Academic Admin user can edit the details of a specific section
             Given the user is working within the Sections app
                 And the user is a Scheduler or Academic Admin they can Edit the details of a section  
@@ -182,19 +146,20 @@
                 And no Terms have been selected yet
                 Then the grid still displays a listing of courses within the grid
 
-        <hr>
-         Scenario: Validate the user can still view the current Schedule Term years when clicking into another app and clicking back into Schedule
+      <hr>
+        Scenario: Validate the user can still view the current Schedule Term years when clicking into another app and clicking back into Schedule
             Given the user is working within the Schedule grid and selects a Term from the Academic Year selector
                 When the user selects a different app within the platform
                 And clicks back into the Schedule app
                 Then that academic year or Term will remain focused when the user clicks back into Schedule 
 
-        <hr>
+      <hr>
         Scenario: Validate the user's currently viewed Term year will cache and remain the active term year when user logs back into the Schedule grid
             Given the user is working within the Schedule grid
                 When the user selects a specific academic year to work within
                 Then that academic year will be cached and default when the user click into the Schedul grid again  
 
+        
       <hr>
         Scenario: Validate when the user does NOT have a selected Term year displayed that the Course grid will still load as normal
             Given the user is working within the Schedule grid
@@ -239,7 +204,55 @@
                 Then the forecasting activities are aligned with institutional planning practices
 
 
+
+        <h2 class="left-text" style="text-align: center;">Filtering</h2>  
+
+
+        <hr>
+         Scenario: Validate user can view all of the sections within an academic year
+            Given the user needs to filter their sections
+                When the user filters the sections page using the current filtering functions
+                Then the filtering will be done using the updated Figma style filtering
+        
+        <hr>
+        Scenario: Validate user will have the ability to Open Filter Dropdown
+            Given the user is on the page with the filter functionality,
+                When the users click the "Filter" button (next to initials)
+                Then the filter dropdown should appear with existing filters (if any) pre-populated.
+
+        <hr>
+        Scenario: Validate user will have the ability to Add New Filter
+            Given the filter dropdown is open and being used
+                When the user needs to make edits and Add a Course
+                Then the user can make the required Schedule updates
+
+          <hr>
+        Scenario: Validate user will have the ability to perform Logical Grouping
+            Given the user is working within the Schedule application
+              And the user is working with multiple filters
+              Then a new filter row with Column, Operator, and Value fields is added to the dropdown
+
+        <hr>
+        Scenario: Validate user will have the ability to apply filters
+            Given the user has entered filter criteria
+              When the user clicks "Apply"
+              Then the dropdown should close and the filtered results should be shown based on the entered criteria
+
+        <hr>
+        Scenario: Validate the app can Show Filter Count
+            Given the user has at least one filter active
+              Then  the "Filter" button should display the number of active filters in parentheses, e.g., Filter (2)
+
+        <hr>
+        Scenario: Validate the app can Clear the Filter
+            Given the user has one or more filters displayed
+                When the user clicks the trash icon next to a filter row,
+                Then that filter should be removed from the list and the count should update accordingly after applying
+
+
+
 <h2 class="left-text" style="text-align: center;">User Experience Scenarios</h2>
+
         <hr>
         UX Scenario: Validate the user can view the Schedule page header
             Given the user is working within the Schedule app
