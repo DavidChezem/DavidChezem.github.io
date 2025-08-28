@@ -78,6 +78,8 @@
                 When the user performs schedule actions within the feature
                 Then the schedule functions can be performed in a quick and performant manner
 
+               
+
 
          <hr>
         Scenario: Validate user can add a course in the Annual Schedule product
@@ -209,17 +211,33 @@
 
 
 
-         Scenario: Validate user can view all of the sections within an academic year
+        Scenario: Validate user can view all of the sections within an academic year
             Given the user needs to filter their sections
                 When the user filters the sections page using the current filtering functions
                 Then the filtering will be done using the updated Figma style filtering
+         
+            <hr>
+        
+        Scenario: Validate user is able to select a Column filter option
+            Given the user needs to filter their Courses selections
+                When the user filters by Column
+                Then the filtering will be executed based on the current Columns options to choose from 
+
+            <hr>      
+        Scenario: Validate user is able to select a Operator filter option
+            Given the user needs to filter their Courses selections
+                When the user filters by Operator
+                Then the filtering will be executed based on the current Operator options to choose from   
         
         
         <hr>
         Scenario: Validate user will have the ability to Open Filter Dropdown
             Given the user is on the page with the filter functionality,
                 When the users click the "Filter" button (next to initials)
-                Then the filter dropdown should appear with existing filters (if any) pre-populated.
+                Then the Column selector displays a list of the current Column options to choose from within the grid
+
+         <hr>
+        
 
         <hr>
         Scenario: Validate user will have the ability to Add New Filter
