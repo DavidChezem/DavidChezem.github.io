@@ -212,6 +212,7 @@
                 When the user filters the sections page using the current filtering functions
                 Then the filtering will be done using the updated Figma style filtering
         
+        
         <hr>
         Scenario: Validate user will have the ability to Open Filter Dropdown
             Given the user is on the page with the filter functionality,
@@ -231,7 +232,7 @@
               Then a new filter row with Column, Operator, and Value fields is added to the dropdown
 
         <hr>
-        Scenario: Validate user will have the ability to apply filters
+        Scenario: Validate user will have the ability to Apply filters
             Given the user has entered filter criteria
               When the user clicks "Apply"
               Then the dropdown should close and the filtered results should be shown based on the entered criteria
@@ -246,6 +247,13 @@
             Given the user has one or more filters displayed
                 When the user clicks the trash icon next to a filter row,
                 Then that filter should be removed from the list and the count should update accordingly after applying
+
+        <hr>
+          Scenario: Validate the user can Cancel the filter actions
+            Given the user is using the Filter functions
+                When the user clicks the Cancel option 
+                Then the filtering option should be closed
+        
 
         <hr>
 
