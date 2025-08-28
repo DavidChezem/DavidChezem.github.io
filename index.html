@@ -56,11 +56,10 @@
 <div class="content">
 <pre><code class="language-gherkin">
 <p style="font-size: 35px;text-align: center;"> Feature: Annual Scheduling - Phase 1 Room Scheduling</p>    
-
+<hr>
 <h2 class="left-text" style="text-align: center;">Functional</h2>
 
        
-        <hr>
         Scenario: Validate user can view Course details including historical data
             Given the user is working within the Courses app
                 When the user needs to Assign a Room to a Section Meeting
@@ -204,11 +203,10 @@
                 Then the forecasting activities are aligned with institutional planning practices
 
 
-
+<hr>
         <h2 class="left-text" style="text-align: center;">Filtering</h2>  
 
 
-        <hr>
          Scenario: Validate user can view all of the sections within an academic year
             Given the user needs to filter their sections
                 When the user filters the sections page using the current filtering functions
@@ -249,11 +247,11 @@
                 When the user clicks the trash icon next to a filter row,
                 Then that filter should be removed from the list and the count should update accordingly after applying
 
-
+        <hr>
 
 <h2 class="left-text" style="text-align: center;">User Experience</h2>
 
-        <hr>
+        
         UX Scenario: Validate the user can view the Schedule page header
             Given the user is working within the Schedule app
                 When opening the Schedule page
