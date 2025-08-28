@@ -265,10 +265,19 @@
                 Then the filtering modal window opens
 
          <hr>
-          Scenario: Validate the Filter modal defaults to Columns=Course and Operator = Contains
+          Scenario: Validate the Filter modal defaults to Columns = Course and Operator = Contains
             Given the user is using the Filter functions
                 When the user opens the Filter modal
                 Then the Columns and Operator will both default to Course and Contains respectively
+
+         <hr>
+          Scenario: Validate the Reset All button clears the current filter parameters
+            Given the user is using the Filter functions
+                When the user clicks the Reset All 
+                Then the current Filter parameters should be cleared (reset)
+
+        
+        
         
         
 
