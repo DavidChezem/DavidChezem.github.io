@@ -253,6 +253,23 @@
             Given the user is using the Filter functions
                 When the user clicks the Cancel option 
                 Then the filtering option should be closed
+
+        <hr>
+          Scenario: Validate the Filter button is displayed on the Courses dashboard page
+            Given the user is using the Courses app page 
+                Then the Filter pill should be displayed
+
+         <hr>
+          Scenario: Validate the Filter button is selected the Filtering modal window opens 
+            Given the user selects the Filter button
+                Then the filtering modal window opens
+
+         <hr>
+          Scenario: Validate the Filter modal defaults to Columns=Course and Operator = Contains
+            Given the user is using the Filter functions
+                When the user opens the Filter modal
+                Then the Columns and Operator will both default to Course and Contains respectively
+        
         
 
         <hr>
