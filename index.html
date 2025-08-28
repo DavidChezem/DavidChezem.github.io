@@ -216,18 +216,25 @@
                 When the user filters the sections page using the current filtering functions
                 Then the filtering will be done using the updated Figma style filtering
          
-            <hr>
+        <hr>
         
         Scenario: Validate user is able to select a Column filter option
             Given the user needs to filter their Courses selections
                 When the user filters by Column
                 Then the filtering will be executed based on the current Columns options to choose from 
 
-            <hr>      
+        <hr>      
         Scenario: Validate user is able to select a Operator filter option
             Given the user needs to filter their Courses selections
                 When the user filters by Operator
                 Then the filtering will be executed based on the current Operator options to choose from   
+
+
+        <hr>      
+        Scenario: Validate user is able to select a Value filter option
+            Given the user needs to filter their Courses selections
+                When the user filters by Value
+                Then the filtering will be executed based on the current Value that the user enters for the filter    
         
         
         <hr>
