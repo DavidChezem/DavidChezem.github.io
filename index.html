@@ -299,6 +299,11 @@
                 When the user clicks the Reset All 
                 Then the current Filter parameters should be cleared (reset)
 
+         <hr>
+          Scenario: Validate the Operator selection option contains four options: Contains, Equals, Starts with, Ends with
+            Given the user is using the Filter functions
+                When the user selects the Operator option
+                Then the user is provided these four Operator options when filtering
 
         <hr>
           Scenario: Validate the "Title" colunmn search param and the Contains operator is filtering based on the selected Value
@@ -308,6 +313,12 @@
 
         <hr>
           Scenario: Validate the "Subject" colunmn search param and the "Equals" operator is filtering based on the selected Value
+            Given the user is using the Filter functions
+                When the user selects the "Subject" and "Equals" params
+                Then the filter will sort by the specified Subject and Quals operator with the exact correct value displayed
+
+        <hr>
+          Scenario: Validate the "Subject" colunmn search param and 
             Given the user is using the Filter functions
                 When the user selects the "Subject" and "Equals" params
                 Then the filter will sort by the specified Subject and Quals operator with the exact correct value displayed
