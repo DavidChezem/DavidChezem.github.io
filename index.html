@@ -318,11 +318,16 @@
                 Then the filter will sort by the specified Subject and Quals operator with the exact correct value displayed
 
         <hr>
-          Scenario: Validate the "Subject" colunmn search param and 
+          Scenario: Validate the "Subject" colunmn search param and the "Starts with" operator is filtering based on the selected Value
             Given the user is using the Filter functions
-                When the user selects the "Subject" and "Equals" params
-                Then the filter will sort by the specified Subject and Quals operator with the exact correct value displayed
-
+                When the user selects the "Subject" and Starts with params
+                Then the filter will sort by the specified Subject and Starts with param
+                
+        <hr>
+          Scenario: Validate the "Subject" colunmn search param and the "Ends with" operator is filtering based on the selected Value
+            Given the user is using the Filter functions
+                When the user selects the "Subject" and Edns with params
+                Then the filter will sort by the specified Subject and Edns with param
         <hr style="height: 4px; background-color: #333; border: none;">
 
 
