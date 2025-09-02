@@ -51,7 +51,7 @@
 
 <!--Astra-54882-->
 </div>
-<button class="collapsible"><b><p style="color: blue;">Annual Scheduling (8/29/2025)</p>
+<button class="collapsible"><b><p style="color: blue;">Annual Scheduling (9/02/2025)</p>
 </b>Astra-54882,54625,54883 (Schedule users should be able to view all their sections for an academic year in a performant way)</button>
 <div class="content">
 <pre><code class="language-gherkin">
@@ -77,8 +77,6 @@
             Given the user is working within the updated Schedule tool 
                 When the user performs schedule actions within the feature
                 Then the schedule functions can be performed in a quick and performant manner
-
-               
 
 
          <hr>
@@ -303,6 +301,16 @@
 
 
         <hr>
+          Scenario: Validate the "Title" colunmn search param and the Contains operator is filtering based on the selected Value
+            Given the user is using the Filter functions
+                When the user selects the "Title" and "Contains" params
+                Then the filter will sort by the specified title and operator params with the correct value displayed
+
+        <hr>
+          Scenario: Validate the "Subject" colunmn search param and the "Equals" operator is filtering based on the selected Value
+            Given the user is using the Filter functions
+                When the user selects the "Subject" and "Equals" params
+                Then the filter will sort by the specified Subject and Quals operator with the exact correct value displayed
 
 <h2 class="left-text" style="text-align: center; color: blue;">User Experience</h2>
 
