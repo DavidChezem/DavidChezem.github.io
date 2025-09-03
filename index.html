@@ -340,6 +340,15 @@
             Given the user is using the Filter functions
                 When the user selects a specific search filter in which predictive logic assists the searching
                 Then the filter will use the predictive logic to execute the search
+
+        <hr>
+        Scenario: Validate the filter enables the user to search by Course name using a numeric value
+            Given the user is using the Filter functions
+                When the user performs a search for a Course name using one it's numeric values
+                Then the filter will return all Courses which contain that numeric value
+
+        
+            
         
 
 
