@@ -217,11 +217,10 @@
                 Then the section drawer will open with the Section details displayed and editable
 
             <hr>
-        Scenario: Validate the academic scheduler or the academic admin can Edit the details of a specific section
-            Given a user selects a section from a list or schedule views within the Sections details
-                When the scheduler works within the Section details
-                Then they can fully perform the functions of their role
-
+        Scenario: Validate the Section details drawer is matching the Section details listed in the Courses grid
+            Given a user selects a Section details drawer
+                When viewing the Section details within the drawer
+                Then the Sections tab within the drawer matches the Sections data in the Courses grid 
 
 
         <hr style="height: 4px; background-color: #333; border: none;">
