@@ -744,65 +744,6 @@
 
 
 
-<!--Astra-47286-->
-</div>
-<button class="collapsible"> Astra-47286 (Astra Events activities aren't being created in snowflake)</button>
-<div class="content">
-<pre><code class="language-gherkin">
-<p style="font-size: 20px;text-align: center;">Feature: Astra Events activities aren't being created in snowflake</p>
-
-
-        Scenario: Validate the newly added Hively events are integrating correctly with the Course "Day" calendar views
-            Given the user is adding new Hively events within the "Day" view
-                When the new Event has been saved in Hively
-                Then the Event will process correctly through the Snowflake integration and external_activities table
-
-                <hr>
-        Scenario: Validate the new Hively event time is displaying correctly on the Course calendar day view
-            Given the user is adding new Hively events within the "Day" view
-                When the new Event has been saved in Hively
-                Then the Event time is also showing on the platform Courses day view
-
-                <hr>
-        Scenario: Validate the new Hively building assignment is displaying correctly on the Course calendar day view
-            Given the user is adding new Hively events within the "Day" view
-                When the new Event has been saved in Hively
-                Then the building assignment (BLD) is displaying on the platform Courses day view
-
-                <hr>
-        Scenario: Validate the newly added Hively events are integrating correctly with the Course "Monthly" calendar views
-            Given the user is adding new Hively events within the "Monthly" view
-                When the new Event has been saved in Hively
-                Then the Event will process correctly through the Snowflake integration and external_activities table
-
-                <hr>
-        Scenario: Validate the newly added Hively events viewed in Weekly view are visible in Courses calendar
-            Given the user is adding new Hively events within the "Week" view
-                When the new Event has been saved in Hively
-                And the new Event is being viewed from the Week view in Hively and the Astra platform
-                Then the Event will process correctly through the Snowflake integration and external_activities table 
-                Then the Event details will match in the Courses platform calendar
-
-                <hr>
-        Scenario: Validate when an event is Cancelled in Hively that the update migrates and viewed as cancelled in Courses calendar
-            Given the user has cancelled an Event
-                When the new Event status has been saved in Hively
-                Then the Event will process correctly through the Snowflake integration and external_activities table and display as Cancelled in Courses
-
-
-<!--Astra-49353-->
-</div>
-<button class="collapsible">Astra-49353 (Schedule Grid - Removing Term filter on a further filtered course list breaks the page)</button>
-<div class="content">
-<pre><code class="language-gherkin"></code>
-<p style="font-size: 20px;text-align: center;">Feature: Schedule Grid - Removing Term filter on a further filtered course list breaks the page</p>
-        Scenario: Validate the page does not return an error when entering a Course name and clearing the Term filter
-            Given</strong> the user is working within the platform and enters a search for a Course
-                When</strong> the user enters a Course title or abbreviation
-                And</strong> deletes the current Term filter
-                Then</strong> the page will refresh correctly and will not throw a system error 
-
-
 
 <!--Astra-51076-->
 </div>
