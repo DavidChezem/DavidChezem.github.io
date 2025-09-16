@@ -210,11 +210,31 @@
                 Then it should display a view of all key section attributes 
 
             <hr>
+        Scenario: Validate the academic scheduler can view the Setup of a section within the new Scheduling
+            Given a academic scheduler selects a section from a list or schedule views within the Sections details
+                When the section details panel opens
+                Then it should display the Sections setup details
+
+            <hr>
+        Scenario: Validate the academic scheduler can view the scheduling context of a section 
+            Given a academic scheduler selects a section from a list or schedule views within the Sections details
+                When the section details panel opens
+                Then it should display the scheduling context of a section
+                
+            <hr>
+        Scenario: Validate the academic scheduler can view spefic attributes of a section
+            Given a academic scheduler selects a section from a list or schedule views within the Sections details
+                When the section details panel opens
+                Then it should display the scheduling attributes for that section
+
+
+            <hr>
         Scenario: Validate the academic scheduler or the academic admin can Edit the details of a specific section
             Given a user selects a section from a list or schedule views within the Sections details
                 When the scheduler works within the Section details
                 And clicks on a specific Course section
                 Then the section drawer will open with the Section details displayed and editable
+   
 
             <hr>
         Scenario: Validate the Section details drawer is matching the Section details listed in the Courses grid
