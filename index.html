@@ -11,7 +11,7 @@
             font-family: 'Roboto', sans-serif;
         }
         pre {
-            background-color: #D6C18C; /* Light gray background for code blocks */
+            background-color: #FBCEB1; /* Light gray background for code blocks */
             padding: 10px; /* Adding some padding for better readability */
             border-radius: 5px; /* Optional: Rounded corners */
         }
@@ -61,37 +61,37 @@
 <h2 class="left-text" style="text-align: center; color: blue;">Functional</h2>
 
 
-        Scenario: Validate user can view Course details including historical data
+        Test Scenario: Validate user can view Course details including historical data
             Given the user is working within the Courses app
                 When the user needs to Assign a Room to a Section Meeting
                 Then the Room is assigned and can be completed from the Section grid 
 
         <hr>
-         Scenario: Validate the user can add, update, or remove a room from a Section meeting
+        Test Scenario: Validate the user can add, update, or remove a room from a Section meeting
             Given the user is working within the Courses and Sections app
                 When the user needs to view Course details 
                 Then the user can use the newly designed Course drawer
 
          <hr>
-        Scenario: Validate user can view all their courses for an academic year in a performant way
+        Test Scenario: Validate user can view all their courses for an academic year in a performant way
             Given the user is working within the updated Schedule tool 
                 When the user performs schedule actions within the feature
                 Then the schedule functions can be performed in a quick and performant manner
 
 
          <hr>
-        Scenario: Validate user can add a course in the Annual Schedule product
+        Test Scenario: Validate user can add a course in the Annual Schedule product
             Given the user is working within Annual Schedule
                 When the user 
                 Then a new filter row with Column, Operator, and Value fields is added to the dropdown
 
         <hr>
-        Scenario: Validate user can see their Section and Section details
+        Test Scenario: Validate user can see their Section and Section details
             Given the user is working within the Section and Section details app
                 Then the user is able to view their Sections and Section details within the new Scheduling app 
 
         <hr>
-        Scenario: Validate user can view academic year without a required drill down into the Courses
+        Test Scenario: Validate user can view academic year without a required drill down into the Courses
             Given the user is on the sections view page
                 When the list of sections is rendered
                 Then each section row should display a combined "Course/Section" identifier (e.g., "BIO101/01")
@@ -99,80 +99,80 @@
                 And the columns that should be turned on. Basically the standard sections/meetings view will display all available columns
 
          <hr>
-        Scenario: Validate academic scheduler can create a schedule that provides the courses the students need
+        Test Scenario: Validate academic scheduler can create a schedule that provides the courses the students need
             Given the user is an academic scheduler and needs to view all their Sections
                 When the user clicks into the Sections dettails
                 Then the academic scheduler user can view and can create a schedule that provides the courses their students require
 
         <hr>
-        Scenario: Validate user can view each section row and see the combined "Course/Section" identifier (e.g., "BIO101/01")
+        Test Scenario: Validate user can view each section row and see the combined "Course/Section" identifier (e.g., "BIO101/01")
             Given the user is working within the Section pages
                 When the sections view is rendered 
                 Then the user can see each section row displayed with the combined "Course/Section" identifier (e.g., "BIO101/01")
 
 
       <hr>
-        Scenario: Validate no additional migration time and/or implementation issues will arise with Annual Scheduling while moving to PostgreSQL
+        Test Scenario: Validate no additional migration time and/or implementation issues will arise with Annual Scheduling while moving to PostgreSQL
             Given the user is working with Ad Astra to migrate data into the new platform
                 Then the courses, sections, section meetings data will migrate with minimal to no issues
 
         <hr>
-        Scenario: Validate the academic scheduler user can view the sections without having to drill into courses thus improving user efficiency
+        Test Scenario: Validate the academic scheduler user can view the sections without having to drill into courses thus improving user efficiency
             Given the user is working with Ad Astra to migrate data into the new platform
                 Then the courses, sections, section meetings data will migrate with minimal to no issues
 
         <hr>
-        Scenario: Validate the user can see a list of predefined Views in a collapsible section
+        Test Scenario: Validate the user can see a list of predefined Views in a collapsible section
             Given the user is working within the Courses view
                 Then there is a collapsible UI to expand or hide the Academic Views section
                 And the user can quickly access them while keeping the view list manageable
 
             <hr>
-        Scenario: Validate the Calendar view can be re-created in the new Annual Schedule. 
+        Test Scenario: Validate the Calendar view can be re-created in the new Annual Schedule. 
             Given the user is working within the Calendar views
                 Then the user can view their Schedule in a Calendar view
 
 
           <hr>
-        Scenario: Validate the Scheduler or Academic Admin user can edit the details of a specific section
+        Test Scenario: Validate the Scheduler or Academic Admin user can edit the details of a specific section
             Given the user is working within the Sections app
                 And the user is a Scheduler or Academic Admin they can Edit the details of a section  
 
         <hr>
-        Scenario: Validate the Schedule grid will default to displaying the full courses grid when first opened by the user
+        Test Scenario: Validate the Schedule grid will default to displaying the full courses grid when first opened by the user
             Given the user is opening the Schedule grid for the first time
                 And no Terms have been selected yet
                 Then the grid still displays a listing of courses within the grid
 
       <hr>
-        Scenario: Validate the user can still view the current Schedule Term years when clicking into another app and clicking back into Schedule
+        Test Scenario: Validate the user can still view the current Schedule Term years when clicking into another app and clicking back into Schedule
             Given the user is working within the Schedule grid and selects a Term from the Academic Year selector
                 When the user selects a different app within the platform
                 And clicks back into the Schedule app
                 Then that academic year or Term will remain focused when the user clicks back into Schedule 
 
       <hr>
-        Scenario: Validate the user's currently viewed Term year will cache and remain the active term year when user logs back into the Schedule grid
+        Test Scenario: Validate the user's currently viewed Term year will cache and remain the active term year when user logs back into the Schedule grid
             Given the user is working within the Schedule grid
                 When the user selects a specific academic year to work within
                 Then that academic year will be cached and default when the user click into the Schedul grid again  
 
         
       <hr>
-        Scenario: Validate when the user does NOT have a selected Term year displayed that the Course grid will still load as normal
+        Test Scenario: Validate when the user does NOT have a selected Term year displayed that the Course grid will still load as normal
             Given the user is working within the Schedule grid
                 When the user clears out the current Term year (Clicks the X) 
                 Then the full Courses grid still displays as it normally does when page is refreshed or re-opened
 
          <hr>
-        Scenario: Validate the Academic admin user can view a list of Academic terms grouped by year
+        Test Scenario: Validate the Academic admin user can view a list of Academic terms grouped by year
             Given the user is needing to Edit the associated Term
                 When working within the Acaedemics app
                 And each term card displays: Term description, Code, Start Dates, Term Type, and Academic Year.
                 Then the user is able to Expand & Collapse academic years to show & hide their Terms
 
         <hr>
-        Scenario: Validate user can update term-level analysis settings (e.g., prior term, baseline term, "like" terms),
+        Test Scenario: Validate user can update term-level analysis settings (e.g., prior term, baseline term, "like" terms),
             Given the user is working within the term level analysis settings
                 When the user needs to run forecasting and comparison settings 
                 And...
@@ -202,32 +202,32 @@
                 Then the forecasting activities are aligned with institutional planning practices
 
             <hr>
-        Scenario: Validate the academic scheduler can view the details of a specific section
+        Test Scenario: Validate the academic scheduler can view the details of a specific section
             Given a user selects a section from a list or schedule views within the Sections details
                 When the section details panel opens
                 Then it should display a view of all key section attributes 
 
             <hr>
-        Scenario: Validate the academic scheduler can view the Setup of a section within the new Scheduling
+        Test Scenario: Validate the academic scheduler can view the Setup of a section within the new Scheduling
             Given a academic scheduler selects a section from a list or schedule views within the Sections details
                 When the section details panel opens
                 Then it should display the Sections setup details
 
             <hr>
-        Scenario: Validate the academic scheduler can view the scheduling context of a section 
+        Test Scenario: Validate the academic scheduler can view the scheduling context of a section 
             Given a academic scheduler selects a section from a list or schedule views within the Sections details
                 When the section details panel opens
                 Then it should display the scheduling context of a section
                 
             <hr>
-        Scenario: Validate the academic scheduler can view spefic attributes of a section
+        Test Scenario: Validate the academic scheduler can view spefic attributes of a section
             Given a academic scheduler selects a section from a list or schedule views within the Sections details
                 When the section details panel opens
                 Then it should display the scheduling attributes for that section
 
 
             <hr>
-        Scenario: Validate the academic scheduler or the academic admin can Edit the details of a specific section
+        Test Scenario: Validate the academic scheduler or the academic admin can Edit the details of a specific section
             Given a user selects a section from a list or schedule views within the Sections details
                 When the scheduler works within the Section details
                 And clicks on a specific Course section
@@ -235,7 +235,7 @@
    
 
             <hr>
-        Scenario: Validate the Section details drawer is matching the Section details listed in the Courses grid
+        Test Scenario: Validate the Section details drawer is matching the Section details listed in the Courses grid
             Given a user selects a Section details drawer
                 When viewing the Section details within the drawer
                 Then the Sections tab within the drawer matches the Sections data in the Courses grid 
@@ -246,146 +246,146 @@
 
 
 
-        Scenario: Validate user can view all of the sections within an academic year
+        Test Scenario: Validate user can view all of the sections within an academic year
             Given the user needs to filter their sections
                 When the user filters the sections page using the current filtering functions
                 Then the filtering will be done using the updated Figma style filtering
          
         <hr>
         
-        Scenario: Validate user is able to select a Column filter option
+        Test Scenario: Validate user is able to select a Column filter option
             Given the user needs to filter their Courses selections
                 When the user filters by Column
                 Then the filtering will be executed based on the current Columns options to choose from 
 
         <hr>      
-        Scenario: Validate user is able to select a Operator filter option
+        Test Scenario: Validate user is able to select a Operator filter option
             Given the user needs to filter their Courses selections
                 When the user filters by Operator
                 Then the filtering will be executed based on the current Operator options to choose from   
 
 
         <hr>      
-        Scenario: Validate user is able to select a Value filter option
+        Test Scenario: Validate user is able to select a Value filter option
             Given the user needs to filter their Courses selections
                 When the user filters by Value
                 Then the filtering will be executed based on the current Value that the user enters for the filter    
         
         
         <hr>
-        Scenario: Validate user will have the ability to Open Filter Dropdown
+        Test Scenario: Validate user will have the ability to Open Filter Dropdown
             Given the user is on the page with the filter functionality,
                 When the users click the "Filter" button (next to initials)
                 Then the Column selector displays a list of the current Column options to choose from within the Grid
         
 
         <hr>
-        Scenario: Validate user will have the ability to Add New Filter
+        Test Scenario: Validate user will have the ability to Add New Filter
             Given the filter dropdown is open and being used
                 When the user needs to make edits and Add a Course
                 Then the user can make the required Schedule updates
 
           <hr>
-        Scenario: Validate user will have the ability to perform Logical Grouping
+        Test Scenario: Validate user will have the ability to perform Logical Grouping
             Given the user is working within the Schedule application
               And the user is working with multiple filters
               Then a new filter row with Column, Operator, and Value fields is added to the dropdown
 
         <hr>
-        Scenario: Validate user will have the ability to Apply filters
+        Test Scenario: Validate user will have the ability to Apply filters
             Given the user has entered filter criteria
               When the user clicks "Apply"
               Then the dropdown should close and the filtered results should be shown based on the entered criteria
 
         <hr>
-        Scenario: Validate the app can Show Filter Count
+        Test Scenario: Validate the app can Show Filter Count
             Given the user has at least one filter active
               Then  the "Filter" button should display the number of active filters in parentheses, e.g., Filter (2)
 
         <hr>
-        Scenario: Validate the app can Clear the Filter
+        Test Scenario: Validate the app can Clear the Filter
             Given the user has one or more filters displayed
                 When the user clicks the trash icon next to a filter row,
                 Then that filter should be removed from the list and the count should update accordingly after applying
 
         <hr>
-          Scenario: Validate the user can Cancel the filter actions
+        Test Scenario: Validate the user can Cancel the filter actions
             Given the user is using the Filter functions
                 When the user clicks the Cancel option 
                 Then the filtering option should be closed
 
         <hr>
-          Scenario: Validate the Filter button is displayed on the Courses dashboard page
+        Test Scenario: Validate the Filter button is displayed on the Courses dashboard page
             Given the user is using the Courses app page 
                 Then the Filter pill should be displayed
 
          <hr>
-          Scenario: Validate the Filter button is selected the Filtering modal window opens 
+        Test Scenario: Validate the Filter button is selected the Filtering modal window opens 
             Given the user selects the Filter button
                 Then the filtering modal window opens
 
          <hr>
-          Scenario: Validate the Filter modal defaults to Columns = Course and Operator = Contains
+        TestScenario: Validate the Filter modal defaults to Columns = Course and Operator = Contains
             Given the user is using the Filter functions
                 When the user opens the Filter modal
                 Then the Columns and Operator will both default to Course and Contains respectively
 
          <hr>
-          Scenario: Validate the Reset All button clears the current filter parameters
+        Test Scenario: Validate the Reset All button clears the current filter parameters
             Given the user is using the Filter functions
                 When the user clicks the Reset All 
                 Then the current Filter parameters should be cleared (reset)
 
          <hr>
-          Scenario: Validate the Operator selection option contains four options: Contains, Equals, Starts with, Ends with
+        Test Scenario: Validate the Operator selection option contains four options: Contains, Equals, Starts with, Ends with
             Given the user is using the Filter functions
                 When the user selects the Operator option
                 Then the user is provided these four Operator options when filtering
 
         <hr>
-          Scenario: Validate the "Title" colunmn search param and the Contains operator is filtering based on the selected Value
+        Test Scenario: Validate the "Title" colunmn search param and the Contains operator is filtering based on the selected Value
             Given the user is using the Filter functions
                 When the user selects the "Title" and "Contains" params
                 Then the filter will sort by the specified title and operator params with the correct value displayed
 
         <hr>
-          Scenario: Validate the "Subject" colunmn search param and the "Equals" operator is filtering based on the selected Value
+        Test Scenario: Validate the "Subject" colunmn search param and the "Equals" operator is filtering based on the selected Value
             Given the user is using the Filter functions
                 When the user selects the "Subject" and "Equals" params
                 Then the filter will sort by the specified Subject and Quals operator with the exact correct value displayed
 
         <hr>
-          Scenario: Validate the "Subject" colunmn search param and the "Starts with" operator is filtering based on the selected Value
+        Test Scenario: Validate the "Subject" colunmn search param and the "Starts with" operator is filtering based on the selected Value
             Given the user is using the Filter functions
                 When the user selects the "Subject" and Starts with params
                 Then the filter will sort by the specified Subject and Starts with param
                 
         <hr>
-          Scenario: Validate the "Subject" colunmn search param and the "Ends with" operator is filtering based on the selected Value
+        Test Scenario: Validate the "Subject" colunmn search param and the "Ends with" operator is filtering based on the selected Value
             Given the user is using the Filter functions
                 When the user selects the "Subject" and Ends with params
                 Then the filter will sort by the specified Subject and Ends with param
 
         <hr>
-        Scenario: Validate the filter provides predictive text searching for specific search filters
+        Test Scenario: Validate the filter provides predictive text searching for specific search filters
             Given the user is using the Filter functions
                 When the user selects a specific search filter in which predictive logic assists the searching
                 Then the filter will use the predictive logic to execute the search
 
         <hr>
-        Scenario: Validate the filter enables the user to search by Course name using a full numeric value
+        Test Scenario: Validate the filter enables the user to search by Course name using a full numeric value
             Given the user is using the Filter functions
                 When the user performs a search for a Course name using one it's numeric values
                 Then the filter will return all Courses which contain that numeric value
 
             <hr>
-        Scenario: Validate the filter enables the user to search by Course name using a partial numeric value
+        Test Scenario: Validate the filter enables the user to search by Course name using a partial numeric value
             Given the user is using the Filter functions
                 When the user performs a search for a Course using a partial numeric search param
                 Then the filter will return all Courses which contain that partial numeric value
 
          <hr>   
-         Scenario: Validate when sorting by Workflow Step, the only Operator option is Equals
+        Test Scenario: Validate when sorting by Workflow Step, the only Operator option is Equals
             Given the user needs to filter their sections
                 When the user filters the section details by Columns "Workflow Step"
                 Then the filtering will be limited to Operator is Equals to - Value
@@ -398,47 +398,47 @@
 
 
         
-        UX Scenario: Validate the user can view the Schedule page header
+        UX Test Scenario: Validate the user can view the Schedule page header
             Given the user is working within the Schedule app
                 When opening the Schedule page
                 Then the Schedule title will display in the Upper left corner
         
                 <hr>
-        UX Scenario: Validate the Academic Year listings are displayed on the page using the (YYYY - YYYY) formatting
+        UX Test Scenario: Validate the Academic Year listings are displayed on the page using the (YYYY - YYYY) formatting
             Given the user is working within the Schedule app
                 When opening the Schedule page
                 Then the Academic Years will are displayed as a Column header
 
          <hr>
-        UX Scenario: Validate the Courses grid is broken out into sortable columns
+        UX Test Scenario: Validate the Courses grid is broken out into sortable columns
             Given the user is working within the Schedule app
                 Then the courses grid will be displayed across sortable header columns
 
 
         <hr>
-        UX Scenario: Validate the grid has a Course IDs row with Course ID displayed in the marketing Blue text
+        UX Test Scenario: Validate the grid has a Course IDs row with Course ID displayed in the marketing Blue text
             Given the user is working within the Schedule app
                 Then the Courses grid will display each horizontal course listing
   
         <hr>
-        UX Scenario: Validate there is contrast in the column headers so user can differentiate between the data and the headers
+        UX Test Scenario: Validate there is contrast in the column headers so user can differentiate between the data and the headers
             Given the user is working within the Schedule app
                 Then the UI will have varying shades in contrast so the user can differentiate data within the header section
 
         <hr>
-        UX Scenario: Validate the Academic Year menu selector field is meeting the W3G min and max pixel dimensions of 24 x 24
+        UX Test Scenario: Validate the Academic Year menu selector field is meeting the W3G min and max pixel dimensions of 24 x 24
             Given the user is working within the Schedule app
                 Then the Academic Year menu selector meets the target pixel size of 24 x 24 min-height
                 Then this ensures the sufficient W3G 2.5.8 Target spacing requirements
 
         <hr>
-        UX Scenario: Validate the Academic Year menu selector 'arrow' button is meeting the W3G min and max pixel dimensions of 24 x 24
+        UX Test Scenario: Validate the Academic Year menu selector 'arrow' button is meeting the W3G min and max pixel dimensions of 24 x 24
             Given the user is working within the Schedule app
                 Then the Academic Year selector 'arrow' button meets the target pixel size of 24 x 24 min-height
                 Then this ensures the sufficient W3G 2.5.8 Target spacing requirements
 
         <hr>
-        UX Scenario: Validate the Course 'arrow' expander button is meeting the W3G min and max pixel dimensions of 24 x 24
+        UX Test Scenario: Validate the Course 'arrow' expander button is meeting the W3G min and max pixel dimensions of 24 x 24
             Given the user is working within the Schedule app
                 Then the Course 'arrow' expander button meets the target pixel size of 24 x 24 min-height
                 Then this ensures the sufficient W3G 2.5.8 Target spacing requirements
