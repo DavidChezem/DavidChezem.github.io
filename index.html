@@ -90,6 +90,13 @@
             Given the user is working within the Section and Section details app
                 Then the user is able to view their Sections and Section details within the new Scheduling app 
 
+      <hr>
+        Test Scenario: Validate a newly added Spinner has been added to the Section/Meetings column indicating the Section data is loading on first click
+            Given the user is working within the Section and Section details app
+            And the user clicks on the Section ID link within the Section/Meeting column details
+                Then the user is presented with a small Spinner indicating the Section details are loading 
+        
+
        <hr>
         Test Scenario: Validate user can make Edits to the section details - Meeting Days 
             Given the user is working within the Section and Section details app
@@ -105,7 +112,14 @@
         <hr>
         Test Scenario: Validate user can see their Section and Section details - Building location assignment 
             Given the user is working within the Section and Section details app
+                Then the user is able to view and make edits to the Location bulding assignment details
+
+
+        <hr>
+        Test Scenario: Validate user can see their Section and Section details - Building location assignment 
+            Given the user is working within the Section and Section details app
                 Then the user is able to view and make edits to the Location bulding assignment details 
+        
 
         
 
