@@ -268,7 +268,7 @@
 
         <hr style="height: 4px; background-color: #333; border: none;">
         <h2 class="left-text" style="text-align: center; color: blue;">Course and Sections Filtering</h2>
-        
+
 
 <a href="https://adastra.atlassian.net/browse/ASTRA-54715" target="_blank" style="font-size: 20px;">Jira: ASTRA-54715</a>
         <hr>
@@ -277,140 +277,140 @@
                 When the user filters the sections page using the current filtering functions
                 Then the filtering will be done using the updated Figma style filtering
          
-        <hr>
+        
         
         Test Scenario: Validate user is able to select a Column filter option
             Given the user needs to filter their Courses selections
                 When the user filters by Column
                 Then the filtering will be executed based on the current Columns options to choose from 
 
-        <hr>      
+             
         Test Scenario: Validate user is able to select a Operator filter option
             Given the user needs to filter their Courses selections
                 When the user filters by Operator
                 Then the filtering will be executed based on the current Operator options to choose from   
 
 
-        <hr>      
+          
         Test Scenario: Validate user is able to select a Value filter option
             Given the user needs to filter their Courses selections
                 When the user filters by Value
                 Then the filtering will be executed based on the current Value that the user enters for the filter    
         
         
-        <hr>
+        
         Test Scenario: Validate user will have the ability to Open Filter Dropdown
             Given the user is on the page with the filter functionality,
                 When the users click the "Filter" button (next to initials)
                 Then the Column selector displays a list of the current Column options to choose from within the Grid
         
 
-        <hr>
+        
         Test Scenario: Validate user will have the ability to Add New Filter
             Given the filter dropdown is open and being used
                 When the user needs to make edits and Add a Course
                 Then the user can make the required Schedule updates
 
-          <hr>
+        
         Test Scenario: Validate user will have the ability to perform Logical Grouping
             Given the user is working within the Schedule application
               And the user is working with multiple filters
               Then a new filter row with Column, Operator, and Value fields is added to the dropdown
 
-        <hr>
+        
         Test Scenario: Validate user will have the ability to Apply filters
             Given the user has entered filter criteria
               When the user clicks "Apply"
               Then the dropdown should close and the filtered results should be shown based on the entered criteria
 
-        <hr>
+        
         Test Scenario: Validate the app can Show Filter Count
             Given the user has at least one filter active
               Then  the "Filter" button should display the number of active filters in parentheses, e.g., Filter (2)
 
-        <hr>
+        
         Test Scenario: Validate the app can Clear the Filter
             Given the user has one or more filters displayed
                 When the user clicks the trash icon next to a filter row,
                 Then that filter should be removed from the list and the count should update accordingly after applying
 
-        <hr>
+        
         Test Scenario: Validate the user can Cancel the filter actions
             Given the user is using the Filter functions
                 When the user clicks the Cancel option 
                 Then the filtering option should be closed
 
-        <hr>
+        
         Test Scenario: Validate the Filter button is displayed on the Courses dashboard page
             Given the user is using the Courses app page 
                 Then the Filter pill should be displayed
 
-         <hr>
+        
         Test Scenario: Validate the Filter button is selected the Filtering modal window opens 
             Given the user selects the Filter button
                 Then the filtering modal window opens
 
-         <hr>
+        
         TestScenario: Validate the Filter modal defaults to Columns = Course and Operator = Contains
             Given the user is using the Filter functions
                 When the user opens the Filter modal
                 Then the Columns and Operator will both default to Course and Contains respectively
 
-         <hr>
+        
         Test Scenario: Validate the Reset All button clears the current filter parameters
             Given the user is using the Filter functions
                 When the user clicks the Reset All 
                 Then the current Filter parameters should be cleared (reset)
 
-         <hr>
+         
         Test Scenario: Validate the Operator selection option contains four options: Contains, Equals, Starts with, Ends with
             Given the user is using the Filter functions
                 When the user selects the Operator option
                 Then the user is provided these four Operator options when filtering
 
-        <hr>
+        
         Test Scenario: Validate the "Title" colunmn search param and the Contains operator is filtering based on the selected Value
             Given the user is using the Filter functions
                 When the user selects the "Title" and "Contains" params
                 Then the filter will sort by the specified title and operator params with the correct value displayed
 
-        <hr>
+        
         Test Scenario: Validate the "Subject" colunmn search param and the "Equals" operator is filtering based on the selected Value
             Given the user is using the Filter functions
                 When the user selects the "Subject" and "Equals" params
                 Then the filter will sort by the specified Subject and Quals operator with the exact correct value displayed
 
-        <hr>
+        
         Test Scenario: Validate the "Subject" colunmn search param and the "Starts with" operator is filtering based on the selected Value
             Given the user is using the Filter functions
                 When the user selects the "Subject" and Starts with params
                 Then the filter will sort by the specified Subject and Starts with param
                 
-        <hr>
+        
         Test Scenario: Validate the "Subject" colunmn search param and the "Ends with" operator is filtering based on the selected Value
             Given the user is using the Filter functions
                 When the user selects the "Subject" and Ends with params
                 Then the filter will sort by the specified Subject and Ends with param
 
-        <hr>
+        
         Test Scenario: Validate the filter provides predictive text searching for specific search filters
             Given the user is using the Filter functions
                 When the user selects a specific search filter in which predictive logic assists the searching
                 Then the filter will use the predictive logic to execute the search
 
-        <hr>
+        
         Test Scenario: Validate the filter enables the user to search by Course name using a full numeric value
             Given the user is using the Filter functions
                 When the user performs a search for a Course name using one it's numeric values
                 Then the filter will return all Courses which contain that numeric value
 
-            <hr>
+    
         Test Scenario: Validate the filter enables the user to search by Course name using a partial numeric value
             Given the user is using the Filter functions
                 When the user performs a search for a Course using a partial numeric search param
                 Then the filter will return all Courses which contain that partial numeric value
 
-         <hr>   
+        
         Test Scenario: Validate when sorting by Workflow Step, the only Operator option is Equals
             Given the user needs to filter their sections
                 When the user filters the section details by Columns "Workflow Step"
