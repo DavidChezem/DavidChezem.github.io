@@ -122,80 +122,77 @@
                 And should be similar to the current AS8 sections view
                 And the columns that should be turned on. Basically the standard sections/meetings view will display all available columns
 
-         <hr>
+
         Test Scenario: Validate academic scheduler can create a schedule that provides the courses the students need
             Given the user is an academic scheduler and needs to view all their Sections
                 When the user clicks into the Sections dettails
                 Then the academic scheduler user can view and can create a schedule that provides the courses their students require
 
-        <hr>
         Test Scenario: Validate user can view each section row and see the combined "Course/Section" identifier (e.g., "BIO101/01")
             Given the user is working within the Section pages
                 When the sections view is rendered 
                 Then the user can see each section row displayed with the combined "Course/Section" identifier (e.g., "BIO101/01")
 
 
-      <hr>
         Test Scenario: Validate no additional migration time and/or implementation issues will arise with Annual Scheduling while moving to PostgreSQL
             Given the user is working with Ad Astra to migrate data into the new platform
                 Then the courses, sections, section meetings data will migrate with minimal to no issues
 
-        <hr>
+        
         Test Scenario: Validate the academic scheduler user can view the sections without having to drill into courses thus improving user efficiency
             Given the user is working with Ad Astra to migrate data into the new platform
                 Then the courses, sections, section meetings data will migrate with minimal to no issues
 
-        <hr>
+        
         Test Scenario: Validate the user can see a list of predefined Views in a collapsible section
             Given the user is working within the Courses view
                 Then there is a collapsible UI to expand or hide the Academic Views section
                 And the user can quickly access them while keeping the view list manageable
 
-            <hr>
+        
         Test Scenario: Validate the Calendar view can be re-created in the new Annual Schedule. 
             Given the user is working within the Calendar views
                 Then the user can view their Schedule in a Calendar view
 
 
-          <hr>
         Test Scenario: Validate the Scheduler or Academic Admin user can edit the details of a specific section
             Given the user is working within the Sections app
                 And the user is a Scheduler or Academic Admin they can Edit the details of a section  
 
-        <hr>
+    
         Test Scenario: Validate the Schedule grid will default to displaying the full courses grid when first opened by the user
             Given the user is opening the Schedule grid for the first time
                 And no Terms have been selected yet
                 Then the grid still displays a listing of courses within the grid
 
-      <hr>
+    
         Test Scenario: Validate the user can still view the current Schedule Term years when clicking into another app and clicking back into Schedule
             Given the user is working within the Schedule grid and selects a Term from the Academic Year selector
                 When the user selects a different app within the platform
                 And clicks back into the Schedule app
                 Then that academic year or Term will remain focused when the user clicks back into Schedule 
 
-      <hr>
+      
         Test Scenario: Validate the user's currently viewed Term year will cache and remain the active term year when user logs back into the Schedule grid
             Given the user is working within the Schedule grid
                 When the user selects a specific academic year to work within
                 Then that academic year will be cached and default when the user click into the Schedul grid again  
 
         
-      <hr>
+      
         Test Scenario: Validate when the user does NOT have a selected Term year displayed that the Course grid will still load as normal
             Given the user is working within the Schedule grid
                 When the user clears out the current Term year (Clicks the X) 
                 Then the full Courses grid still displays as it normally does when page is refreshed or re-opened
 
-         <hr>
+        
         Test Scenario: Validate the Academic admin user can view a list of Academic terms grouped by year
             Given the user is needing to Edit the associated Term
                 When working within the Acaedemics app
                 And each term card displays: Term description, Code, Start Dates, Term Type, and Academic Year.
                 Then the user is able to Expand & Collapse academic years to show & hide their Terms
 
-        <hr>
+        
         Test Scenario: Validate user can update term-level analysis settings (e.g., prior term, baseline term, "like" terms),
             Given the user is working within the term level analysis settings
                 When the user needs to run forecasting and comparison settings 
@@ -225,32 +222,33 @@
 
                 Then the forecasting activities are aligned with institutional planning practices
 
-            <hr>
+
+    
         Test Scenario: Validate the academic scheduler can view the details of a specific section
             Given a user selects a section from a list or schedule views within the Sections details
                 When the section details panel opens
                 Then it should display a view of all key section attributes 
 
-            <hr>
+            
         Test Scenario: Validate the academic scheduler can view the Setup of a section within the new Scheduling
             Given a academic scheduler selects a section from a list or schedule views within the Sections details
                 When the section details panel opens
                 Then it should display the Sections setup details
 
-            <hr>
+            
         Test Scenario: Validate the academic scheduler can view the scheduling context of a section 
             Given a academic scheduler selects a section from a list or schedule views within the Sections details
                 When the section details panel opens
                 Then it should display the scheduling context of a section
                 
-            <hr>
+            
         Test Scenario: Validate the academic scheduler can view spefic attributes of a section
             Given a academic scheduler selects a section from a list or schedule views within the Sections details
                 When the section details panel opens
                 Then it should display the scheduling attributes for that section
 
 
-            <hr>
+            
         Test Scenario: Validate the academic scheduler or the academic admin can Edit the details of a specific section
             Given a user selects a section from a list or schedule views within the Sections details
                 When the scheduler works within the Section details
@@ -258,7 +256,7 @@
                 Then the section drawer will open with the Section details displayed and editable
    
 
-            <hr>
+        
         Test Scenario: Validate the Section details drawer is matching the Section details listed in the Courses grid
             Given a user selects a Section details drawer
                 When viewing the Section details within the drawer
