@@ -1376,25 +1376,6 @@
                  Then</strong> that user is able to Add/Edit meetings within the applicable sections 
 
 
-        
-  
-                 
-<!--Astra-49891-->
-</div>
-<button class="collapsible"><b>Custom Permissions - </b>Astra-49891 (The Add Section, Delete, Status button should be enabled for users with "Custom" permissions if they have the required field-level edit permissions)</button>
-<div class="content">
-<pre><code class="language-gherkin">
-<p style="font-size: 20px;text-align: center;">Feature: Ensure required fields (e.g., sectionCode, sectionTitle) are editable for "Custom" users</p>
-        Scenario: Validate the Add Section, Delete, and status is active for users with Custom permissions set true
-            Given</strong> the user already has custom level permissions set true 
-                 When</strong> viewing Add Section, Delete, and Status
-                 Then</strong> these options will be enabled
-                 <hr>
-
-        Scenario: Validate when the samne custom permissions are set to False - the Add Section align option button is disabled 
-            Given</strong> the user does not have Custom permissions for Add or Delete Sections
-                 When</strong> viewing Add Section, Delete, and Status
-                 Then</strong> these options are disabled 
 
 
 <!--Astra-50029-->
