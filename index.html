@@ -107,7 +107,6 @@
                 Then the user is able to view and make edits to the Instructor details of the section 
 
 
-
         Test Scenario: Validate user can see their Section and Section details - Building location assignment 
             Given the user is working within the Section and Section details app
                 Then the user is able to view and make edits to the Location bulding assignment details 
@@ -129,6 +128,7 @@
             Given the user is an academic scheduler and needs to view all their Sections
                 When the user clicks into the Sections dettails
                 Then the academic scheduler user can view and can create a schedule that provides the courses their students require
+
 
         Test Scenario: Validate user can view each section row and see the combined "Course/Section" identifier (e.g., "BIO101/01")
             Given the user is working within the Section pages
@@ -181,7 +181,6 @@
                 Then that academic year will be cached and default when the user click into the Schedul grid again  
 
         
-      
         Test Scenario: Validate when the user does NOT have a selected Term year displayed that the Course grid will still load as normal
             Given the user is working within the Schedule grid
                 When the user clears out the current Term year (Clicks the X) 
@@ -194,7 +193,7 @@
                 And each term card displays: Term description, Code, Start Dates, Term Type, and Academic Year.
                 Then the user is able to Expand & Collapse academic years to show & hide their Terms
 
-        
+
         Test Scenario: Validate user can update term-level analysis settings (e.g., prior term, baseline term, "like" terms),
             Given the user is working within the term level analysis settings
                 When the user needs to run forecasting and comparison settings 
@@ -249,7 +248,6 @@
                 When the section details panel opens
                 Then it should display the scheduling attributes for that section
 
-
             
         Test Scenario: Validate the academic scheduler or the academic admin can Edit the details of a specific section
             Given a user selects a section from a list or schedule views within the Sections details
@@ -258,7 +256,6 @@
                 Then the section drawer will open with the Section details displayed and editable
    
 
-        
         Test Scenario: Validate the Section details drawer is matching the Section details listed in the Courses grid
             Given a user selects a Section details drawer
                 When viewing the Section details within the drawer
@@ -276,7 +273,6 @@
                 When the user filters the sections page using the current filtering functions
                 Then the filtering will be done using the updated Figma style filtering
          
-        
         
         Test Scenario: Validate user is able to select a Column filter option
             Given the user needs to filter their Courses selections
@@ -297,14 +293,12 @@
                 Then the filtering will be executed based on the current Value that the user enters for the filter    
         
         
-        
         Test Scenario: Validate user will have the ability to Open Filter Dropdown
             Given the user is on the page with the filter functionality,
                 When the users click the "Filter" button (next to initials)
                 Then the Column selector displays a list of the current Column options to choose from within the Grid
         
 
-        
         Test Scenario: Validate user will have the ability to Add New Filter
             Given the filter dropdown is open and being used
                 When the user needs to make edits and Add a Course
