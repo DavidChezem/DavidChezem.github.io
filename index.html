@@ -260,6 +260,18 @@
                 Then the Sections tab within the drawer matches the Sections data in the Courses grid 
 
 
+        Test Scenario: Validate the Section details links can be Enabled & Disabled using the "Section Details" entitlemenet feature flipper
+            Given an Admin or a Standard user is working within the new Sections details grid
+                When turning the "Section Details" feature flipper to ON
+                Then the Section & Courses links will be Enabled
+
+        
+        Test Scenario: Validate the Section details links can be Enabled & Disabled using the "Section Details" entitlemenet feature flipper
+            Given an Admin or a Standard user is working within the new Sections details grid
+                When turning the "Section Details" feature flipper to OFF
+                Then the Section & Courses links will be Disabled
+
+
         <hr style="height: 4px; background-color: #333; border: none;">
         <h2 class="left-text" style="text-align: center; color: blue;">Filters</h2>
 
