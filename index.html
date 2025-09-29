@@ -64,6 +64,8 @@
 <a href="https://adastra.atlassian.net/browse/ASTRA-55698" target="_blank" style="font-size: 20px;"">Jira: ASTRA-55698</a>
 <a href="https://adastra.atlassian.net/browse/ASTRA-54882" target="_blank" style="font-size: 20px;"">Jira: ASTRA-54882</a>
 
+
+
         Test Scenario: Validate user can view Course details including historical data
             Given the user is working within the Courses app
                 When the user needs to Assign a Room to a Section Meeting
@@ -786,6 +788,35 @@
 </html>
 
 
+<table border="1" style="width:50%; margin:auto; text-align:center;">
+  <thead>
+    <tr>
+      <th>Test Scenario</th>
+      <th>Feature Branch</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Feature branch enables the section links to be turned ON/OFF via the Section Details entitlement:</td>
+      <td>http://feat55693.beta.something.astra-dev.com/unified-schedule</td>
+      <td>Row 1, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 3, Cell 1</td>
+      <td>Row 3, Cell 2</td>
+      <td>Row 3, Cell 3</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
 <!--Astra-51076-->
 </div>
 <button class="collapsible"><b>UX Standards - </b>Astra-51076 (Edit custom permissions icon needs tooltip)</button>
@@ -841,200 +872,7 @@
                 When</strong> the user is interacting with the Action buttons mentioned 
                 Then</strong> the action button does not require a tooltip because of the existing button, action text
 
-        
-
-
-
-<!--Astra-50762-->
-</div>
-<button class="collapsible"><b>UX Standards - </b>Astra-50762 (Filter Remove Button Tooltips)</button>
-<div class="content"> 
-<pre><code class="language-gherkin"></code>
-<p style="font-size: 20px;text-align: center;">Feature: UX - Quick Filters button should not have a tooltip</p>
-<a href="https://adastra.atlassian.net/wiki/spaces/EN/pages/2779414530/User+Experience+Standards#Tool-Tips" target="_blank">UX Standard</a>
-        Scenario: Validate the Quick Filters button does not have a tooltip because it already has button text
-            Given</strong> the user is working within the platform
-                When</strong> using the Quick Filters buttons which happen to appear on multiple pages
-                Then</strong> the action button does not open a tooltip on mouse hover due to existing descriptive text on the button
-                
-                <hr>
-        Scenario: Validate the Quick Filters button still functions and still displays correctly after the tooltip has been removed
-            Given</strong> the user is working within the platform
-                When</strong> using the Quick Filters buttons which happen to appear on multiple pages
-                Then</strong> the action button still displays the primary Quick Filters button label correctly and functions in the same manner 
-
-                <hr>
-        Scenario: Validate the Quick Filters change has been deployed across the multiple platform views that display the Quck Filters option 
-            Given</strong> the user is working within the platform in the Schedule application 
-                When</strong> using the Quick Filters buttons on the Schedule application page
-                Then</strong> the Quick Filters action button does not open a tooltip
-
-                <hr>
-        Scenario: Validate the Quick Filters change has been deployed across the multiple platform views that display the Quck Filters option 
-            Given</strong> the user is working within the platform in the Courses application 
-                When</strong> using the Quick Filters buttons on the Courses application page
-                Then</strong> the Quick Filters action button does not open a tooltip
-
-                <hr>
-        Scenario: Validate the Quick Filters change has been deployed across the multiple platform views that display the Quck Filters option 
-            Given</strong> the user is working within the platform in the Monitor application 
-                When</strong> using the Quick Filters buttons on the Monitor application page
-                Then</strong> the Quick Filters action button does not open a tooltip
-
-
-
-<!--Astra-46700-->
-</div>
-<button class="collapsible"><b>UX Standards - </b>Astra-46700 (Add Meeting Pattern Management input needs to be updated)</button>
-<div class="content"> 
-<pre><code class="language-gherkin"></code>
-<p style="font-size: 20px;text-align: center;">Feature: UX - Add Meeting Pattern Management input needs to be updated</p>
-        Scenario: Validate the New button used to add a Meeting Pattern Management has an updated UX change
-            Given</strong> the user is adding a new Meeting Pattern Management pattern to the schedule
-                When</strong> using the action button
-                Then</strong> the action button will be updated with the new label of "Add Meeting Pattern"
-
-            <hr>
-        Scenario: Validate the "Add Meeting Pattern" button no longer has the "plus +" graphical icon
-            Given</strong> the new "Add Meeting Pattern" action button has been added to the UI
-                When</strong> its in place
-                Then</strong> the button will NOT contain the prior non-compliant graphical icon "plus sign +"
-
-            <hr>
-        Scenario: Validate the action button continues to open the "Add Meeting Pattern" modal window
-            Given</strong> the user is adding a new "Add Meeting Pattern" to the schedule
-                When</strong> opening the "Add Meeting Pattern" action bultton and modal
-                Then</strong> the "Add Meeting Pattern" modal opens correctly as it did prior to the UX label change
-
-
-<!--Astra-50090-->
-</div>
-<button class="collapsible"><b>UX Standards - </b>Astra-50090 (Courses/Meetings - Find (Instructor) modal link does not need text underlined) **This ticket addresses graphical element on Add Instructor button**</button>
-<div class="content">
-<pre><code class="language-gherkin">
-<p style="font-size: 20px;text-align: center;">Feature: Validate the Add Instructor graphical element has been changed to the current grey input button</p>
-        Scenario: The Add Instructor button is changed to the Gray background instead of the graphic element
-            Given</strong> the user is working within the Courses and Meetings app
-                 When</strong> adding an instructor to a Meeting
-                 Then</strong> the add button is now shaded Gray
-
-                <hr>
-        Scenario: Validate the Add Instructor button opens the Remove and Profile button options
-            Given</strong> the user is adding an instructor and clicks the button
-                 When</strong> the user clicks the Add Instructor button
-                 Then</strong> the Profile and Remove button panel displays 
-
-                 <hr>
-        Scenario: Validate the Remove button cancels the Add Instructor option and closes the view
-            Given</strong> the user is working in the Add Instructor 
-                 When</strong> selecting the Remove button option
-                 Then</strong> the instructor selection is removed and the Add Instructor button displays again from the original view
-
-
-<!--Astra-48547-->
-</div>
-<button class="collapsible"><b>UX Standards - </b>Astra-48547 (Add Course button needs the marketing blue shading)</button>
-<div class="content">
-<pre><code class="language-gherkin"></code>
-<p style="font-size: 20px;text-align: center;">Feature: UX- Add Course button needs the marketing blue shading</p>
-        Scenario: Validate the Add Course button has the updated marketing blue shading
-            Given</strong> the user is working within the platform and Courses
-                 When</strong> the user is using the Add Course input button
-                 Then</strong> the input button should match the other primary inputs with the updated marketing blue shade
-
-
-<!--Astra-45194-->
-</div>
-<button class="collapsible"><b>Space Titles - </b>Astra-45194 (Validate Space title update)</button>
-<div class="content">
-<pre><code class="language-gherkin"></code>
-<p style="font-size: 20px;text-align: center;">Feature: Validate Space title update</p>
-        Scenario: Validate new formatting
-            Given</strong> the recent updates to Rooms name formatting
-                When</strong> viewing the new format
-                Then</strong> the nomenclature will follow {building name} {room code} - {room name}  
-
-            <hr>
-        Scenario: Validate the UI locations impacted by the Room formatting updates
-            Given</strong> the user is viewing the spaces viewer > header
-                When</strong> user is viewing the spaces viewer
-                Then</strong> the name formatting has been updated correctly - Sample of new format = "BCH 00000 - 00000"
-
-            <hr>
-        Scenario: Validate the changes within the Timeline
-            Given</strong> user is working within the "Timeline" feature
-                When</strong> changing the view dropdown entry from Rooms to Spaces
-                Then</strong> update the list on the left to the new format
-
-            <hr>
-        Scenario: Validate the UI locations impacted by the Room formatting updates
-            Given</strong> the user is viewing the spaces viewer > header
-                When</strong> user is viewing the spaces viewer
-                Then</strong> the name formatting has been updated correctly - Sample of new format = "BCH 00000 - 00000"
-
-
-<!--Astra-48852-->
-</div>
-<button class="collapsible"><b>Calendar Space Conflicts - </b>Astra-48852 (Space conflicts on calendar)</button>
-<div class="content">
-<pre><code class="language-gherkin">
-<p style="font-size: 20px;text-align: center;">Feature: Space conflicts on calendar</p>
-        Scenario: Validate the Room Selector has a Calendar viee embedded
-            Given</strong> the user is updating the information within the Selector
-                 When</strong> updating the information within the Selector
-                 Then</strong> the modal has an embedded calendar view
-
-                 <hr>
-        Scenario: Validate the Calendar is aligned with the current product concept mock
-            Given</strong> the user is working within the Room Selector
-                When</strong> the user makes Section details changes and invokes a Publish Status update
-                Then</strong> updating the information within the Selector
-                And</strong> the embedded calendar will have the similar look and feel of the product mock
-
-                <hr>
-        Scenario: Validate the existing conflicts are now visible on the new Calendar view within Room Selector
-            Given</strong> the user is working within the Room Selector
-                 When</strong> the user is working within the Room Selector
-                 Then</strong> the Calendar view will display the current conflicts 
-
-                 <hr>
-        Scenario: Validate the existing conflicts are now visible on the new Calendar view within Room Selector
-            Given</strong> the user is working within the Room Selector
-                  When</strong> the user is working within the Room Selector
-                  Then</strong> the Calendar view will display the current conflicts 
-
-                  <hr>
-        Scenario: Validate the Available spaces toggle is defaulted to ON when user first opens the Room Selector
-            Given</strong> the user is working within the Course details page
-                  When</strong> the user selects the Find link to open the Meetings > Room Selector
-                  And</strong> the user enters a Building value and the Room Type value
-                  Then</strong> the Room Selector set to Avaiable Spaces toggle will default to ON
-
-                  <hr>
-        Scenario: Validate the Unavailable icon displays correctly on the Unavailable Spaces when selecting the Available Rooms Only toggle to OFF
-            Given</strong> the user is working within the Room Selector
-                  When</strong> the user is working within the Room Selector and toggles off the Available Rooms Only option
-                  Then</strong> the availability Space listing will only show the Unavailable Spaces 
-
-
-<!--Astra-48473-->
-</div>
-<button class="collapsible">Astra-48473 (Adding more milliseconds to the hover state for application sidebar)</button>
-<div class="content">
-<pre><code class="language-gherkin"></code>
-<p style="font-size: 20px;text-align: center;">Feature: Adding more milliseconds to the hover state for application sidebar</p>
-        Scenario: Validate the main sidebar menu can be modified to fly out with a more user friendly delay
-            Given</strong> the user is working within the platform and hovers on the main sidebar menu
-                    When the menu opens
-                    And</strong> the user is either working within the menu or accidently hovers over the menu
-                    Then</strong> there should be a slight delay to reduce accidental opening of the menu 
-                    Or
-                    Then</strong> the sidebar is changed to more of an intentional click and removing the On Hover behavior from the menu
-                <hr>
-            Given</strong> the user is working within the platform and hovers on the main sidebar menu
-                    When the sidebar menu opens 
-                    Then</strong> there will be a slight delay added when sidebar is opening thus providing a better UX. 
-        
+    
 
 
 <!--Astra-48685-->
