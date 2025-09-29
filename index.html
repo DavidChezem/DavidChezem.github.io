@@ -788,34 +788,6 @@
 </html>
 
 
-<table border="1" style="width:50%; margin:auto; text-align:center;">
-  <thead>
-    <tr>
-      <th>Test Scenario</th>
-      <th>Feature Branch</th>
-      <th>Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Feature branch enables the section links to be turned ON/OFF via the Section Details entitlement:</td>
-      <td>http://feat55693.beta.something.astra-dev.com/unified-schedule</td>
-      <td>Row 1, Cell 3</td>
-    </tr>
-    <tr>
-      <td>Row 2, Cell 1</td>
-      <td>Row 2, Cell 2</td>
-      <td>Row 2, Cell 3</td>
-    </tr>
-    <tr>
-      <td>Row 3, Cell 1</td>
-      <td>Row 3, Cell 2</td>
-      <td>Row 3, Cell 3</td>
-    </tr>
-  </tbody>
-</table>
-
-
 
 <!--Astra-51076-->
 </div>
@@ -841,38 +813,6 @@
                  Then</strong> the Edit Custom Permissions icon is not displayed (Regression)
     
 
-
-<!--Astra-50742-->
-</div>
-<button class="collapsible"><b>UX Standards - </b>Astra-50742 (Settings-removal of unnecessary tooltips)</button>
-<div class="content"> 
-<pre><code class="language-gherkin"></code>
-<p style="font-size: 20px;text-align: center;">Feature: UX - Multiple areas needing UX updates</p>
-<a href="https://adastra.atlassian.net/wiki/spaces/EN/pages/2779414530/User+Experience+Standards#Tool-Tips" target="_blank">UX Standard</a>
-        Scenario: Validate the Academics> Pathway Courses tab> Add Pathway Course Mapping button
-            Given</strong> the user is working within the platform
-                When</strong> using the user is interacting with the Add Pathway Course Mapping button
-                Then</strong> the action button does not require a tooltip
-
-                <hr>
-        Scenario: Validate the Exclusions> Exclusions tab > Add Exclusion button does not need a tooltip
-            Given</strong> the user is working within the Exclusions app
-                When</strong> the user is interacting with the Add Exclusion button
-                Then</strong> the action button does not require a tooltip
-
-                <hr>
-        Scenario: Validate the Exclusions> Faculty Exclusions tab > Add Exclusion button does not need a tooltip
-            Given</strong> the user is working within the Exclusions app
-                When</strong> the user is interacting with the Add Exclusion button
-                Then</strong> the action button does not require a tooltip
-
-
-        Scenario: Validate within the feature branch build environment that the preceeding platform tooltips have been removed from the specific actions buttons
-            Given</strong> the user is working within the Exclusions, Faculty Exclusions, and Pathways
-                When</strong> the user is interacting with the Action buttons mentioned 
-                Then</strong> the action button does not require a tooltip because of the existing button, action text
-
-    
 
 
 <!--Astra-48685-->
