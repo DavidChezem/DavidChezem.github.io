@@ -95,7 +95,7 @@
                 Then the user is able to view their Sections and Section details within the new Scheduling app 
 
      
-        Test Scenario: Validate a newly added Spinner has been added to the Section/Meetings column indicating the Section data is loading on first click
+        Test Scenario: Validate a new Spinner has been added to the Section/Meetings column indicating the Section data is loading on first click
             Given the user is working within the Section and Section details app
             And the user clicks on the Section ID link within the Section/Meeting column details
                 Then the user is presented with a small Spinner indicating the Section details are loading 
@@ -114,6 +114,11 @@
         Test Scenario: Validate user can see their Section and Section details - Building location assignment 
             Given the user is working within the Section and Section details app
                 Then the user is able to view and make edits to the Location bulding assignment details 
+
+
+        Test Scenario: Validate user can make real time Edits on the Sections details page
+            Given the user is working within the Section and Section details app
+                Then the user is able to make Edits to a Section detail and the update is real time without a page refresh
 
 
         <hr>
@@ -671,6 +676,11 @@
 
         <tr>
         <td>Functional - Validate the academic scheduler user can view the sections without having to drill into courses thus improving user efficiency</td>
+        <td class="failed">In Development</td>
+       </tr>
+
+        <tr>
+        <td>Functional - Validate the user can make real time Edits on the Sections details page</td>
         <td class="failed">In Development</td>
        </tr>
     
