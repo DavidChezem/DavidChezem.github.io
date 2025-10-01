@@ -65,13 +65,13 @@
 <!--Functional test scenarios-->
         Test Scenario: Validate user can view Course details including historical data
             Given the user is working within the Courses app
-                When the user needs to Assign a Room to a Section Meeting
+                When the user needs to assign a room to a section Meeting
                 Then the Room is assigned and can be completed from the Section grid 
 
         Test Scenario: Validate the user can add, update, or remove a room from a Section meeting
-            Given the user is working within the Courses and Sections app
-                When the user needs to view Course details 
-                Then the user can use the newly designed Course drawer
+            Given the user is working within the courses and sections app
+                When the user needs to view course details 
+                Then the user can use the newly designed course drawer
 
         Test Scenario: Validate user can view all their courses for an academic year in a performant way
             Given the user is working within the updated Schedule tool 
@@ -79,41 +79,41 @@
                 Then the schedule functions can be performed in a quick and performant manner
 
 
-        Test Scenario: Validate user can add a course in the Annual Schedule product
-            Given the user is working within Annual Schedule
+        Test Scenario: Validate user can add a course in the annual schedule product
+            Given the user is working within annual schedule
                 When the user 
-                Then a new filter row with Column, Operator, and Value fields is added to the dropdown
+                Then a new filter row with column, operator, and value fields is added to the dropdown
 
         
-        Test Scenario: Validate user can see their Section and Section details
-            Given the user is working within the Section and Section details app
-                Then the user is able to view their Sections and Section details within the new Scheduling app 
+        Test Scenario: Validate user can see their section and section details
+            Given the user is working within the section and section details app
+                Then the user is able to view their sections and section details within the new scheduling app 
 
      
-        Test Scenario: Validate a new Spinner has been added to the Section/Meetings column indicating the Section data is loading on first click
-            Given the user is working within the Section and Section details app
-            And the user clicks on the Section ID link within the Section/Meeting column details
-                Then the user is presented with a small Spinner indicating the Section details are loading 
+        Test Scenario: Validate a new spinner has been added to the section/Meetings column indicating the section data is loading on first click
+            Given the user is working within the section and section details app
+            And the user clicks on the section ID link within the section/meeting column details
+                Then the user is presented with a small spinner indicating the Section details are loading 
         
 
-        Test Scenario: Validate user can make Edits to the section details - Meeting Days 
-            Given the user is working within the Section and Section details app
-                Then the user is able to view and make edits to the Meeting Days option 
+        Test Scenario: Validate user can make edits to the section details - meeting days 
+            Given the user is working within the section and section details app
+                Then the user is able to view and make edits to the meeting days option 
 
 
-        Test Scenario: Validate user can see their Section and Section details - Instructor details
-            Given the user is working within the Section and Section details app
-                Then the user is able to view and make edits to the Instructor details of the section 
+        Test Scenario: Validate user can see their section and section details - instructor details
+            Given the user is working within the section and section details app
+                Then the user is able to view and make edits to the instructor details of the section 
 
 
-        Test Scenario: Validate user can see their Section and Section details - Building location assignment 
-            Given the user is working within the Section and Section details app
-                Then the user is able to view and make edits to the Location bulding assignment details 
+        Test Scenario: Validate user can see their section and section details - building location assignment 
+            Given the user is working within the section and section details app
+                Then the user is able to view and make edits to the location bulding assignment details 
 
 
-        Test Scenario: Validate user can make real time Edits on the Sections details page
-            Given the user is working within the Section and Section details app
-                Then the user is able to make Edits to a Section detail and the update is real time without a page refresh
+        Test Scenario: Validate user can make real time edits on the sections details page
+            Given the user is working within the section and section details app
+                Then the user is able to make Edits to a section detail and the update is real time without a page refresh
 
 
 
@@ -148,49 +148,49 @@
 
         
         Test Scenario: Validate the user can see a list of predefined Views in a collapsible section
-            Given the user is working within the Courses view
+            Given the user is working within the courses view
                 Then there is a collapsible UI to expand or hide the Academic Views section
                 And the user can quickly access them while keeping the view list manageable
 
         
-        Test Scenario: Validate the Calendar view can be re-created in the new Annual Schedule. 
-            Given the user is working within the Calendar views
-                Then the user can view their Schedule in a Calendar view
+        Test Scenario: Validate the calendar view can be re-created in the new Annual Schedule. 
+            Given the user is working within the calendar views
+                Then the user can view their schedule in a calendar views
 
 
-        Test Scenario: Validate the Scheduler or Academic Admin user can edit the details of a specific section
-            Given the user is working within the Sections app
-                And the user is a Scheduler or Academic Admin they can Edit the details of a section  
+        Test Scenario: Validate the scheduler or academic sdmin user can edit the details of a specific section
+            Given the user is working within the sections app
+                And the user is a scheduler or academic sdmin they can Edit the details of a section  
 
     
-        Test Scenario: Validate the Schedule grid will default to displaying the full courses grid when first opened by the user
-            Given the user is opening the Schedule grid for the first time
+        Test Scenario: Validate the schedule grid will default to displaying the full courses grid when first opened by the user
+            Given the user is opening the schedule grid for the first time
                 And no Terms have been selected yet
                 Then the grid still displays a listing of courses within the grid
 
     
-        Test Scenario: Validate the user can still view the current Schedule Term years when clicking into another app and clicking back into Schedule
-            Given the user is working within the Schedule grid and selects a Term from the Academic Year selector
+        Test Scenario: Validate the user can still view the current schedule term years when clicking into another app and clicking back into schedule
+            Given the user is working within the schedule grid and selects a term from the academic year selector
                 When the user selects a different app within the platform
-                And clicks back into the Schedule app
-                Then that academic year or Term will remain focused when the user clicks back into Schedule 
+                And clicks back into the schedule app
+                Then that academic year or Term will remain focused when the user clicks back into schedule 
 
       
-        Test Scenario: Validate the user's currently viewed Term year will cache and remain the active term year when user logs back into the Schedule grid
-            Given the user is working within the Schedule grid
+        Test Scenario: Validate the user's currently viewed term year will cache and remain the active term year when user logs back into the schedule grid
+            Given the user is working within the schedule grid
                 When the user selects a specific academic year to work within
-                Then that selected Academic Year is 'cached' and becomes the default when the user clicks back into the Schedule grid  
+                Then that selected academic year is 'cached' and becomes the default when the user clicks back into the schedule grid  
 
         
-        Test Scenario: Validate when the user does NOT have a selected Term year displayed that the Course grid will still load as normal
-            Given the user is working within the Schedule grid
+        Test Scenario: Validate when the user does NOT have a selected term year displayed that the course grid will still load as normal
+            Given the user is working within the schedule grid
                 When the user clears out the current Term year (Clicks the X) 
-                Then the full Courses grid still displays as it normally does when page is refreshed or re-opened
+                Then the full courses grid still displays as it normally does when page is refreshed or re-opened
 
         
-        Test Scenario: Validate the Academic admin user can view a list of Academic terms grouped by year
-            Given the user is needing to Edit the associated Term
-                When working within the Acaedemics app
+        Test Scenario: Validate the academic admin user can view a list of academic terms grouped by year
+            Given the user is needing to edit the associated Term
+                When working within the acaedemics app
                 And each term card displays: Term description, Code, Start Dates, Term Type, and Academic Year.
                 Then the user is able to Expand & Collapse academic years to show & hide their Terms
 
@@ -211,13 +211,13 @@
                 Validate that user has a date picker which defines when the restriction takes effect
         
                 And...
-                Validate that user has checkboxes allow enabling/disabling for each location change permission
+                Validate that user has checkboxes which allow enabling/disabling for each location change permission
         
                 And...
                 Validate the user changes persist per academic term
         
                 And...
-                Validate the app has the “Add Milestone Date” and “Add Deadline Date” buttons which open a date-entry dialog.
+                Validate the app has the “Add Milestone Date” and “Add Deadline Date” buttons which open a date-entry dialog
         
                 And...
                 Validate the user can edit and save Custom Dates are saved with the associated - selected term 
@@ -227,49 +227,49 @@
 
     
         Test Scenario: Validate the academic scheduler can view the details of a specific section
-            Given a user selects a section from a list or schedule views within the Sections details
+            Given a user selects a section from a list or schedule views within the sections details
                 When the section details panel opens
                 Then it should display a view of all key section attributes 
 
             
-        Test Scenario: Validate the academic scheduler can view the Setup of a section within the new Scheduling
-            Given a academic scheduler selects a section from a list or schedule views within the Sections details
+        Test Scenario: Validate the academic scheduler can view the setup of a section within the new scheduling
+            Given a academic scheduler selects a section from a list or schedule views within the sections details
                 When the section details panel opens
                 Then it should display the Sections setup details
 
             
         Test Scenario: Validate the academic scheduler can view the scheduling context of a section 
-            Given a academic scheduler selects a section from a list or schedule views within the Sections details
+            Given a academic scheduler selects a section from a list or schedule views within the sections details
                 When the section details panel opens
                 Then it should display the scheduling context of a section
                 
             
         Test Scenario: Validate the academic scheduler can view spefic attributes of a section
-            Given a academic scheduler selects a section from a list or schedule views within the Sections details
+            Given a academic scheduler selects a section from a list or schedule views within the sections details
                 When the section details panel opens
                 Then it should display the scheduling attributes for that section
 
             
-        Test Scenario: Validate the academic scheduler or the academic admin can Edit the details of a specific section
-            Given a user selects a section from a list or schedule views within the Sections details
+        Test Scenario: Validate the academic scheduler or the academic admin can edit the details of a specific section
+            Given a user selects a section from a list or schedule views within the sections details
                 When the scheduler works within the Section details
-                And clicks on a specific Course section
-                Then the section drawer will open with the Section details displayed and editable
+                And clicks on a specific course section
+                Then the section drawer will open with the section details displayed and editable
    
 
-        Test Scenario: Validate the Section details drawer is matching the Section details listed in the Courses grid
-            Given a user selects a Section details drawer
-                When viewing the Section details within the drawer
-                Then the Sections tab within the drawer matches the Sections data in the Courses grid 
+        Test Scenario: Validate the section details drawer is matching the Section details listed in the courses grid
+            Given a user selects a section details drawer
+                When viewing the section details within the drawer
+                Then the sections tab within the drawer matches the sections data in the courses grid 
 
 
-        Test Scenario: Validate the Section details links can be Enabled & Disabled using the "Section Details" entitlemenet feature flipper
+        Test Scenario: Validate the section details links can be Enabled & Disabled using the "Section Details" entitlemenet feature flipper
             Given an Admin or a Standard user is working within the new Sections details grid
                 When turning the "Section Details" feature flipper to ON
-                Then the Section & Courses links will be Enabled
+                Then the Section & Courses links will be enabled
 
         
-        Test Scenario: Validate the Section details links can be Enabled & Disabled using the "Section Details" entitlemenet feature flipper
+        Test Scenario: Validate the section details links can be Enabled & Disabled using the "Section Details" entitlemenet feature flipper
             Given an Admin or a Standard user is working within the new Sections details grid
                 When turning the "Section Details" feature flipper to OFF
                 Then the Section & Courses links will be Disabled
@@ -288,137 +288,137 @@
                 Then the filtering will be done using the updated Figma style filtering
          
         
-        Test Scenario: Validate user is able to select a Column filter option
-            Given the user needs to filter their Courses selections
-                When the user filters by Column
-                Then the filtering will be executed based on the current Columns options to choose from 
+        Test Scenario: Validate user is able to select a column filter option
+            Given the user needs to filter their courses selections
+                When the user filters by column
+                Then the filtering will be executed based on the current columns options to choose from 
 
              
-        Test Scenario: Validate user is able to select a Operator filter option
-            Given the user needs to filter their Courses selections
-                When the user filters by Operator
-                Then the filtering will be executed based on the current Operator options to choose from   
+        Test Scenario: Validate user is able to select a operator filter option
+            Given the user needs to filter their courses selections
+                When the user filters by operator
+                Then the filtering will be executed based on the current operator options to choose from   
 
 
           
-        Test Scenario: Validate user is able to select a Value filter option
-            Given the user needs to filter their Courses selections
-                When the user filters by Value
-                Then the filtering will be executed based on the current Value that the user enters for the filter    
+        Test Scenario: Validate user is able to select a value filter option
+            Given the user needs to filter their courses selections
+                When the user filters by value
+                Then the filtering will be executed based on the current value that the user enters for the filter    
         
         
-        Test Scenario: Validate user will have the ability to Open Filter Dropdown
+        Test Scenario: Validate user will have the ability to open filter dropdown
             Given the user is on the page with the filter functionality,
                 When the users click the "Filter" button (next to initials)
-                Then the Column selector displays a list of the current Column options to choose from within the Grid
+                Then the column selector displays a list of the current column options to choose from within the Grid
         
 
         Test Scenario: Validate user will have the ability to Add New Filter
             Given the filter dropdown is open and being used
-                When the user needs to make edits and Add a Course
-                Then the user can make the required Schedule updates
+                When the user needs to make edits and add a course
+                Then the user can make the required schedule updates
 
         
         Test Scenario: Validate user will have the ability to perform Logical Grouping
-            Given the user is working within the Schedule application
+            Given the user is working within the schedule application
               And the user is working with multiple filters
-              Then a new filter row with Column, Operator, and Value fields is added to the dropdown
+              Then a new filter row with column, operator, and value fields is added to the dropdown
 
         
-        Test Scenario: Validate user will have the ability to Apply filters
+        Test Scenario: Validate user will have the ability to apply filters
             Given the user has entered filter criteria
-              When the user clicks "Apply"
+              When the user clicks "apply"
               Then the dropdown should close and the filtered results should be shown based on the entered criteria
 
         
-        Test Scenario: Validate the app can Show Filter Count
+        Test Scenario: Validate the app can show filter count
             Given the user has at least one filter active
-              Then  the "Filter" button should display the number of active filters in parentheses, e.g., Filter (2)
+              Then  the "filter" button should display the number of active filters in parentheses, e.g., filter (2)
 
         
-        Test Scenario: Validate the app can Clear the Filter
+        Test Scenario: Validate the app can clear the filter
             Given the user has one or more filters displayed
                 When the user clicks the trash icon next to a filter row,
                 Then that filter should be removed from the list and the count should update accordingly after applying
 
         
-        Test Scenario: Validate the user can Cancel the filter actions
-            Given the user is using the Filter functions
-                When the user clicks the Cancel option 
+        Test Scenario: Validate the user can cancel the filter actions
+            Given the user is using the filter functions
+                When the user clicks the cancel option 
                 Then the filtering option should be closed
 
         
-        Test Scenario: Validate the Filter button is displayed on the Courses dashboard page
-            Given the user is using the Courses app page 
+        Test Scenario: Validate the filter button is displayed on the courses dashboard page
+            Given the user is using the courses app page 
                 Then the Filter pill should be displayed
 
         
-        Test Scenario: Validate the Filter button is selected the Filtering modal window opens 
-            Given the user selects the Filter button
+        Test Scenario: Validate the filter button is selected the filtering modal window opens 
+            Given the user selects the filter button
                 Then the filtering modal window opens
 
         
-        TestScenario: Validate the Filter modal defaults to Columns = Course and Operator = Contains
-            Given the user is using the Filter functions
-                When the user opens the Filter modal
+        TestScenario: Validate the filter modal defaults to Columns = Course and Operator = Contains
+            Given the user is using the filter functions
+                When the user opens the filter modal
                 Then the Columns and Operator will both default to Course and Contains respectively
 
         
-        Test Scenario: Validate the Reset All button clears the current filter parameters
-            Given the user is using the Filter functions
+        Test Scenario: Validate the reset All button clears the current filter parameters
+            Given the user is using the filter functions
                 When the user clicks the Reset All 
-                Then the current Filter parameters should be cleared (reset)
+                Then the current filter parameters should be cleared (reset)
 
          
-        Test Scenario: Validate the Operator selection option contains four options: Contains, Equals, Starts with, Ends with
+        Test Scenario: Validate the operator selection option contains four options: Contains, Equals, Starts with, Ends with
             Given the user is using the Filter functions
-                When the user selects the Operator option
-                Then the user is provided these four Operator options when filtering
+                When the user selects the operator option
+                Then the user is provided these four operator options when filtering
 
         
-        Test Scenario: Validate the "Title" colunmn search param and the Contains operator is filtering based on the selected Value
-            Given the user is using the Filter functions
+        Test Scenario: Validate the "Title" colunmn search param and the contains operator is filtering based on the selected value
+            Given the user is using the filter functions
                 When the user selects the "Title" and "Contains" params
                 Then the filter will sort by the specified title and operator params with the correct value displayed
 
         
         Test Scenario: Validate the "Subject" colunmn search param and the "Equals" operator is filtering based on the selected Value
-            Given the user is using the Filter functions
+            Given the user is using the filter functions
                 When the user selects the "Subject" and "Equals" params
                 Then the filter will sort by the specified Subject and Quals operator with the exact correct value displayed
 
         
         Test Scenario: Validate the "Subject" colunmn search param and the "Starts with" operator is filtering based on the selected Value
-            Given the user is using the Filter functions
+            Given the user is using the filter functions
                 When the user selects the "Subject" and Starts with params
                 Then the filter will sort by the specified Subject and Starts with param
                 
         
         Test Scenario: Validate the "Subject" colunmn search param and the "Ends with" operator is filtering based on the selected Value
-            Given the user is using the Filter functions
+            Given the user is using the filter functions
                 When the user selects the "Subject" and Ends with params
                 Then the filter will sort by the specified Subject and Ends with param
 
         
         Test Scenario: Validate the filter provides predictive text searching for specific search filters
-            Given the user is using the Filter functions
+            Given the user is using the filter functions
                 When the user selects a specific search filter in which predictive logic assists the searching
                 Then the filter will use the predictive logic to execute the search
 
         
-        Test Scenario: Validate the filter enables the user to search by Course name using a full numeric value
-            Given the user is using the Filter functions
-                When the user performs a search for a Course name using one it's numeric values
-                Then the filter will return all Courses which contain that numeric value
+        Test Scenario: Validate the filter enables the user to search by course name using a full numeric value
+            Given the user is using the filter functions
+                When the user performs a search for a course name using one it's numeric values
+                Then the filter will return all courses which contain that numeric value
 
     
-        Test Scenario: Validate the filter enables the user to search by Course name using a partial numeric value
-            Given the user is using the Filter functions
-                When the user performs a search for a Course using a partial numeric search param
-                Then the filter will return all Courses which contain that partial numeric value
+        Test Scenario: Validate the filter enables the user to search by course name using a partial numeric value
+            Given the user is using the filter functions
+                When the user performs a search for a course using a partial numeric search param
+                Then the filter will return all courses which contain that partial numeric value
 
         
-        Test Scenario: Validate when sorting by Workflow Step, the only Operator option is Equals
+        Test Scenario: Validate when sorting by workflow step, the only Operator option is Equals
             Given the user needs to filter their sections
                 When the user filters the section details by Columns "Workflow Step"
                 Then the filtering will be limited to Operator is Equals to - Value
@@ -433,40 +433,40 @@
 
  <!--UX test scenarios-->
         
-        UX Test Scenario: Validate the user can view the Schedule page header
-            Given the user is working within the Schedule app
-                When opening the Schedule page
-                Then the Schedule title will display in the Upper left corner
+        UX Test Scenario: Validate the user can view the schedule page header
+            Given the user is working within the schedule app
+                When opening the schedule page
+                Then the schedule title will display in the Upper left corner
         
-        UX Test Scenario: Validate the Academic Year listings are displayed on the page using the (YYYY - YYYY) formatting
+        UX Test Scenario: Validate the academic year listings are displayed on the page using the (YYYY - YYYY) formatting
             Given the user is working within the Schedule app
-                When opening the Schedule page
-                Then the Academic Years will are displayed as a Column header
+                When opening the schedule page
+                Then the Academic Years will are displayed as a column header
 
-        UX Test Scenario: Validate the Courses grid is broken out into sortable columns
-            Given the user is working within the Schedule app
+        UX Test Scenario: Validate the courses grid is broken out into sortable columns
+            Given the user is working within the schedule app
                 Then the courses grid will be displayed across sortable header columns
 
-        UX Test Scenario: Validate the grid has a Course IDs row with Course ID displayed in the marketing Blue text
-            Given the user is working within the Schedule app
-                Then the Courses grid will display each horizontal course listing
+        UX Test Scenario: Validate the grid has a course IDs row with Course ID displayed in the marketing Blue text
+            Given the user is working within the schedule app
+                Then the courses grid will display each horizontal course listing
   
         UX Test Scenario: Validate there is contrast in the column headers so user can differentiate between the data and the headers
-            Given the user is working within the Schedule app
+            Given the user is working within the schedule app
                 Then the UI will have varying shades in contrast so the user can differentiate data within the header section
 
         UX Test Scenario: Validate the Academic Year menu selector field is meeting the W3G min and max pixel dimensions of 24 x 24
-            Given the user is working within the Schedule app
-                Then the Academic Year menu selector meets the target pixel size of 24 x 24 min-height
+            Given the user is working within the schedule app
+                Then the academic year menu selector meets the target pixel size of 24 x 24 min-height
                 Then this ensures the sufficient W3G 2.5.8 Target spacing requirements
 
-        UX Test Scenario: Validate the Academic Year menu selector 'arrow' button is meeting the W3G min and max pixel dimensions of 24 x 24
+        UX Test Scenario: Validate the academic year menu selector 'arrow' button is meeting the W3G min and max pixel dimensions of 24 x 24
             Given the user is working within the Schedule app
-                Then the Academic Year selector 'arrow' button meets the target pixel size of 24 x 24 min-height
+                Then the academic year selector 'arrow' button meets the target pixel size of 24 x 24 min-height
                 Then this ensures the sufficient W3G 2.5.8 Target spacing requirements
 
-        UX Test Scenario: Validate the Course 'arrow' expander button is meeting the W3G min and max pixel dimensions of 24 x 24
-            Given the user is working within the Schedule app
+        UX Test Scenario: Validate the course 'arrow' expander button is meeting the W3G min and max pixel dimensions of 24 x 24
+            Given the user is working within the schedule app
                 Then the Course 'arrow' expander button meets the target pixel size of 24 x 24 min-height
                 Then this ensures the sufficient W3G 2.5.8 Target spacing requirements
 <hr> 
